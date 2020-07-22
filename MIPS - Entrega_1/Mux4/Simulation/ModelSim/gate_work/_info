@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\Downloads\MIPS\Entrega 1\Mux4\Mux4\Simulation\ModelSim
+vmux4
+IazQ;W[f3eeDh3[JFRmD:L2
+VD;U:>2Gg;99:CJY5m?OWI2
+Z1 dC:\Users\thiag\Downloads\MIPS\Entrega 1\Mux4\Mux4\Simulation\ModelSim
+w1554156079
+8mux4.vo
+Fmux4.vo
+L0 31
+Z2 OV;L;10.1b;51
+r1
+31
+o-vlog01compat -work work -O0
+!i10b 1
+!s100 0mLSUnJ8P3TjcliM7h:Z31
+!s85 0
+!s108 1554156106.658000
+!s107 mux4.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|mux4.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vmux4_tb
+DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 @o<bL7c_JkkQJh3Oh;>0B2
+IbneRh^DejD:0]DD>;CRkn0
+VB]C>BGJg;0H1iMJYLoBcB2
+!s105 mux4_tb_sv_unit
+S1
+R1
+w1554156013
+8C:/Users/thiag/Downloads/MIPS/Entrega 1/Mux4/Mux4/Testbench/mux4_tb.sv
+FC:/Users/thiag/Downloads/MIPS/Entrega 1/Mux4/Mux4/Testbench/mux4_tb.sv
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1554156107.017000
+!s107 C:/Users/thiag/Downloads/MIPS/Entrega 1/Mux4/Mux4/Testbench/mux4_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/Downloads/MIPS/Entrega 1/Mux4/Mux4/Testbench|C:/Users/thiag/Downloads/MIPS/Entrega 1/Mux4/Mux4/Testbench/mux4_tb.sv|
+!s101 -O0
+o-sv -work work -O0
+!s92 -sv -work work {+incdir+C:/Users/thiag/Downloads/MIPS/Entrega 1/Mux4/Mux4/Testbench} -O0

@@ -1,0 +1,143 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\15 - Mux8 32 bit\Simulation\ModelSim
+vinversor
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Ien0ROnB_F3O1o974XIUzM3
+VK9C;<dDEdeKN0OH61L[:Q1
+S1
+Z2 dC:\Users\thiag\OneDrive\햞ea de Trabalho\15 - Mux8 32 bit\Simulation\ModelSim
+w1553633326
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/inversor.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/inversor.sv
+L0 1
+Z3 OV;L;10.1b;51
+r1
+31
+Z4 o-sv -work work -O0
+Z5 !s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit} -O0
+!i10b 1
+!s100 Xz_:e;eTJ2j;0FY1b;EMj1
+!s105 inversor_sv_unit
+!s85 0
+!s108 1555374991.175000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/inversor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit|C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/inversor.sv|
+!s101 -O0
+vmux2
+R1
+IiAfPG;jO_HI::aFn4b29V3
+VlDRXj7k>PSm=K:ES72NA:3
+S1
+R2
+Z6 w1555361754
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/mux2.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/mux2.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 43zVe6l0@8AT6m>Kk2n@81
+!s105 mux2_sv_unit
+!s85 0
+!s108 1555374990.300000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit|C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/mux2.sv|
+!s101 -O0
+vmux4
+R1
+I_Vjo85n:`0jz>8=S]EkTP3
+V80LDl:2ELb_AKC0SldfBK1
+S1
+R2
+w1555362880
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/mux4.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/mux4.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 X_8X<RRm:?`M_?g65eKO52
+!s105 mux4_sv_unit
+!s85 0
+!s108 1555374989.893000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/mux4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit|C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/mux4.sv|
+!s101 -O0
+vmux8
+R1
+I]aocWQi]8;ll>BX;_SA6R1
+V`^WL]7D35f^JNh`dV055<0
+S1
+R2
+w1555371150
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/mux8.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/mux8.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 6WJ1kYMoMl@23i_0jmWVS1
+!s105 mux8_sv_unit
+!s85 0
+!s108 1555374989.534000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/mux8.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit|C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/mux8.sv|
+!s101 -O0
+vmux8_tb
+R1
+!i10b 1
+!s100 j>?Xb=FLPQO[l;IAgUOF;2
+I0UenC9d3RMz]0D_?7J;A>0
+V?<B;o4L>]W>9ZK_KY[B7<2
+!s105 mux8_tb_sv_unit
+S1
+R2
+w1555374705
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/Testbench/mux8_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/Testbench/mux8_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1555374991.565000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/Testbench/mux8_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/Testbench|C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/Testbench/mux8_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/Testbench} -O0
+vtristate
+R1
+I?Kc0WWHgdTF@RKD[B>CSd2
+VYAOY8_Qc;@hVF>WAkY02>0
+S1
+R2
+R6
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/tristate.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/tristate.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 1Z;W`:[8KA4T364hM_lPW3
+!s105 tristate_sv_unit
+!s85 0
+!s108 1555374989.144000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/tristate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit|C:/Users/thiag/OneDrive/햞ea de Trabalho/15 - Mux8 32 bit/tristate.sv|
+!s101 -O0

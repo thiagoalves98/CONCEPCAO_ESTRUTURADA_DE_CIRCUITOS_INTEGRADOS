@@ -1,0 +1,51 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Banco de Registradores\Simulation\ModelSim
+vbank
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I;LF`iIge2K5cif97j7P:R2
+V347G<QX5Dd6AecAzh?9^J0
+S1
+Z2 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Banco de Registradores\Simulation\ModelSim
+w1554780243
+8bank_6_1200mv_85c_slow.svo
+Fbank_6_1200mv_85c_slow.svo
+L0 31
+Z3 OV;L;10.1b;51
+r1
+31
+Z4 o-sv -work work -O0
+!i10b 1
+!s100 8h396RAbeTKg2nY4?fI0X0
+!s105 bank_6_1200mv_85c_slow_svo_unit
+!s85 0
+!s108 1554780646.564000
+!s107 bank_6_1200mv_85c_slow.svo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+.|bank_6_1200mv_85c_slow.svo|
+!s101 -O0
+!s92 -sv -work work +incdir+. -O0
+vbank_tb
+R1
+!i10b 1
+!s100 m3V90NzO0NEDA@@iVRKeH0
+I@PEY8ViBz^J:A6f=<^<RQ1
+Vg5Edg:]=KQgIkUDEa`Za93
+!s105 bank_tb_sv_unit
+S1
+R2
+w1554780643
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1554780647.081000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench|C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench} -O0

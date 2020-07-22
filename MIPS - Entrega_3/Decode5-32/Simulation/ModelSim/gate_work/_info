@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Decode5-32\Simulation\ModelSim
+vdecoder5_32
+I;kDNR`g1dk0K;4K_P<cAH2
+Vo;z:^2zi6iBmkVc2kkjJ[1
+Z1 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Decode5-32\Simulation\ModelSim
+w1554786190
+8decoder5_32_6_1200mv_85c_slow.vo
+Fdecoder5_32_6_1200mv_85c_slow.vo
+L0 31
+Z2 OV;L;10.1b;51
+r1
+31
+o-vlog01compat -work work -O0
+!i10b 1
+!s100 XE=:me>;D?FG17dGJQF8j1
+!s85 0
+!s108 1554786296.494000
+!s107 decoder5_32_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|decoder5_32_6_1200mv_85c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vdecoder5_32_tb
+DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 jJ?PPk;J;NGY@_5V?>7nC0
+I]e3zb0WW^U^IL:;z1;gQf1
+Vmb>WVmn>8k1cV8VM4?P1L1
+!s105 decoder5_32_tb_sv_unit
+S1
+R1
+w1554786099
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1554786297.010000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench|C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv|
+!s101 -O0
+o-sv -work work -O0
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench} -O0

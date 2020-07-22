@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\Downloads\MIPS\Entrega 1\Mux2\Mux2\Simulation\ModelSim
+vmux2
+IDXVUO>LR1@J1@f6Ud`[492
+V4:42Wnh=OcQJ[:;]F`0F91
+Z1 dC:\Users\thiag\Downloads\MIPS\Entrega 1\Mux2\Mux2\Simulation\ModelSim
+w1554155476
+8mux2.vo
+Fmux2.vo
+L0 31
+Z2 OV;L;10.1b;51
+r1
+31
+o-vlog01compat -work work -O0
+!i10b 1
+!s100 >cB_0=czi1ZBNWoN5zOJS3
+!s85 0
+!s108 1554155502.814000
+!s107 mux2.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|mux2.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vmux2_tb
+DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 8YJHD1S7g`=Xz_A37`@2o1
+ImnJgAP=38<9YA9;ERHRcA3
+V_I?[5HnX@4AG3KQ4kg1TC1
+!s105 mux2_tb_sv_unit
+S1
+R1
+w1554155411
+8C:/Users/thiag/Downloads/MIPS/Entrega 1/Mux2/Mux2/Testbench/mux2_tb.sv
+FC:/Users/thiag/Downloads/MIPS/Entrega 1/Mux2/Mux2/Testbench/mux2_tb.sv
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1554155503.111000
+!s107 C:/Users/thiag/Downloads/MIPS/Entrega 1/Mux2/Mux2/Testbench/mux2_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/Downloads/MIPS/Entrega 1/Mux2/Mux2/Testbench|C:/Users/thiag/Downloads/MIPS/Entrega 1/Mux2/Mux2/Testbench/mux2_tb.sv|
+!s101 -O0
+o-sv -work work -O0
+!s92 -sv -work work {+incdir+C:/Users/thiag/Downloads/MIPS/Entrega 1/Mux2/Mux2/Testbench} -O0

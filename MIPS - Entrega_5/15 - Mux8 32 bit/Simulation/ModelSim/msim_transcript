@@ -1,0 +1,1225 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do mux8_run_msim_gate_systemverilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+. {mux8_7_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux8
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/15\ -\ Mux8\ 32\ bit/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8_tb
+# 
+# Top level modules:
+# 	mux8_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  mux8_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux8_tb 
+# Loading sv_std.std
+# Loading work.mux8_tb
+# Loading work.mux8
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# SDF 10.1b Compiler 2012.04 Apr 27 2012
+# 
+# Loading instances from mux8_7_1200mv_85c_v_slow.sdo
+# Loading timing data from mux8_7_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux8_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+#    |                D                   |   S   |                Y                   |             Y_esperado             |
+#    |------------------------------------|-------|------------------------------------|------------------------------------|
+# D0 |  11111111111111111111111111111111  |  000  |  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  001  |  00001110101011101101000000001000  |  11111111111111111111111111111111  | ERRO
+# D1 |  11111111111111111111111111111111  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  010  |  11000110100101101101000000000000  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  11111111111111111111111111111111  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  011  |  00100111100011101101000101010100  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  11111111111111111111111111111111  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  100  |  00100000000000001000000000000000  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  11111111111111111111111111111111  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  101  |  00111110100110100101100100110100  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  11111111111111111111111111111111  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  110  |  00110010000101101011100100010100  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  11111111111111111111111111111111  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  111  |  00110110100111100101110100000100  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  11111111111111111111111111111111  |
+#  
+# Testes Efetuados  = 8
+# Erros Encontrados = 8
+# Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# Simulation Breakpoint: Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# MACRO ./mux8_run_msim_gate_systemverilog.do PAUSED at line 17
+do mux8_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {mux8_7_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux8
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/15\ -\ Mux8\ 32\ bit/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8_tb
+# 
+# Top level modules:
+# 	mux8_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  mux8_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux8_tb 
+# Loading sv_std.std
+# Loading work.mux8_tb
+# Loading work.mux8
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading instances from mux8_7_1200mv_85c_v_slow.sdo
+# Loading timing data from mux8_7_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux8_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+#    |                D                   |   S   |                Y                   |             Y_esperado             |
+#    |------------------------------------|-------|------------------------------------|------------------------------------|
+# D0 |  11111111111111111111111111111111  |  000  |  xxxxx1xx1xx1xxxxx1xxxxxxxxxxxx1x  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  001  |  11000110100101101100000000000111  |  11111111111111111111111111111111  | ERRO
+# D1 |  11111111111111111111111111111111  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  010  |  00000110100001101100000000000000  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  11111111111111111111111111111111  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  011  |  11000111100001101100000000100111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  11111111111111111111111111111111  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  100  |  00001100000000001100000000000000  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  11111111111111111111111111111111  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  101  |  00100110100001101101000000100110  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  11111111111111111111111111111111  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  110  |  00100110100001101101000000000100  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  11111111111111111111111111111111  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  111  |  00100110100001101101000000000100  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  11111111111111111111111111111111  |
+#  
+# Testes Efetuados  = 8
+# Erros Encontrados = 8
+# Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# Simulation Breakpoint: Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# MACRO ./mux8_run_msim_gate_systemverilog.do PAUSED at line 17
+do mux8_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {mux8_7_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux8
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/15\ -\ Mux8\ 32\ bit/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8_tb
+# 
+# Top level modules:
+# 	mux8_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  mux8_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux8_tb 
+# Loading sv_std.std
+# Loading work.mux8_tb
+# Loading work.mux8
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading instances from mux8_7_1200mv_85c_v_slow.sdo
+# Loading timing data from mux8_7_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux8_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+#    |                D                   |   S   |                Y                   |             Y_esperado             |
+#    |------------------------------------|-------|------------------------------------|------------------------------------|
+# D0 |  11111111111111111111111111111111  |  000  |  111111111x111111x1xx111x11111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  001  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  11111111111111111111111111111111  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  010  |  11111111111111111110111111111011  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  11111111111111111111111111111111  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  011  |  11111111111111111111111111111011  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  11111111111111111111111111111111  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  100  |  11011110100111011100011011101011  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  11111111111111111111111111111111  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  101  |  11011111111111111110111011111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  11111111111111111111111111111111  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  110  |  11111111111111111110011011111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  11111111111111111111111111111111  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  111  |  11111111111111111110111011111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  11111111111111111111111111111111  |
+#  
+# Testes Efetuados  = 8
+# Erros Encontrados = 7
+# Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# Simulation Breakpoint: Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# MACRO ./mux8_run_msim_gate_systemverilog.do PAUSED at line 17
+do mux8_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {mux8_7_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux8
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/15\ -\ Mux8\ 32\ bit/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8_tb
+# 
+# Top level modules:
+# 	mux8_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  mux8_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux8_tb 
+# Loading sv_std.std
+# Loading work.mux8_tb
+# Loading work.mux8
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading instances from mux8_7_1200mv_85c_v_slow.sdo
+# Loading timing data from mux8_7_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux8_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+#    |                D                   |   S   |                Y                   |             Y_esperado             |
+#    |------------------------------------|-------|------------------------------------|------------------------------------|
+# D0 |  11111111111111111111111111111111  |  000  |  1111111111111111x111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  001  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  11111111111111111111111111111111  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  010  |  11111111111111110111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  11111111111111111111111111111111  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  011  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  11111111111111111111111111111111  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  100  |  11111111111111010111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  11111111111111111111111111111111  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  101  |  11111111111111011111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  11111111111111111111111111111111  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  110  |  11111111111111011111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  11111111111111111111111111111111  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  111  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  11111111111111111111111111111111  |
+#  
+# Testes Efetuados  = 8
+# Erros Encontrados = 5
+# Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# Simulation Breakpoint: Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# MACRO ./mux8_run_msim_gate_systemverilog.do PAUSED at line 17
+do mux8_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {mux8_7_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux8
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/15\ -\ Mux8\ 32\ bit/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8_tb
+# 
+# Top level modules:
+# 	mux8_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  mux8_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux8_tb 
+# Loading sv_std.std
+# Loading work.mux8_tb
+# Loading work.mux8
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading instances from mux8_7_1200mv_85c_v_slow.sdo
+# Loading timing data from mux8_7_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux8_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+#    |                D                   |   S   |                Y                   |             Y_esperado             |
+#    |------------------------------------|-------|------------------------------------|------------------------------------|
+# D0 |  11111111111111111111111111111111  |  000  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  001  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  11111111111111111111111111111111  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  010  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  11111111111111111111111111111111  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  011  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  11111111111111111111111111111111  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  100  |  11111111111111110111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  11111111111111111111111111111111  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  101  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  11111111111111111111111111111111  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  110  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  11111111111111111111111111111111  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  111  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  11111111111111111111111111111111  |
+#  
+# Testes Efetuados  = 8
+# Erros Encontrados = 1
+# Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# Simulation Breakpoint: Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# MACRO ./mux8_run_msim_gate_systemverilog.do PAUSED at line 17
+do mux8_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {mux8_7_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux8
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/15\ -\ Mux8\ 32\ bit/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8_tb
+# 
+# Top level modules:
+# 	mux8_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  mux8_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux8_tb 
+# Loading sv_std.std
+# Loading work.mux8_tb
+# Loading work.mux8
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading instances from mux8_7_1200mv_85c_v_slow.sdo
+# Loading timing data from mux8_7_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux8_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+#    |                D                   |   S   |                Y                   |             Y_esperado             |
+#    |------------------------------------|-------|------------------------------------|------------------------------------|
+# D0 |  11111111111111111111111111111111  |  000  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  001  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  11111111111111111111111111111111  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  010  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  11111111111111111111111111111111  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  011  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  11111111111111111111111111111111  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  100  |  11111111111111110111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  11111111111111111111111111111111  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  101  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  11111111111111111111111111111111  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  110  |  11111111111111110111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  11111111111111111111111111111111  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  111  |  11111111111111110111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  11111111111111111111111111111111  |
+#  
+# Testes Efetuados  = 8
+# Erros Encontrados = 3
+# Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# Simulation Breakpoint: Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# MACRO ./mux8_run_msim_gate_systemverilog.do PAUSED at line 17
+do mux8_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {mux8_7_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux8
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/15\ -\ Mux8\ 32\ bit/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8_tb
+# 
+# Top level modules:
+# 	mux8_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  mux8_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux8_tb 
+# Loading sv_std.std
+# Loading work.mux8_tb
+# Loading work.mux8
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading instances from mux8_7_1200mv_85c_v_slow.sdo
+# Loading timing data from mux8_7_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux8_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+#    |                D                   |   S   |                Y                   |             Y_esperado             |
+#    |------------------------------------|-------|------------------------------------|------------------------------------|
+# D0 |  11111111111111111111111111111111  |  000  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  001  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  11111111111111111111111111111111  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  010  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  11111111111111111111111111111111  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  011  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  11111111111111111111111111111111  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  100  |  11111111111111110111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  11111111111111111111111111111111  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  101  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  11111111111111111111111111111111  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  110  |  11111111111111110111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  11111111111111111111111111111111  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  111  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  11111111111111111111111111111111  |
+#  
+# Testes Efetuados  = 8
+# Erros Encontrados = 2
+# Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# Simulation Breakpoint: Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# MACRO ./mux8_run_msim_gate_systemverilog.do PAUSED at line 17
+do mux8_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {mux8_7_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux8
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/15\ -\ Mux8\ 32\ bit/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8_tb
+# 
+# Top level modules:
+# 	mux8_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  mux8_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux8_tb 
+# Loading sv_std.std
+# Loading work.mux8_tb
+# Loading work.mux8
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading instances from mux8_7_1200mv_85c_v_slow.sdo
+# Loading timing data from mux8_7_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux8_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+#    |                D                   |   S   |                Y                   |             Y_esperado             |
+#    |------------------------------------|-------|------------------------------------|------------------------------------|
+# D0 |  11111111111111111111111111111111  |  000  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  001  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  11111111111111111111111111111111  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  010  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  11111111111111111111111111111111  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  011  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  11111111111111111111111111111111  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  100  |  11111111111111110111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  11111111111111111111111111111111  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  101  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  11111111111111111111111111111111  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  110  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  11111111111111111111111111111111  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  111  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  11111111111111111111111111111111  |
+#  
+# Testes Efetuados  = 8
+# Erros Encontrados = 1
+# Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# Simulation Breakpoint: Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# MACRO ./mux8_run_msim_gate_systemverilog.do PAUSED at line 17
+do mux8_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {mux8_7_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux8
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/15\ -\ Mux8\ 32\ bit/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8_tb
+# 
+# Top level modules:
+# 	mux8_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  mux8_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux8_tb 
+# Loading sv_std.std
+# Loading work.mux8_tb
+# Loading work.mux8
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading instances from mux8_7_1200mv_85c_v_slow.sdo
+# Loading timing data from mux8_7_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux8_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+#    |                D                   |   S   |                Y                   |             Y_esperado             |
+#    |------------------------------------|-------|------------------------------------|------------------------------------|
+# D0 |  11111111111111111111111111111111  |  000  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  001  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  11111111111111111111111111111111  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  010  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  11111111111111111111111111111111  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  011  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  11111111111111111111111111111111  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  100  |  11111111111111110111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  11111111111111111111111111111111  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  101  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  11111111111111111111111111111111  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  110  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  11111111111111111111111111111111  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  111  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  11111111111111111111111111111111  |
+#  
+# Testes Efetuados  = 8
+# Erros Encontrados = 1
+# Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# Simulation Breakpoint: Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# MACRO ./mux8_run_msim_gate_systemverilog.do PAUSED at line 17
+do mux8_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {mux8_7_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux8
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/15\ -\ Mux8\ 32\ bit/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8_tb
+# 
+# Top level modules:
+# 	mux8_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  mux8_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux8_tb 
+# Loading sv_std.std
+# Loading work.mux8_tb
+# Loading work.mux8
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading instances from mux8_7_1200mv_85c_v_slow.sdo
+# Loading timing data from mux8_7_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux8_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+#    |                D                   |   S   |                Y                   |             Y_esperado             |
+#    |------------------------------------|-------|------------------------------------|------------------------------------|
+# D0 |  11111111111111111111111111111111  |  000  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  001  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  11111111111111111111111111111111  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  010  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  11111111111111111111111111111111  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  011  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  11111111111111111111111111111111  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  100  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  11111111111111111111111111111111  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  101  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  11111111111111111111111111111111  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  110  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  11111111111111111111111111111111  |
+# D7 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  111  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+# D4 |  00000000000000000000000000000000  |
+# D5 |  00000000000000000000000000000000  |
+# D6 |  00000000000000000000000000000000  |
+# D7 |  11111111111111111111111111111111  |
+#  
+# Testes Efetuados  = 8
+# Erros Encontrados = 0
+# Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# Simulation Breakpoint: Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv line 84
+# MACRO ./mux8_run_msim_gate_systemverilog.do PAUSED at line 17

@@ -1,0 +1,40 @@
+|decoder5_32
+a[0] => Ram0.RADDR
+a[1] => Ram0.RADDR1
+a[2] => Ram0.RADDR2
+a[3] => Ram0.RADDR3
+a[4] => Ram0.RADDR4
+y[0] <= Ram0.DATAOUT
+y[1] <= Ram0.DATAOUT1
+y[2] <= Ram0.DATAOUT2
+y[3] <= Ram0.DATAOUT3
+y[4] <= Ram0.DATAOUT4
+y[5] <= Ram0.DATAOUT5
+y[6] <= Ram0.DATAOUT6
+y[7] <= Ram0.DATAOUT7
+y[8] <= Ram0.DATAOUT8
+y[9] <= Ram0.DATAOUT9
+y[10] <= Ram0.DATAOUT10
+y[11] <= Ram0.DATAOUT11
+y[12] <= Ram0.DATAOUT12
+y[13] <= Ram0.DATAOUT13
+y[14] <= Ram0.DATAOUT14
+y[15] <= Ram0.DATAOUT15
+y[16] <= Ram0.DATAOUT16
+y[17] <= Ram0.DATAOUT17
+y[18] <= Ram0.DATAOUT18
+y[19] <= Ram0.DATAOUT19
+y[20] <= Ram0.DATAOUT20
+y[21] <= Ram0.DATAOUT21
+y[22] <= Ram0.DATAOUT22
+y[23] <= Ram0.DATAOUT23
+y[24] <= Ram0.DATAOUT24
+y[25] <= Ram0.DATAOUT25
+y[26] <= Ram0.DATAOUT26
+y[27] <= Ram0.DATAOUT27
+y[28] <= Ram0.DATAOUT28
+y[29] <= Ram0.DATAOUT29
+y[30] <= Ram0.DATAOUT30
+y[31] <= Ram0.DATAOUT31
+
+

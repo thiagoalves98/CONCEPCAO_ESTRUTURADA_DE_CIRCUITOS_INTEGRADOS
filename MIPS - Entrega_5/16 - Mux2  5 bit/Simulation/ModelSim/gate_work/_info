@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\MIPS\16 - Mux2  5 bit\Simulation\ModelSim
+vmux2
+IMkTCFFSI0kFoajLI6zoM30
+VefYEb<8V35LPTeUeNUD1;2
+Z1 dC:\Users\thiag\OneDrive\햞ea de Trabalho\MIPS\16 - Mux2  5 bit\Simulation\ModelSim
+w1555369830
+8mux2_6_1200mv_85c_slow.vo
+Fmux2_6_1200mv_85c_slow.vo
+L0 31
+Z2 OV;L;10.1b;51
+r1
+31
+o-vlog01compat -work work -O0
+!i10b 1
+!s100 bXK>2AoCY`CkEbP<GLPUj3
+!s85 0
+!s108 1555379140.844000
+!s107 mux2_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|mux2_6_1200mv_85c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vmux2_tb
+DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 llGlQc6`GHF7m<=?GbdQb2
+I2bfGG`YC6lN=nX6H:fI?63
+V_I?[5HnX@4AG3KQ4kg1TC1
+!s105 mux2_tb_sv_unit
+S1
+R1
+w1555379137
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/16 - Mux2  5 bit/Testbench/mux2_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/16 - Mux2  5 bit/Testbench/mux2_tb.sv
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1555379141.266000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/16 - Mux2  5 bit/Testbench/mux2_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/16 - Mux2  5 bit/Testbench|C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/16 - Mux2  5 bit/Testbench/mux2_tb.sv|
+!s101 -O0
+o-sv -work work -O0
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/16 - Mux2  5 bit/Testbench} -O0

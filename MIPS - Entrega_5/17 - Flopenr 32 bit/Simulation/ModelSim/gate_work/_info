@@ -1,0 +1,51 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\MIPS\17 - Flopenr 32 bit\Simulation\ModelSim
+vflopenr32
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IjlJ23Tg=XSe<F5Q9T0DS=1
+VcoChzR<`H3ENzoUR04od13
+S1
+Z2 dC:\Users\thiag\OneDrive\햞ea de Trabalho\MIPS\17 - Flopenr 32 bit\Simulation\ModelSim
+w1555380155
+8flopenr32_6_1200mv_85c_slow.svo
+Fflopenr32_6_1200mv_85c_slow.svo
+L0 31
+Z3 OV;L;10.1b;51
+r1
+31
+Z4 o-sv -work work -O0
+!i10b 1
+!s100 h[G<IFBOEH?89`BF9^Tfd2
+!s105 flopenr32_6_1200mv_85c_slow_svo_unit
+!s85 0
+!s108 1555380537.396000
+!s107 flopenr32_6_1200mv_85c_slow.svo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+.|flopenr32_6_1200mv_85c_slow.svo|
+!s101 -O0
+!s92 -sv -work work +incdir+. -O0
+vflopenr32_tb
+R1
+!i10b 1
+!s100 Cb464NbJP`kB7jT@mUVMz2
+IPE[DAmSoH;celDJdJ2kHe2
+Vz2XQ;Ne2f<iDVPBN4C?PM2
+!s105 flopenr32_tb_sv_unit
+S1
+R2
+w1555380534
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/17 - Flopenr 32 bit/Testbench/flopenr32_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/17 - Flopenr 32 bit/Testbench/flopenr32_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1555380538.004000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/17 - Flopenr 32 bit/Testbench/flopenr32_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/17 - Flopenr 32 bit/Testbench|C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/17 - Flopenr 32 bit/Testbench/flopenr32_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/17 - Flopenr 32 bit/Testbench} -O0

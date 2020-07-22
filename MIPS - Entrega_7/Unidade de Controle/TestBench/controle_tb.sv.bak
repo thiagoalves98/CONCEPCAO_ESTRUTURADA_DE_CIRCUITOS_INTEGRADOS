@@ -1,0 +1,99 @@
+`timescale 1ns/100ps
+
+module controle_tb;
+    
+int counter, errors, aux_error;
+logic clk, rst;
+
+logic ck, rs, funct;
+logic [5:0]opcode; 					
+logic MemtoReg, RegDst, IorD, ALUSrcA, IRWrite, MemWrite, PCWrite, Branch, RegWrite, BranchNE;
+logic MemtoReg_esp, RegDst_esp, IorD_esp, ALUSrcA_esp, IRWrite_esp, MemWrite_esp, PCWrite_esp, Branch_esp, RegWrite_esp, BranchNE_esp;							
+logic [1:0]PCSrc, ALUSrcB;
+logic [1:0]PCSrc_esp, ALUSrcB_esp;
+logic [2:0]ALUControl, ALUControl_esp;
+
+logic [32:0]vectors[126]; 
+
+controle dut(ck, rs, opcode, funct, MemtoReg, RegDst, IorD, ALUSrcA, IRWrite, MemWrite, PCWrite, Branch, RegWrite, BranchNE, PCSrc, ALUSrcB, ALUControl);
+
+initial begin
+	$display("Iniciando Testbench");
+	$readmemb("controle_tv.tv",vectors);
+	counter=0; errors=0;
+	rst = 1; 
+	#60; 
+	rst = 0;		
+end
+		
+always begin
+   clk=1; #50; 
+	clk=0; #10;
+end
+
+always @(posedge clk)begin
+	if(~rst)
+	begin
+		//Atribui valores do vetor nas entradas do DUT e nos valores esperados
+		{ck, rs, opcode, funct,MemtoReg_esp, RegDst_esp, IorD_esp, ALUSrcA_esp, IRWrite_esp, MemWrite_esp, PCWrite_esp, Branch_esp, RegWrite_esp, BranchNE_esp, PCSrc_esp, ALUSrcB_esp, ALUControl_esp} = vectors[counter];	
+	end
+end
+
+always @(negedge clk)begin	//Sempre (que o clock descer)u
+	if(~rst)begin
+		
+		aux_error = errors;
+		
+		assert (MemtoReg === MemtoReg_esp)
+		
+		else	errors = errors + 1;
+				
+		if(aux_error === errors)begin
+			$display("| clk %b  | rst %b   | Op  %b | funct %b  | OK", ck, rs, opcode, funct);
+			$display("|   MemtoReg   %b   |   MemtoReg_esp   %b    |   ", MemtoReg, MemtoReg_esp);
+			$display("|   RegDst     %b   |   RegDst_esp     %b    |   ", RegDst, RegDst_esp);
+			$display("|   IorD       %b   |   IorD_esp       %b    |   ", IorD, IorD_esp);
+			$display("|   ALUSrcA    %b   |   ALUSrcA_esp    %b    |   ", ALUSrcA, ALUSrcA_esp);
+			$display("|   IRWrite    %b   |   IRWrite_esp    %b    |   ", IRWrite, IRWrite_esp);
+			$display("|   MemWrite   %b   |   MemWrite_esp   %b    |   ", MemWrite, MemWrite_esp);
+			$display("|   PCWrite    %b   |   PCWrite_esp    %b    |   ", PCWrite, PCWrite_esp);
+			$display("|   Branch     %b   |   Branch_esp     %b    |   ", Branch, Branch_esp);
+			$display("|   RegWrite   %b   |   RegWrite_esp   %b    |   ", RegWrite,RegWrite_esp);
+			$display("|   BranchNE   %b   |   BranchNE_esp   %b    |   ", BranchNE, BranchNE_esp);
+			$display("|   PCSrc      %b  |   PCSrc_esp      %b   |     ", PCSrc, PCSrc_esp);
+			$display("|   ALUSrcB    %b  |   ALUSrcB_esp    %b   |     ", ALUSrcB,ALUSrcB_esp);
+			$display("|   ALUControl %b |   ALUControl_esp %b  |       ", ALUControl, ALUControl_esp);
+			$display(" ");
+		end
+		
+		else begin
+			$display("| clk %b  | rst %b   | Op %b | funct %b  | ERRO", ck, rs, opcode, funct);
+			$display("|   MemtoReg   %b   |   MemtoReg_esp   %b    |   ", MemtoReg, MemtoReg_esp);
+			$display("|   RegDst     %b   |   RegDst_esp     %b    |   ", RegDst, RegDst_esp);
+			$display("|   IorD       %b   |   IorD_esp       %b    |   ", IorD, IorD_esp);
+			$display("|   ALUSrcA    %b   |   ALUSrcA_esp    %b    |   ", ALUSrcA, ALUSrcA_esp);
+			$display("|   IRWrite    %b   |   IRWrite_esp    %b    |   ", IRWrite, IRWrite_esp);
+			$display("|   MemWrite   %b   |   MemWrite_esp   %b    |   ", MemWrite, MemWrite_esp);
+			$display("|   PCWrite    %b   |   PCWrite_esp    %b    |   ", PCWrite, PCWrite_esp);
+			$display("|   Branch     %b   |   Branch_esp     %b    |   ", Branch, Branch_esp);
+			$display("|   RegWrite   %b   |   RegWrite_esp   %b    |   ", RegWrite,RegWrite_esp);
+			$display("|   BranchNE   %b   |   BranchNE_esp   %b    |   ", BranchNE, BranchNE_esp);
+			$display("|   PCSrc      %b  |   PCSrc_esp      %b   |     ", PCSrc, PCSrc_esp);
+			$display("|   ALUSrcB    %b  |   ALUSrcB_esp    %b   |     ", ALUSrcB,ALUSrcB_esp);
+			$display("|   ALUControl %b |   ALUControl_esp %b  |       ", ALUControl, ALUControl_esp);
+			$display(" ");
+		end
+		
+		counter++;	//Incrementa contador dos vertores de teste
+			
+		if(counter == $size(vectors))begin //Quando os vetores de teste acabarem
+			$display("Testes Efetuados  = %0d", counter);
+			$display("Erros Encontrados = %0d", errors);
+			#10
+			$stop;
+		end	
+	end
+end
+		
+endmodule
+ 

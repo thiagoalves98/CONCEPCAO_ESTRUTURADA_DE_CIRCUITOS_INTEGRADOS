@@ -1,0 +1,51 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Mux32\Simulation\ModelSim
+vmux32
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+ITFZL<VGfPhLR7LC4HN_H[3
+VV1VR7Iz`TVY76Y:ZF2@Rc1
+S1
+Z2 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Mux32\Simulation\ModelSim
+w1554778870
+8mux32_6_1200mv_85c_slow.svo
+Fmux32_6_1200mv_85c_slow.svo
+L0 31
+Z3 OV;L;10.1b;51
+r1
+31
+Z4 o-sv -work work -O0
+!i10b 1
+!s100 _aRSg?Y1mUon;Fo=0?Rg?0
+!s105 mux32_6_1200mv_85c_slow_svo_unit
+!s85 0
+!s108 1554779333.586000
+!s107 mux32_6_1200mv_85c_slow.svo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+.|mux32_6_1200mv_85c_slow.svo|
+!s101 -O0
+!s92 -sv -work work +incdir+. -O0
+vmux32_tb
+R1
+!i10b 1
+!s100 iTad:^Qi]L:5^RROJZUg_1
+I3B:l53mkL;KZc;cWU1EJ]3
+VDL=B7a9gY2dX8O6ld2bg^0
+!s105 mux32_tb_sv_unit
+S1
+R2
+w1554779329
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/Testbench/mux32_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/Testbench/mux32_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1554779334.076000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/Testbench/mux32_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/Testbench|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/Testbench/mux32_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/Testbench} -O0

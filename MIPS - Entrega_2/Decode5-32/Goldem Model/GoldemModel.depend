@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1554238416 source:c:\users\aluno\desktop\decode5-32\goldem model\goldemmodel\main.cpp
+	<iostream>
+	<math.h>
+	<stdio.h>
+

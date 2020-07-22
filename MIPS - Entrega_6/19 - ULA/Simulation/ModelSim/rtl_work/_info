@@ -1,0 +1,213 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\MIPS\20 - ALU\Simulation\ModelSim
+valu
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I[lLJAe]?a^nG^FDHK;?S`1
+VcGSlPXdSNFCLHFeSQZ2f31
+S1
+Z2 dC:\Users\thiag\OneDrive\햞ea de Trabalho\MIPS\20 - ALU\Simulation\ModelSim
+w1555526779
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/alu.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/alu.sv
+L0 1
+Z3 OV;L;10.1b;51
+r1
+31
+Z4 o-sv -work work -O0
+Z5 !s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU} -O0
+!i10b 1
+!s100 j;bzc6MU6fUgUoMnEal]C3
+!s105 alu_sv_unit
+!s85 0
+!s108 1555526896.693000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU|C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/alu.sv|
+!s101 -O0
+valu_tb
+R1
+!i10b 1
+!s100 e[ik86LhXDf50GR@BdOQ_3
+IjYV0;BYiYb?mQVoc`k1YX3
+VL;=kgzZ7GJ2Reg7Z1GkmR2
+!s105 alu_tb_sv_unit
+S1
+R2
+w1555526028
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench/alu_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench/alu_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1555526897.458000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench/alu_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench|C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench/alu_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench} -O0
+vinversor
+R1
+Ih>YJGc@Q_W29b1ZY8_Ffd3
+VK9C;<dDEdeKN0OH61L[:Q1
+S1
+R2
+w1553626128
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/inversor.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/inversor.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 PP9DZD<F4JAWm]_L4`ATj0
+!s105 inversor_sv_unit
+!s85 0
+!s108 1555526892.992000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/inversor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU|C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/inversor.sv|
+!s101 -O0
+vmeioSomador
+R1
+IYSlY7b@h9eaac1D<HEKQG1
+VC0IUYFek7HY6WHJka8@hM2
+Z6 !s105 somador_sv_unit
+S1
+R2
+Z7 w1555526890
+Z8 8C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/somador.sv
+Z9 FC:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/somador.sv
+L0 1
+R3
+r1
+31
+Z10 !s108 1555526895.333000
+Z11 !s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/somador.sv|
+Z12 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU|C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/somador.sv|
+R4
+R5
+nmeio@somador
+!i10b 1
+!s100 QIV[JVjXOZKJ@5@XFiK;52
+!s85 0
+!s101 -O0
+vmux2
+R1
+ITk9g8I5QV8B][=B=BJJ@?0
+V>N3SEjELKI^h[HaUMzX7j2
+S1
+R2
+w1555348508
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/mux2.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/mux2.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 iO@INS`P>T533;6@EG@c93
+!s105 mux2_sv_unit
+!s85 0
+!s108 1555526893.418000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU|C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/mux2.sv|
+!s101 -O0
+vmux4
+R1
+I2`XIWNYKZDk8Jin=]h9RB3
+V0zcdIRhGIeRi:>;P<_V730
+S1
+R2
+w1555349018
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/mux4.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/mux4.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 6lVFYRk68PmOA6Y2zPnMB3
+!s105 mux4_sv_unit
+!s85 0
+!s108 1555526893.859000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/mux4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU|C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/mux4.sv|
+!s101 -O0
+vmux8
+R1
+I3RU_4n@5NSgklG_iJ9YnC0
+VhZUE[=Kdcaf0z3CTbM`CZ2
+S1
+R2
+w1555368680
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/mux8.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/mux8.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 ISbnlb9SH[Lli:I0A86]?3
+!s105 mux8_sv_unit
+!s85 0
+!s108 1555526894.372000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/mux8.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU|C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/mux8.sv|
+!s101 -O0
+vsomador
+R1
+IbQ:>eNo55^ZFeDJ^jKnEf0
+VGD1JPAKHZ<1S6k^j5;9`Z0
+R6
+S1
+R2
+R7
+R8
+R9
+L0 8
+R3
+r1
+31
+R10
+R11
+R12
+R4
+R5
+!i10b 1
+!s100 5_PF2aQ]kRWQHI1745I3j0
+!s85 0
+!s101 -O0
+vtristate
+R1
+I_SSIe=;F7U1?djlzI`9Gc1
+VRec>Y2aHg`5_EGQ7YU:J70
+S1
+R2
+w1553625682
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/tristate.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/tristate.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 l3dI?301cBNKO>bC[dVWA2
+!s105 tristate_sv_unit
+!s85 0
+!s108 1555526896.240000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/tristate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU|C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/tristate.sv|
+!s101 -O0

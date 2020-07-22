@@ -1,0 +1,293 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do bank_run_msim_gate_systemverilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+. {bank_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module bank
+# 
+# Top level modules:
+# 	bank
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Banco\ de\ Registradores/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module bank_tb
+# 
+# Top level modules:
+# 	bank_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  bank_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps bank_tb 
+# Loading sv_std.std
+# Loading work.bank_tb
+# Loading work.bank
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_clkctrl
+# Loading cycloneiv_ver.cycloneiv_mux41
+# Loading cycloneiv_ver.cycloneiv_ena_reg
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading altera_ver.dffeas
+# SDF 10.1b Compiler 2012.04 Apr 27 2012
+# 
+# Loading instances from bank_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from bank_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /bank_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |  CLK  |  RST  |              EN              |       SAIDA ESPERADA      |           SAIDA           |
+# |-------|-------|------------------------------|---------------------------|---------------------------|
+# |  CLK  |  RST  |  EN0  |  EN1  | ... |  EN31  |  QE0 | QE1   | ... | QE31 |  Q0  |  Q1  | ... |  Q31  |
+# |  0    |  1    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  1    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  1    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  1    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  1    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  1    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  1    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  1    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  0    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  0    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  0    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  0    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  0    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  0    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  0    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  0    |  1    |  1    | ... |  1     |  1   |  1   | ... |  1    |  1   |  1   | ... |  1    | OK
+# Testes Efetuados  = 16
+# Erros Encontrados = 0
+# Break in Module bank_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv line 73
+# Simulation Breakpoint: Break in Module bank_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv line 73
+# MACRO ./bank_run_msim_gate_systemverilog.do PAUSED at line 17
+do bank_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {bank_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module bank
+# 
+# Top level modules:
+# 	bank
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Banco\ de\ Registradores/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module bank_tb
+# 
+# Top level modules:
+# 	bank_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  bank_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps bank_tb 
+# Loading sv_std.std
+# Loading work.bank_tb
+# Loading work.bank
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_clkctrl
+# Loading cycloneiv_ver.cycloneiv_mux41
+# Loading cycloneiv_ver.cycloneiv_ena_reg
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading altera_ver.dffeas
+# Loading instances from bank_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from bank_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /bank_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |  CLK  |  RST  |              EN              |       SAIDA ESPERADA      |           SAIDA           |
+# |-------|-------|------------------------------|---------------------------|---------------------------|
+# |  CLK  |  RST  |  EN0  |  EN1  | ... |  EN31  |  QE0 | QE1   | ... | QE31 |  Q0  |  Q1  | ... |  Q31  |
+# |  0    |  1    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  1    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  1    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  1    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  1    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  1    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  1    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  1    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  0    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  0    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  0    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  0    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  0    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  0    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  0    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  0    |  1    |  1    | ... |  1     |  1   |  1   | ... |  1    |  1   |  1   | ... |  1    | OK
+# Testes Efetuados  = 16
+# Erros Encontrados = 0
+# Break in Module bank_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv line 73
+# Simulation Breakpoint: Break in Module bank_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv line 73
+# MACRO ./bank_run_msim_gate_systemverilog.do PAUSED at line 17
+do bank_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {bank_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module bank
+# 
+# Top level modules:
+# 	bank
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Banco\ de\ Registradores/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module bank_tb
+# 
+# Top level modules:
+# 	bank_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  bank_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps bank_tb 
+# Loading sv_std.std
+# Loading work.bank_tb
+# Loading work.bank
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_clkctrl
+# Loading cycloneiv_ver.cycloneiv_mux41
+# Loading cycloneiv_ver.cycloneiv_ena_reg
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading altera_ver.dffeas
+# Loading instances from bank_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from bank_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /bank_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |  CLK  |  RST  |              EN              |       SAIDA ESPERADA      |           SAIDA           |
+# |-------|-------|------------------------------|---------------------------|---------------------------|
+# |  CLK  |  RST  |  EN0  |  EN1  | ... |  EN31  |  QE0 | QE1   | ... | QE31 |  Q0  |  Q1  | ... |  Q31  |
+# |  0    |  1    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  1    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  1    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  1    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  1    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  1    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  1    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  1    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  0    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  0    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  0    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  0    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  0    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  0    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  0    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  0    |  1    |  1    | ... |  1     |  1   |  1   | ... |  1    |  1   |  1   | ... |  1    | OK
+# Testes Efetuados  = 16
+# Erros Encontrados = 0
+# Break in Module bank_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv line 73
+# Simulation Breakpoint: Break in Module bank_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv line 73
+# MACRO ./bank_run_msim_gate_systemverilog.do PAUSED at line 17
+do bank_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {bank_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module bank
+# 
+# Top level modules:
+# 	bank
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Banco\ de\ Registradores/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module bank_tb
+# 
+# Top level modules:
+# 	bank_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  bank_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps bank_tb 
+# Loading sv_std.std
+# Loading work.bank_tb
+# Loading work.bank
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_clkctrl
+# Loading cycloneiv_ver.cycloneiv_mux41
+# Loading cycloneiv_ver.cycloneiv_ena_reg
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading altera_ver.dffeas
+# Loading instances from bank_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from bank_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /bank_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |  CLK  |  RST  |              EN              |       SAIDA ESPERADA      |           SAIDA           |
+# |-------|-------|------------------------------|---------------------------|---------------------------|
+# |  CLK  |  RST  |  EN0  |  EN1  | ... |  EN31  |  QE0 | QE1   | ... | QE31 |  Q0  |  Q1  | ... |  Q31  |
+# |  0    |  1    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  1    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  1    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  1    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  1    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  1    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  1    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  1    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  0    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  0    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  0    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  0    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  0    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  0    |  0    |  0    | ... |  0     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  0    |  0    |  1    |  1    | ... |  1     |  0   |  0   | ... |  0    |  0   |  0   | ... |  0    | OK
+# |  1    |  0    |  1    |  1    | ... |  1     |  1   |  1   | ... |  1    |  0   |  0   | ... |  0    | ERROR
+# Testes Efetuados  = 16
+# Erros Encontrados = 1
+# Break in Module bank_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv line 73
+# Simulation Breakpoint: Break in Module bank_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv line 73
+# MACRO ./bank_run_msim_gate_systemverilog.do PAUSED at line 17

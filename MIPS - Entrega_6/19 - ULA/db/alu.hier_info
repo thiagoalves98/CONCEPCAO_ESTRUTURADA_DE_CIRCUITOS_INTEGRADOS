@@ -1,0 +1,248 @@
+|alu
+ALUcontrol[0] => ALUcontrol[0].IN1
+ALUcontrol[1] => ALUcontrol[1].IN1
+ALUcontrol[2] => ALUcontrol[2].IN1
+SrcA => SrcA.IN1
+SrcB => andULA.IN0
+SrcB => nandULA.IN0
+SrcB => orULA.IN0
+SrcB => norULA.IN0
+SrcB => xorULA.IN0
+SrcB => addSub.IN0
+cin => cin.IN1
+addSubSignal => addSub.IN1
+less => out[7].IN1
+set <= OutputSomador.DB_MAX_OUTPUT_PORT_TYPE
+ALUresult <= mux8:muxULA.port2
+cout <= somador:somadorULA.port4
+
+
+|alu|somador:somadorULA
+inputA => inputA.IN1
+inputB => inputB.IN1
+cin => cin.IN1
+output_s <= meioSomador:u2.port2
+cout <= u3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|somador:somadorULA|meioSomador:u1
+input1 => output_s0.IN0
+input1 => cout_0.IN0
+input2 => output_s0.IN1
+input2 => cout_0.IN1
+output_s0 <= output_s0.DB_MAX_OUTPUT_PORT_TYPE
+cout_0 <= cout_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|somador:somadorULA|meioSomador:u2
+input1 => output_s0.IN0
+input1 => cout_0.IN0
+input2 => output_s0.IN1
+input2 => cout_0.IN1
+output_s0 <= output_s0.DB_MAX_OUTPUT_PORT_TYPE
+cout_0 <= cout_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+d[2] => d[2].IN1
+d[3] => d[3].IN1
+d[4] => d[4].IN1
+d[5] => d[5].IN1
+d[6] => d[6].IN1
+d[7] => d[7].IN1
+s[0] => s[0].IN2
+s[1] => s[1].IN2
+s[2] => s[2].IN1
+y <= mux2:m2_0.port2
+
+
+|alu|mux8:muxULA|mux4:m4_0
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+d[2] => d[2].IN1
+d[3] => d[3].IN1
+s[0] => s[0].IN2
+s[1] => s[1].IN1
+y <= mux2:m2.port2
+
+
+|alu|mux8:muxULA|mux4:m4_0|mux2:m0
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_0|mux2:m0|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_0|mux2:m0|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_0|mux2:m0|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_0|mux2:m1
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_0|mux2:m1|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_0|mux2:m1|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_0|mux2:m1|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_0|mux2:m2
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_0|mux2:m2|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_0|mux2:m2|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_0|mux2:m2|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_1
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+d[2] => d[2].IN1
+d[3] => d[3].IN1
+s[0] => s[0].IN2
+s[1] => s[1].IN1
+y <= mux2:m2.port2
+
+
+|alu|mux8:muxULA|mux4:m4_1|mux2:m0
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_1|mux2:m0|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_1|mux2:m0|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_1|mux2:m0|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_1|mux2:m1
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_1|mux2:m1|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_1|mux2:m1|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_1|mux2:m1|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_1|mux2:m2
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_1|mux2:m2|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_1|mux2:m2|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux4:m4_1|mux2:m2|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux2:m2_0
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux2:m2_0|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux2:m2_0|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|mux8:muxULA|mux2:m2_0|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+

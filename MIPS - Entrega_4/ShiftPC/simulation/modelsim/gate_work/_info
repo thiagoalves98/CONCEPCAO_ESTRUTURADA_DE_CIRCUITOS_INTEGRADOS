@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\shiftpc\simulation\modelsim
+vshiftpc
+IAGSn<mJljQ1@fklTINQaL3
+VRzeXJ]nZ4G9XKMY2D4^VM1
+Z1 dC:\Users\thiag\OneDrive\햞ea de Trabalho\shiftpc\simulation\modelsim
+w1554933025
+8shiftpc_6_1200mv_85c_slow.vo
+Fshiftpc_6_1200mv_85c_slow.vo
+L0 31
+Z2 OV;L;10.1b;51
+r1
+31
+o-vlog01compat -work work -O0
+!i10b 1
+!s100 UenijIgVX8R5jgGnQI`>k2
+!s85 0
+!s108 1554933138.059000
+!s107 shiftpc_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|shiftpc_6_1200mv_85c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vshiftpc_tb
+DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 oPOGRY_6_TMNV^^k;eShX3
+IjTzZ>]gn9d7JJ^4<8fmdH2
+V9jkiBfhH0Fb<KMM=T<BAL3
+!s105 shiftpc_tb_sv_unit
+S1
+R1
+w1554933132
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench/shiftpc_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench/shiftpc_tb.sv
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1554933138.413000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench/shiftpc_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench|C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench/shiftpc_tb.sv|
+!s101 -O0
+o-sv -work work -O0
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench} -O0

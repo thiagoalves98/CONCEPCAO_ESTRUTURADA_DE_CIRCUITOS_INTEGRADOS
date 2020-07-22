@@ -1,0 +1,51 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\Documentos\Facudade\Faculdade - P6\CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS\MIPS\Entrega 2\Decode5-32\Simulation\ModelSim
+vdecoder5_32
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I6VN8?8cRVXT4kPk=ia6]O2
+V`j4?Y7@3OSQGOY[J5<=m`3
+S1
+Z2 dC:\Users\thiag\OneDrive\Documentos\Facudade\Faculdade - P6\CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS\MIPS\Entrega 2\Decode5-32\Simulation\ModelSim
+w1554224744
+8C:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32/decoder5_32.sv
+FC:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32/decoder5_32.sv
+L0 1
+Z3 OV;L;10.1b;51
+r1
+31
+Z4 o-sv -work work -O0
+!i10b 1
+!s100 P::=dPjeaDm9Xbgi^f<ge0
+!s105 decoder5_32_sv_unit
+!s85 0
+!s108 1554258711.264000
+!s107 C:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32/decoder5_32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32|C:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32/decoder5_32.sv|
+!s101 -O0
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32} -O0
+vdecoder5_32_tb
+R1
+!i10b 1
+!s100 dnX:bY]FO3`B[JVPZ6R>A0
+IoMhNWF>b^4V4Pb7meDCX[3
+Vmb>WVmn>8k1cV8VM4?P1L1
+!s105 decoder5_32_tb_sv_unit
+S1
+R2
+w1554258697
+8C:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32/Testbench/decoder5_32_tb.sv
+FC:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32/Testbench/decoder5_32_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1554258711.733000
+!s107 C:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32/Testbench/decoder5_32_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32/Testbench|C:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32/Testbench/decoder5_32_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32/Testbench} -O0

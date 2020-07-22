@@ -1,0 +1,112 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do shiftleft2_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {shiftleft2_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shiftleft2
+# 
+# Top level modules:
+# 	shiftleft2
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/shiftleft2/testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/testbench/shiftleft2_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shiftleft2_tb
+# 
+# Top level modules:
+# 	shiftleft2_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  shiftleft2_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps shiftleft2_tb 
+# Loading sv_std.std
+# Loading work.shiftleft2_tb
+# Loading work.shiftleft2
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# SDF 10.1b Compiler 2012.04 Apr 27 2012
+# 
+# Loading instances from shiftleft2_6_1200mv_85c_v_slow.sdo
+# Loading timing data from shiftleft2_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /shiftleft2_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/testbench/shiftleft2_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |               A                    |               Y                    |           Y_esperado               |
+# |------------------------------------|------------------------------------|------------------------------------|
+# |  00000010010010000001001001001000  |  0000x00100100000010010010x100000  |  00001001001000000100100100100000  | ERROR
+# |  00110011011010100011001001010000  |  11001101101010001100100100000000  |  11001101101010001100100101000000  | ERROR
+# |  01110000110010010000001001000000  |  11001011001001000000100101000000  |  11000011001001000000100100000000  | ERROR
+# |  11110010010010000001001001001111  |  11000001001000000100100100111100  |  11001001001000000100100100111100  | ERROR
+# Testes Efetuados  = 4
+# Erros Encontrados = 4
+# Break in Module shiftleft2_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/testbench/shiftleft2_tb.sv line 58
+# Simulation Breakpoint: Break in Module shiftleft2_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/testbench/shiftleft2_tb.sv line 58
+# MACRO ./shiftleft2_run_msim_gate_verilog.do PAUSED at line 17
+do shiftleft2_run_msim_gate_verilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {shiftleft2_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shiftleft2
+# 
+# Top level modules:
+# 	shiftleft2
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/shiftleft2/testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/testbench/shiftleft2_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shiftleft2_tb
+# 
+# Top level modules:
+# 	shiftleft2_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  shiftleft2_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps shiftleft2_tb 
+# Loading sv_std.std
+# Loading work.shiftleft2_tb
+# Loading work.shiftleft2
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading instances from shiftleft2_6_1200mv_85c_v_slow.sdo
+# Loading timing data from shiftleft2_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /shiftleft2_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/testbench/shiftleft2_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |               A                    |               Y                    |           Y_esperado               |
+# |------------------------------------|------------------------------------|------------------------------------|
+# |  00000010010010000001001001001000  |  00001001001000000100100100100000  |  00001001001000000100100100100000  | OK
+# |  00110011011010100011001001010000  |  11001101101010001100100101000000  |  11001101101010001100100101000000  | OK
+# |  01110000110010010000001001000000  |  11000011001001000000100100000000  |  11000011001001000000100100000000  | OK
+# |  11110010010010000001001001001111  |  11001001001000000100100100111100  |  11001001001000000100100100111100  | OK
+# Testes Efetuados  = 4
+# Erros Encontrados = 0
+# Break in Module shiftleft2_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/testbench/shiftleft2_tb.sv line 58
+# Simulation Breakpoint: Break in Module shiftleft2_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/testbench/shiftleft2_tb.sv line 58
+# MACRO ./shiftleft2_run_msim_gate_verilog.do PAUSED at line 17
+run -over

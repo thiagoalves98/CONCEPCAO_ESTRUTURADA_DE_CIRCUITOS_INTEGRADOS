@@ -1,0 +1,51 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\MIPS\15 - Mux8 32 bit\Simulation\ModelSim
+vmux8
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I@o66DNM?j>h0SLYiGL`EC2
+V`^WL]7D35f^JNh`dV055<0
+S1
+Z2 dC:\Users\thiag\OneDrive\햞ea de Trabalho\MIPS\15 - Mux8 32 bit\Simulation\ModelSim
+w1555377897
+8mux8_7_1200mv_85c_slow.svo
+Fmux8_7_1200mv_85c_slow.svo
+L0 31
+Z3 OV;L;10.1b;51
+r1
+31
+Z4 o-sv -work work -O0
+!i10b 1
+!s100 iI>UAdSU>S7T32UbImD=>2
+!s105 mux8_7_1200mv_85c_slow_svo_unit
+!s85 0
+!s108 1555378490.274000
+!s107 mux8_7_1200mv_85c_slow.svo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+.|mux8_7_1200mv_85c_slow.svo|
+!s101 -O0
+!s92 -sv -work work +incdir+. -O0
+vmux8_tb
+R1
+!i10b 1
+!s100 R1gYPZM^6=2cN>ZaXjZ0R3
+IZU=KFOh]]nd@S`2mC]OK90
+V?<B;o4L>]W>9ZK_KY[B7<2
+!s105 mux8_tb_sv_unit
+S1
+R2
+w1555378487
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1555378490.937000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench|C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench/mux8_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/15 - Mux8 32 bit/Testbench} -O0

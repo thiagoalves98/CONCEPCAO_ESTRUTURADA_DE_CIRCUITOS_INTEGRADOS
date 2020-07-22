@@ -1,0 +1,20 @@
+Fitter Status : Successful - Tue Apr 09 00:23:20 2019
+Quartus II 32-bit Version : 12.0 Build 178 05/31/2012 SJ Web Edition
+Revision Name : bank
+Top-level Entity Name : bank
+Family : Cyclone IV GX
+Device : EP4CGX22CF19C6
+Timing Models : Final
+Total logic elements : 32 / 21,280 ( < 1 % )
+    Total combinational functions : 32 / 21,280 ( < 1 % )
+    Dedicated logic registers : 32 / 21,280 ( < 1 % )
+Total registers : 32
+Total pins : 67 / 167 ( 40 % )
+Total virtual pins : 0
+Total memory bits : 0 / 774,144 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 80 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 4 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 4 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 4 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 4 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

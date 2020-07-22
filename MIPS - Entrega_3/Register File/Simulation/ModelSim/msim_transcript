@@ -1,0 +1,137 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do register_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Register\ File {C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/decoder5_32.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module decoder5_32
+# 
+# Top level modules:
+# 	decoder5_32
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Register\ File {C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/tristate.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module tristate
+# 
+# Top level modules:
+# 	tristate
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Register\ File {C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux32.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux32
+# 
+# Top level modules:
+# 	mux32
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Register\ File {C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Register\ File {C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Register\ File {C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/inversor.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module inversor
+# 
+# Top level modules:
+# 	inversor
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Register\ File {C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/flopenr.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module flopenr
+# 
+# Top level modules:
+# 	flopenr
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Register\ File {C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/bank.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module bank
+# 
+# Top level modules:
+# 	bank
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Register\ File {C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/register.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Register\ File/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/Testbench/register_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module register_tb
+# 
+# Top level modules:
+# 	register_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  register_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps register_tb 
+# Loading sv_std.std
+# Loading work.register_tb
+# Loading work.register
+# Loading work.decoder5_32
+# Loading work.bank
+# Loading work.flopenr
+# Loading work.mux32
+# Loading work.mux4
+# Loading work.mux2
+# Loading work.tristate
+# Loading work.inversor
+# ** Warning: (vsim-3015) C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/register.sv(21): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'reset'. The port definition is at: C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/bank.sv(1).
+# 
+#         Region: /register_tb/dut/b
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |   RW    | CLK | EN  | busW|   RA    |   RB    |busA |  bAes   |busB |  bBes   |
+# |---------|-----|-----|-----|---------|---------|-----|---------|-----|---------|
+# |  00000  |  0  |  1  |  0  |  00000  |  00000  |  x  |    0    |  x  |    0    | OK
+# |  00001  |  1  |  1  |  0  |  00001  |  00001  |  x  |    0    |  x  |    0    | OK
+# |  00010  |  0  |  1  |  0  |  00010  |  00010  |  x  |    0    |  x  |    0    | OK
+# |  00011  |  1  |  1  |  0  |  00011  |  00011  |  x  |    0    |  x  |    0    | OK
+# |  00100  |  0  |  1  |  1  |  00100  |  00100  |  x  |    0    |  x  |    0    | OK
+# |  00101  |  1  |  1  |  1  |  00101  |  00101  |  x  |    0    |  x  |    0    | OK
+# |  00110  |  0  |  1  |  1  |  00110  |  00110  |  x  |    0    |  x  |    0    | OK
+# |  00111  |  1  |  1  |  1  |  00111  |  00111  |  x  |    0    |  x  |    0    | OK
+# |  01000  |  0  |  1  |  0  |  01000  |  01000  |  0  |    0    |  0  |    0    | OK
+# |  01001  |  1  |  1  |  0  |  01001  |  01001  |  x  |    1    |  x  |    0    | OK
+# |  01010  |  0  |  1  |  0  |  01010  |  01010  |  x  |    1    |  x  |    0    | OK
+# |  01011  |  1  |  1  |  0  |  01011  |  01011  |  x  |    0    |  x  |    0    | OK
+# |  01100  |  0  |  1  |  1  |  01100  |  01100  |  1  |    0    |  1  |    0    | OK
+# |  01101  |  1  |  1  |  1  |  01101  |  01101  |  x  |    0    |  x  |    0    | OK
+# |  01110  |  0  |  1  |  1  |  01110  |  01110  |  x  |    1    |  x  |    0    | OK
+# |  01111  |  1  |  1  |  1  |  01111  |  01111  |  x  |    0    |  x  |    0    | OK
+# |  10000  |  0  |  1  |  0  |  10000  |  10000  |  x  |    0    |  x  |    1    | OK
+# |  10001  |  1  |  1  |  0  |  10001  |  10001  |  x  |    0    |  x  |    1    | OK
+# |  10010  |  0  |  1  |  0  |  10010  |  10010  |  x  |    0    |  x  |    0    | OK
+# |  10011  |  1  |  1  |  0  |  10011  |  10011  |  x  |    0    |  x  |    0    | OK
+# |  10100  |  0  |  1  |  1  |  10100  |  10100  |  x  |    0    |  x  |    0    | OK
+# |  10101  |  1  |  1  |  1  |  10101  |  10101  |  x  |    0    |  x  |    0    | OK
+# |  10110  |  0  |  1  |  1  |  10110  |  10110  |  x  |    0    |  x  |    0    | OK
+# |  10111  |  1  |  1  |  1  |  10111  |  10111  |  x  |    0    |  x  |    0    | OK
+# |  11000  |  0  |  1  |  0  |  11000  |  11000  |  x  |    0    |  x  |    0    | OK
+# |  11001  |  1  |  1  |  0  |  11001  |  11001  |  x  |    0    |  x  |    0    | OK
+# |  11010  |  0  |  1  |  0  |  11010  |  11010  |  x  |    1    |  x  |    0    | OK
+# |  11011  |  1  |  1  |  0  |  11011  |  11011  |  x  |    0    |  x  |    0    | OK
+# |  11100  |  0  |  1  |  1  |  11100  |  11100  |  x  |    0    |  x  |    0    | OK
+# |  11101  |  1  |  1  |  1  |  11101  |  11101  |  x  |    0    |  x  |    0    | OK
+# |  11110  |  0  |  1  |  1  |  11110  |  11110  |  x  |    0    |  x  |    0    | OK
+# |  xxxxx  |  x  |  x  |  x  |  xxxxx  |  xxxxx  |  x  |    x    |  x  |    x    | OK
+# Testes Efetuados  = 32
+# Erros Encontrados = 30
+# Break in Module register_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/Testbench/register_tb.sv line 79
+# Simulation Breakpoint: Break in Module register_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/Testbench/register_tb.sv line 79
+# MACRO ./register_run_msim_rtl_verilog.do PAUSED at line 25

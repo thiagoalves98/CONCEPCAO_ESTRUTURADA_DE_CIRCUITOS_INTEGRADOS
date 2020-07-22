@@ -1,0 +1,51 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\MIPS\21 - Unidade de Controle\Simulation\ModelSim
+vcontrole
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IgX84LBg5JK6LG4Z9oeBD40
+V;3e651QE?@?;8OHQ[71i60
+S1
+Z2 dC:\Users\thiag\OneDrive\햞ea de Trabalho\MIPS\21 - Unidade de Controle\Simulation\ModelSim
+w1556248041
+8controle_6_1200mv_85c_slow.svo
+Fcontrole_6_1200mv_85c_slow.svo
+L0 31
+Z3 OV;L;10.1b;51
+r1
+31
+Z4 o-sv -work work -O0
+!i10b 1
+!s100 7VHWIfZ8LAWV4:7Ga1IOX0
+!s105 controle_6_1200mv_85c_slow_svo_unit
+!s85 0
+!s108 1556248288.623000
+!s107 controle_6_1200mv_85c_slow.svo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+.|controle_6_1200mv_85c_slow.svo|
+!s101 -O0
+!s92 -sv -work work +incdir+. -O0
+vcontrole_tb
+R1
+!i10b 1
+!s100 6_jb2LE_I`2_RBNl167MC2
+IQQm[MoGKcng6=dF7];n>o1
+VeFAQ59M6Ya0LUOelWaMD32
+!s105 controle_tb_sv_unit
+S1
+R2
+w1556248285
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/21 - Unidade de Controle/TestBench/controle_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/21 - Unidade de Controle/TestBench/controle_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1556248289.097000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/21 - Unidade de Controle/TestBench/controle_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/21 - Unidade de Controle/TestBench|C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/21 - Unidade de Controle/TestBench/controle_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/21 - Unidade de Controle/TestBench} -O0

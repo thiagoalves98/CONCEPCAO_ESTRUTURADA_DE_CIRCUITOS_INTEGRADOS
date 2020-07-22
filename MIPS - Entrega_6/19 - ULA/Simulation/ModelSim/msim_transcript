@@ -1,0 +1,356 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do alu_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {alu_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/20\ -\ ALU/TestBench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench/alu_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  alu_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps alu_tb 
+# Loading sv_std.std
+# Loading work.alu_tb
+# Loading work.alu
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# SDF 10.1b Compiler 2012.04 Apr 27 2012
+# 
+# Loading instances from alu_6_1200mv_85c_v_slow.sdo
+# Loading timing data from alu_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench/alu_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# | ALUcontrol | SrcA | SrcB | cin | addSubSignal | less || set | set_esperado || ALUresult | ALUresult_esperado || cout | cout_esperado |
+# |------------------------------------------------------AND-----------------------------------------------------------------------------|
+# |    000     |  0   |  0   |  0  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  0   |      0        | OK
+# |    000     |  0   |  0   |  1  |     0        |  0   ||  1  |     1        ||    0      |        0           ||  0   |      0        | OK
+# |    000     |  0   |  1   |  0  |     0        |  0   ||  1  |     1        ||    0      |        0           ||  0   |      0        | OK
+# |    000     |  0   |  1   |  1  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    000     |  1   |  0   |  0  |     0        |  0   ||  1  |     1        ||    0      |        0           ||  0   |      0        | OK
+# |    000     |  1   |  0   |  1  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    000     |  1   |  1   |  0  |     0        |  0   ||  0  |     0        ||    1      |        1           ||  1   |      1        | OK
+# |    000     |  1   |  1   |  1  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  1   |      1        | OK
+# |------------------------------------------------------NAND----------------------------------------------------------------------------|
+# |    101     |  0   |  0   |  0  |     0        |  0   ||  0  |     0        ||    1      |        1           ||  0   |      0        | OK
+# |    101     |  0   |  0   |  1  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    101     |  0   |  1   |  0  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    101     |  0   |  1   |  1  |     0        |  0   ||  0  |     0        ||    1      |        1           ||  1   |      1        | OK
+# |    101     |  1   |  0   |  0  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    101     |  1   |  0   |  1  |     0        |  0   ||  0  |     0        ||    1      |        1           ||  1   |      1        | OK
+# |    101     |  1   |  1   |  0  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    101     |  1   |  1   |  1  |     0        |  0   ||  1  |     1        ||    0      |        0           ||  1   |      1        | OK
+# |------------------------------------------------------OR------------------------------------------------------------------------------|
+# |    001     |  0   |  0   |  0  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  0   |      0        | OK
+# |    001     |  0   |  0   |  1  |     0        |  0   ||  1  |     1        ||    0      |        0           ||  0   |      0        | OK
+# |    001     |  0   |  1   |  0  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    001     |  0   |  1   |  1  |     0        |  0   ||  0  |     0        ||    1      |        1           ||  1   |      1        | OK
+# |    001     |  1   |  0   |  0  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    001     |  1   |  0   |  1  |     0        |  0   ||  0  |     0        ||    1      |        1           ||  1   |      1        | OK
+# |    001     |  1   |  1   |  0  |     0        |  0   ||  0  |     0        ||    1      |        1           ||  1   |      1        | OK
+# |    001     |  1   |  1   |  1  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  1   |      1        | OK
+# |------------------------------------------------------NOR-----------------------------------------------------------------------------|
+# |    011     |  0   |  0   |  0  |     0        |  0   ||  0  |     0        ||    1      |        1           ||  0   |      0        | OK
+# |    011     |  0   |  0   |  1  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    011     |  0   |  1   |  0  |     0        |  0   ||  1  |     1        ||    0      |        0           ||  0   |      0        | OK
+# |    011     |  0   |  1   |  1  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    011     |  1   |  0   |  0  |     0        |  0   ||  1  |     1        ||    0      |        0           ||  0   |      0        | OK
+# |    011     |  1   |  0   |  1  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    011     |  1   |  1   |  0  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    011     |  1   |  1   |  1  |     0        |  0   ||  1  |     1        ||    0      |        0           ||  1   |      1        | OK
+# |------------------------------------------------------XOR-----------------------------------------------------------------------------|
+# |    100     |  0   |  0   |  0  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  0   |      0        | OK
+# |    100     |  0   |  0   |  1  |     0        |  0   ||  1  |     1        ||    0      |        0           ||  0   |      0        | OK
+# |    100     |  0   |  1   |  0  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    100     |  0   |  1   |  1  |     0        |  0   ||  0  |     0        ||    1      |        1           ||  1   |      1        | OK
+# |    100     |  1   |  0   |  0  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    100     |  1   |  0   |  1  |     0        |  0   ||  0  |     0        ||    1      |        1           ||  1   |      1        | OK
+# |    100     |  1   |  1   |  0  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    100     |  1   |  1   |  1  |     0        |  0   ||  1  |     1        ||    0      |        0           ||  1   |      1        | OK
+# |------------------------------------------------------SOMA----------------------------------------------------------------------------|
+# |    010     |  0   |  0   |  0  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  0   |      0        | OK
+# |    010     |  0   |  0   |  1  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    010     |  0   |  1   |  0  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    010     |  0   |  1   |  1  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    010     |  1   |  0   |  0  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    010     |  1   |  0   |  1  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    010     |  1   |  1   |  0  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    010     |  1   |  1   |  1  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  1   |      1        | OK
+# |------------------------------------------------------SUB-----------------------------------------------------------------------------|
+# |    110     |  0   |  0   |  0  |     1        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    110     |  0   |  0   |  1  |     1        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    110     |  0   |  1   |  0  |     1        |  0   ||  0  |     0        ||    0      |        0           ||  0   |      0        | OK
+# |    110     |  0   |  1   |  1  |     1        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    110     |  1   |  0   |  0  |     1        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    110     |  1   |  0   |  1  |     1        |  0   ||  1  |     1        ||    1      |        1           ||  1   |      1        | OK
+# |    110     |  1   |  1   |  0  |     1        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    110     |  1   |  1   |  1  |     1        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |------------------------------------------------------LESS----------------------------------------------------------------------------|
+# |    111     |  0   |  0   |  0  |     0        |  1   ||  0  |     0        ||    1      |        1           ||  0   |      0        | OK
+# |    111     |  0   |  0   |  0  |     0        |  1   ||  0  |     0        ||    1      |        1           ||  0   |      0        | OK
+# |    111     |  0   |  0   |  0  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  0   |      0        | OK
+# |    111     |  0   |  0   |  0  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  0   |      0        | OK
+# Testes Efetuados  = 60
+# Erros Encontrados = 0
+# Break in Module alu_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench/alu_tb.sv line 68
+# Simulation Breakpoint: Break in Module alu_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench/alu_tb.sv line 68
+# MACRO ./alu_run_msim_gate_verilog.do PAUSED at line 17
+do alu_run_msim_gate_verilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {alu_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/20\ -\ ALU/TestBench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench/alu_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  alu_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps alu_tb 
+# Loading sv_std.std
+# Loading work.alu_tb
+# Loading work.alu
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from alu_6_1200mv_85c_v_slow.sdo
+# Loading timing data from alu_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench/alu_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# | ALUcontrol | SrcA | SrcB | cin | addSubSignal | less || set | set_esperado || ALUresult | ALUresult_esperado || cout | cout_esperado |
+# |------------------------------------------------------AND-----------------------------------------------------------------------------|
+# |    000     |  0   |  0   |  0  |     0        |  0   ||  x  |     0        ||    0      |        0           ||  0   |      0        | ERRO
+# |    000     |  0   |  0   |  1  |     0        |  0   ||  1  |     1        ||    0      |        0           ||  0   |      0        | OK
+# |    000     |  0   |  1   |  0  |     0        |  0   ||  0  |     1        ||    0      |        0           ||  1   |      0        | ERRO
+# |    000     |  0   |  1   |  1  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    000     |  1   |  0   |  0  |     0        |  0   ||  0  |     1        ||    0      |        0           ||  1   |      0        | ERRO
+# |    000     |  1   |  0   |  1  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    000     |  1   |  1   |  0  |     0        |  0   ||  1  |     0        ||    1      |        1           ||  1   |      1        | ERRO
+# |    000     |  1   |  1   |  1  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  1   |      1        | OK
+# |------------------------------------------------------NAND----------------------------------------------------------------------------|
+# |    101     |  0   |  0   |  0  |     0        |  0   ||  1  |     0        ||    1      |        1           ||  0   |      0        | ERRO
+# |    101     |  0   |  0   |  1  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    101     |  0   |  1   |  0  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      0        | ERRO
+# |    101     |  0   |  1   |  1  |     0        |  0   ||  0  |     0        ||    1      |        1           ||  1   |      1        | OK
+# |    101     |  1   |  0   |  0  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      0        | ERRO
+# |    101     |  1   |  0   |  1  |     0        |  0   ||  0  |     0        ||    1      |        1           ||  1   |      1        | OK
+# |    101     |  1   |  1   |  0  |     0        |  0   ||  1  |     0        ||    0      |        0           ||  1   |      1        | ERRO
+# |    101     |  1   |  1   |  1  |     0        |  0   ||  1  |     1        ||    0      |        0           ||  1   |      1        | OK
+# |------------------------------------------------------OR------------------------------------------------------------------------------|
+# |    001     |  0   |  0   |  0  |     0        |  0   ||  1  |     0        ||    0      |        0           ||  0   |      0        | ERRO
+# |    001     |  0   |  0   |  1  |     0        |  0   ||  1  |     1        ||    0      |        0           ||  0   |      0        | OK
+# |    001     |  0   |  1   |  0  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      0        | ERRO
+# |    001     |  0   |  1   |  1  |     0        |  0   ||  0  |     0        ||    1      |        1           ||  1   |      1        | OK
+# |    001     |  1   |  0   |  0  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      0        | ERRO
+# |    001     |  1   |  0   |  1  |     0        |  0   ||  0  |     0        ||    1      |        1           ||  1   |      1        | OK
+# |    001     |  1   |  1   |  0  |     0        |  0   ||  1  |     0        ||    1      |        1           ||  1   |      1        | ERRO
+# |    001     |  1   |  1   |  1  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  1   |      1        | OK
+# |------------------------------------------------------NOR-----------------------------------------------------------------------------|
+# |    011     |  0   |  0   |  0  |     0        |  0   ||  1  |     0        ||    1      |        1           ||  0   |      0        | ERRO
+# |    011     |  0   |  0   |  1  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    011     |  0   |  1   |  0  |     0        |  0   ||  0  |     1        ||    0      |        0           ||  1   |      0        | ERRO
+# |    011     |  0   |  1   |  1  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    011     |  1   |  0   |  0  |     0        |  0   ||  0  |     1        ||    0      |        0           ||  1   |      0        | ERRO
+# |    011     |  1   |  0   |  1  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    011     |  1   |  1   |  0  |     0        |  0   ||  1  |     0        ||    0      |        0           ||  1   |      1        | ERRO
+# |    011     |  1   |  1   |  1  |     0        |  0   ||  1  |     1        ||    0      |        0           ||  1   |      1        | OK
+# |------------------------------------------------------XOR-----------------------------------------------------------------------------|
+# |    100     |  0   |  0   |  0  |     0        |  0   ||  1  |     0        ||    0      |        0           ||  0   |      0        | ERRO
+# |    100     |  0   |  0   |  1  |     0        |  0   ||  1  |     1        ||    0      |        0           ||  0   |      0        | OK
+# |    100     |  0   |  1   |  0  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      0        | ERRO
+# |    100     |  0   |  1   |  1  |     0        |  0   ||  0  |     0        ||    1      |        1           ||  1   |      1        | OK
+# |    100     |  1   |  0   |  0  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      0        | ERRO
+# |    100     |  1   |  0   |  1  |     0        |  0   ||  0  |     0        ||    1      |        1           ||  1   |      1        | OK
+# |    100     |  1   |  1   |  0  |     0        |  0   ||  1  |     0        ||    0      |        0           ||  1   |      1        | ERRO
+# |    100     |  1   |  1   |  1  |     0        |  0   ||  1  |     1        ||    0      |        0           ||  1   |      1        | OK
+# |------------------------------------------------------SOMA----------------------------------------------------------------------------|
+# |    010     |  0   |  0   |  0  |     0        |  0   ||  1  |     0        ||    1      |        0           ||  0   |      0        | ERRO
+# |    010     |  0   |  0   |  1  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    010     |  0   |  1   |  0  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      0        | ERRO
+# |    010     |  0   |  1   |  1  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    010     |  1   |  0   |  0  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      0        | ERRO
+# |    010     |  1   |  0   |  1  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    010     |  1   |  1   |  0  |     0        |  0   ||  1  |     0        ||    1      |        0           ||  1   |      1        | ERRO
+# |    010     |  1   |  1   |  1  |     0        |  0   ||  1  |     1        ||    1      |        1           ||  1   |      1        | OK
+# |------------------------------------------------------SUB-----------------------------------------------------------------------------|
+# |    110     |  0   |  0   |  0  |     1        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      0        | ERRO
+# |    110     |  0   |  0   |  1  |     1        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |    110     |  0   |  1   |  0  |     1        |  0   ||  1  |     0        ||    1      |        0           ||  0   |      0        | ERRO
+# |    110     |  0   |  1   |  1  |     1        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    110     |  1   |  0   |  0  |     1        |  0   ||  1  |     0        ||    1      |        0           ||  1   |      1        | ERRO
+# |    110     |  1   |  0   |  1  |     1        |  0   ||  1  |     1        ||    1      |        1           ||  1   |      1        | OK
+# |    110     |  1   |  1   |  0  |     1        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      0        | ERRO
+# |    110     |  1   |  1   |  1  |     1        |  0   ||  0  |     0        ||    0      |        0           ||  1   |      1        | OK
+# |------------------------------------------------------LESS----------------------------------------------------------------------------|
+# |    111     |  0   |  0   |  0  |     0        |  1   ||  0  |     0        ||    1      |        1           ||  0   |      0        | OK
+# |    111     |  0   |  0   |  0  |     0        |  1   ||  0  |     0        ||    1      |        1           ||  0   |      0        | OK
+# |    111     |  0   |  0   |  0  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  0   |      0        | OK
+# |    111     |  0   |  0   |  0  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  0   |      0        | OK
+# Testes Efetuados  = 60
+# Erros Encontrados = 28
+# Break in Module alu_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench/alu_tb.sv line 68
+# Simulation Breakpoint: Break in Module alu_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench/alu_tb.sv line 68
+# MACRO ./alu_run_msim_gate_verilog.do PAUSED at line 17
+do alu_run_msim_gate_verilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {alu_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/20\ -\ ALU/TestBench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench/alu_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  alu_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps alu_tb 
+# Loading sv_std.std
+# Loading work.alu_tb
+# Loading work.alu
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from alu_6_1200mv_85c_v_slow.sdo
+# Loading timing data from alu_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /alu_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench/alu_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# | ALUcontrol | SrcA | SrcB | cin | addSubSignal | less || set | set_esperado || ALUresult | ALUresult_esperado || cout | cout_esperado |
+# |------------------------------------------------------AND-----------------------------------------------------------------------------|
+# |    000     |  0   |  0   |  0  |     0        |  0   ||  x  |     0        ||    x      |        0           ||  x   |      0        | ERRO
+# |    000     |  0   |  0   |  1  |     0        |  0   ||  0  |     1        ||    0      |        0           ||  0   |      0        | ERRO
+# |    000     |  0   |  1   |  0  |     0        |  0   ||  0  |     1        ||    0      |        0           ||  1   |      0        | ERRO
+# |    000     |  0   |  1   |  1  |     0        |  0   ||  1  |     0        ||    0      |        0           ||  0   |      1        | ERRO
+# |    000     |  1   |  0   |  0  |     0        |  0   ||  0  |     1        ||    0      |        0           ||  1   |      0        | ERRO
+# |    000     |  1   |  0   |  1  |     0        |  0   ||  1  |     0        ||    0      |        0           ||  0   |      1        | ERRO
+# |    000     |  1   |  1   |  0  |     0        |  0   ||  1  |     0        ||    1      |        1           ||  1   |      1        | ERRO
+# |    000     |  1   |  1   |  1  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      1        | ERRO
+# |------------------------------------------------------NAND----------------------------------------------------------------------------|
+# |    101     |  0   |  0   |  0  |     0        |  0   ||  1  |     0        ||    0      |        1           ||  0   |      0        | ERRO
+# |    101     |  0   |  0   |  1  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  0   |      0        | ERRO
+# |    101     |  0   |  1   |  0  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      0        | ERRO
+# |    101     |  0   |  1   |  1  |     0        |  0   ||  1  |     0        ||    1      |        1           ||  0   |      1        | ERRO
+# |    101     |  1   |  0   |  0  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      0        | ERRO
+# |    101     |  1   |  0   |  1  |     0        |  0   ||  1  |     0        ||    1      |        1           ||  0   |      1        | ERRO
+# |    101     |  1   |  1   |  0  |     0        |  0   ||  1  |     0        ||    0      |        0           ||  1   |      1        | ERRO
+# |    101     |  1   |  1   |  1  |     0        |  0   ||  0  |     1        ||    0      |        0           ||  1   |      1        | ERRO
+# |------------------------------------------------------OR------------------------------------------------------------------------------|
+# |    001     |  0   |  0   |  0  |     0        |  0   ||  1  |     0        ||    1      |        0           ||  0   |      0        | ERRO
+# |    001     |  0   |  0   |  1  |     0        |  0   ||  0  |     1        ||    0      |        0           ||  0   |      0        | ERRO
+# |    001     |  0   |  1   |  0  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      0        | ERRO
+# |    001     |  0   |  1   |  1  |     0        |  0   ||  1  |     0        ||    1      |        1           ||  0   |      1        | ERRO
+# |    001     |  1   |  0   |  0  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      0        | ERRO
+# |    001     |  1   |  0   |  1  |     0        |  0   ||  1  |     0        ||    1      |        1           ||  0   |      1        | ERRO
+# |    001     |  1   |  1   |  0  |     0        |  0   ||  1  |     0        ||    1      |        1           ||  1   |      1        | ERRO
+# |    001     |  1   |  1   |  1  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      1        | ERRO
+# |------------------------------------------------------NOR-----------------------------------------------------------------------------|
+# |    011     |  0   |  0   |  0  |     0        |  0   ||  1  |     0        ||    1      |        1           ||  0   |      0        | ERRO
+# |    011     |  0   |  0   |  1  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  0   |      0        | ERRO
+# |    011     |  0   |  1   |  0  |     0        |  0   ||  0  |     1        ||    0      |        0           ||  1   |      0        | ERRO
+# |    011     |  0   |  1   |  1  |     0        |  0   ||  1  |     0        ||    0      |        0           ||  0   |      1        | ERRO
+# |    011     |  1   |  0   |  0  |     0        |  0   ||  0  |     1        ||    0      |        0           ||  1   |      0        | ERRO
+# |    011     |  1   |  0   |  1  |     0        |  0   ||  1  |     0        ||    0      |        0           ||  0   |      1        | ERRO
+# |    011     |  1   |  1   |  0  |     0        |  0   ||  1  |     0        ||    0      |        0           ||  1   |      1        | ERRO
+# |    011     |  1   |  1   |  1  |     0        |  0   ||  0  |     1        ||    0      |        0           ||  1   |      1        | ERRO
+# |------------------------------------------------------XOR-----------------------------------------------------------------------------|
+# |    100     |  0   |  0   |  0  |     0        |  0   ||  1  |     0        ||    0      |        0           ||  0   |      0        | ERRO
+# |    100     |  0   |  0   |  1  |     0        |  0   ||  0  |     1        ||    0      |        0           ||  0   |      0        | ERRO
+# |    100     |  0   |  1   |  0  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      0        | ERRO
+# |    100     |  0   |  1   |  1  |     0        |  0   ||  1  |     0        ||    1      |        1           ||  0   |      1        | ERRO
+# |    100     |  1   |  0   |  0  |     0        |  0   ||  0  |     1        ||    1      |        1           ||  1   |      0        | ERRO
+# |    100     |  1   |  0   |  1  |     0        |  0   ||  1  |     0        ||    1      |        1           ||  0   |      1        | ERRO
+# |    100     |  1   |  1   |  0  |     0        |  0   ||  1  |     0        ||    0      |        0           ||  1   |      1        | ERRO
+# |    100     |  1   |  1   |  1  |     0        |  0   ||  0  |     1        ||    0      |        0           ||  1   |      1        | ERRO
+# |------------------------------------------------------SOMA----------------------------------------------------------------------------|
+# |    010     |  0   |  0   |  0  |     0        |  0   ||  1  |     0        ||    1      |        0           ||  0   |      0        | ERRO
+# |    010     |  0   |  0   |  1  |     0        |  0   ||  0  |     1        ||    0      |        1           ||  0   |      0        | ERRO
+# |    010     |  0   |  1   |  0  |     0        |  0   ||  0  |     1        ||    0      |        1           ||  1   |      0        | ERRO
+# |    010     |  0   |  1   |  1  |     0        |  0   ||  1  |     0        ||    1      |        0           ||  0   |      1        | ERRO
+# |    010     |  1   |  0   |  0  |     0        |  0   ||  0  |     1        ||    0      |        1           ||  1   |      0        | ERRO
+# |    010     |  1   |  0   |  1  |     0        |  0   ||  1  |     0        ||    1      |        0           ||  0   |      1        | ERRO
+# |    010     |  1   |  1   |  0  |     0        |  0   ||  1  |     0        ||    1      |        0           ||  1   |      1        | ERRO
+# |    010     |  1   |  1   |  1  |     0        |  0   ||  0  |     1        ||    0      |        1           ||  1   |      1        | ERRO
+# |------------------------------------------------------SUB-----------------------------------------------------------------------------|
+# |    110     |  0   |  0   |  0  |     1        |  0   ||  1  |     1        ||    1      |        1           ||  0   |      0        | OK
+# |    110     |  0   |  0   |  1  |     1        |  0   ||  1  |     0        ||    1      |        0           ||  0   |      1        | ERRO
+# |    110     |  0   |  1   |  0  |     1        |  0   ||  1  |     0        ||    1      |        0           ||  0   |      0        | ERRO
+# |    110     |  0   |  1   |  1  |     1        |  0   ||  0  |     1        ||    0      |        1           ||  0   |      0        | ERRO
+# |    110     |  1   |  0   |  0  |     1        |  0   ||  1  |     0        ||    1      |        0           ||  1   |      1        | ERRO
+# |    110     |  1   |  0   |  1  |     1        |  0   ||  0  |     1        ||    0      |        1           ||  1   |      1        | ERRO
+# |    110     |  1   |  1   |  0  |     1        |  0   ||  0  |     1        ||    0      |        1           ||  1   |      0        | ERRO
+# |    110     |  1   |  1   |  1  |     1        |  0   ||  1  |     0        ||    1      |        0           ||  0   |      1        | ERRO
+# |------------------------------------------------------LESS----------------------------------------------------------------------------|
+# |    111     |  0   |  0   |  0  |     0        |  1   ||  0  |     0        ||    0      |        1           ||  1   |      0        | ERRO
+# |    111     |  0   |  0   |  0  |     0        |  1   ||  0  |     0        ||    1      |        1           ||  0   |      0        | OK
+# |    111     |  0   |  0   |  0  |     0        |  0   ||  0  |     0        ||    1      |        0           ||  0   |      0        | ERRO
+# |    111     |  0   |  0   |  0  |     0        |  0   ||  0  |     0        ||    0      |        0           ||  0   |      0        | OK
+# Testes Efetuados  = 60
+# Erros Encontrados = 57
+# Break in Module alu_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench/alu_tb.sv line 68
+# Simulation Breakpoint: Break in Module alu_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/20 - ALU/TestBench/alu_tb.sv line 68
+# MACRO ./alu_run_msim_gate_verilog.do PAUSED at line 17

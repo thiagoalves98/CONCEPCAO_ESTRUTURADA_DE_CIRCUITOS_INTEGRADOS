@@ -1,0 +1,326 @@
+|bank
+clk => clk.IN32
+reset => reset.IN32
+en[31][0] => en[31][0].IN1
+en[30][0] => en[30][0].IN1
+en[29][0] => en[29][0].IN1
+en[28][0] => en[28][0].IN1
+en[27][0] => en[27][0].IN1
+en[26][0] => en[26][0].IN1
+en[25][0] => en[25][0].IN1
+en[24][0] => en[24][0].IN1
+en[23][0] => en[23][0].IN1
+en[22][0] => en[22][0].IN1
+en[21][0] => en[21][0].IN1
+en[20][0] => en[20][0].IN1
+en[19][0] => en[19][0].IN1
+en[18][0] => en[18][0].IN1
+en[17][0] => en[17][0].IN1
+en[16][0] => en[16][0].IN1
+en[15][0] => en[15][0].IN1
+en[14][0] => en[14][0].IN1
+en[13][0] => en[13][0].IN1
+en[12][0] => en[12][0].IN1
+en[11][0] => en[11][0].IN1
+en[10][0] => en[10][0].IN1
+en[9][0] => en[9][0].IN1
+en[8][0] => en[8][0].IN1
+en[7][0] => en[7][0].IN1
+en[6][0] => en[6][0].IN1
+en[5][0] => en[5][0].IN1
+en[4][0] => en[4][0].IN1
+en[3][0] => en[3][0].IN1
+en[2][0] => en[2][0].IN1
+en[1][0] => en[1][0].IN1
+en[0][0] => en[0][0].IN1
+d => d.IN32
+q[31][0] <= flopenr:r31.port4
+q[30][0] <= flopenr:r30.port4
+q[29][0] <= flopenr:r29.port4
+q[28][0] <= flopenr:r28.port4
+q[27][0] <= flopenr:r27.port4
+q[26][0] <= flopenr:r26.port4
+q[25][0] <= flopenr:r25.port4
+q[24][0] <= flopenr:r24.port4
+q[23][0] <= flopenr:r23.port4
+q[22][0] <= flopenr:r22.port4
+q[21][0] <= flopenr:r21.port4
+q[20][0] <= flopenr:r20.port4
+q[19][0] <= flopenr:r19.port4
+q[18][0] <= flopenr:r18.port4
+q[17][0] <= flopenr:r17.port4
+q[16][0] <= flopenr:r16.port4
+q[15][0] <= flopenr:r15.port4
+q[14][0] <= flopenr:r14.port4
+q[13][0] <= flopenr:r13.port4
+q[12][0] <= flopenr:r12.port4
+q[11][0] <= flopenr:r11.port4
+q[10][0] <= flopenr:r10.port4
+q[9][0] <= flopenr:r9.port4
+q[8][0] <= flopenr:r8.port4
+q[7][0] <= flopenr:r7.port4
+q[6][0] <= flopenr:r6.port4
+q[5][0] <= flopenr:r5.port4
+q[4][0] <= flopenr:r4.port4
+q[3][0] <= flopenr:r3.port4
+q[2][0] <= flopenr:r2.port4
+q[1][0] <= flopenr:r1.port4
+q[0][0] <= flopenr:r0.port4
+
+
+|bank|flopenr:r0
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r1
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r2
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r3
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r4
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r5
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r6
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r7
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r8
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r9
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r10
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r11
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r12
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r13
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r14
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r15
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r16
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r17
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r18
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r19
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r20
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r21
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r22
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r23
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r24
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r25
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r26
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r27
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r28
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r29
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r30
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bank|flopenr:r31
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+en => q~reg0.ENA
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

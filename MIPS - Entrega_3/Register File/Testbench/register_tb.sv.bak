@@ -1,0 +1,60 @@
+`timescale 1ns/100ps
+
+module and2_tb;
+    
+int counter, errors, aux_error;
+logic clk,rst;
+logic a, b;
+logic y, y_esperado;
+logic [0:2]vectors[4];
+ 
+and2 dut(.a(a), .b(b), .y(y));
+
+initial begin
+	$display("Iniciando Testbench");
+	$display("|  A  |  B  |  Y  |"); 
+	$display("-------------------");
+	$readmemb("and2_tv.tv",vectors);
+	counter=0; errors=0;
+	rst = 1;
+	#15;
+	rst = 0;
+end
+		
+always begin
+   clk=1; #10;
+   clk=0; #5;
+end
+
+always @(posedge clk)
+	if(~rst) begin
+		{a, b, y_esperado} = vectors[counter];
+	end
+
+always @(negedge clk)
+
+	if(~rst) begin
+		aux_error = errors;
+		assert(y === y_esperado)
+	else
+		begin
+		errors = errors + 1; //Incrementa contador de erros a cada bit errado encontrado
+		end
+		
+	if(aux_error === errors)
+		$display("|  %b  |  %b  |  %b  | OK", a, b, y);
+	else
+		$display("|  %b  |  %b  |  %b  | ERROR", a, b, y);
+		counter++;	//Incrementa contador dos vertores de teste
+			
+	if(counter == $size(vectors)) //Quando os vetores de teste acabarem
+		begin
+		$display("Testes Efetuados  = %0d", counter);
+		$display("Erros Encontrados = %0d", errors);
+		#15
+		$stop;
+		end
+			
+end
+		
+endmodule

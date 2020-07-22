@@ -1,0 +1,688 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Datapath_run_msim_gate_systemverilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+. {Datapath_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module Datapath
+# 
+# Top level modules:
+# 	Datapath
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Datapath/testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module Datapath_tb
+# 
+# Top level modules:
+# 	Datapath_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  Datapath_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps Datapath_tb 
+# Loading sv_std.std
+# Loading work.Datapath_tb
+# Loading work.Datapath
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# SDF 10.1b Compiler 2012.04 Apr 27 2012
+# 
+# Loading instances from Datapath_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: Design size of 2 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+# Loading timing data from Datapath_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /Datapath_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 33 of file "Datapath.tv". (Current address [32], address range [0:31])    : C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv(25)
+#    Time: 0 ps  Iteration: 0  Instance: /Datapath_tb
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   1   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   00    |  00   |    000     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00000000000000000000000000000000 | 00000000000000000000000000000000 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   1   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   00    |  00   |    000     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00000000000000000000000000000000 | 00000000000000000000000000000000 | 00000000000000000000000000000000 |    0     | OK
+#  
+# overflow = 1, 0 expected
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000000 | 00000000000000000000000000000000 |    1     | ERRO
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     1    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     1    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  1   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000000001 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  1   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000000001 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  1   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000000010 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  1   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000000010 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     1    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00000000000000000000000000000011 | 00000000000000000000000000001100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     1    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00000000000000000000000000000011 | 00000000000000000000000000001100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00001000000000000000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00001000000000000000000000000010 | 00000000000000000000000000010000 | 00000000000000000000000000000010 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00001000000000000000000000000010 | 00000000000000000000000000010000 | 00000000000000000000000000000010 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00001000000000000000000000000010 | 00000000000000000000000000010000 | 00000000000000000000000000000000 |    0     | OK
+#  
+# Testes Efetuados  = 32
+# Erros Encontrados = 1
+# Break in Module Datapath_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv line 90
+# Simulation Breakpoint: Break in Module Datapath_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv line 90
+# MACRO ./Datapath_run_msim_gate_systemverilog.do PAUSED at line 17
+do Datapath_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {Datapath_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module Datapath
+# 
+# Top level modules:
+# 	Datapath
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Datapath/testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module Datapath_tb
+# 
+# Top level modules:
+# 	Datapath_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  Datapath_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps Datapath_tb 
+# Loading sv_std.std
+# Loading work.Datapath_tb
+# Loading work.Datapath
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading instances from Datapath_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: Design size of 2 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+# Loading timing data from Datapath_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /Datapath_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 33 of file "Datapath.tv". (Current address [32], address range [0:31])    : C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv(25)
+#    Time: 0 ps  Iteration: 0  Instance: /Datapath_tb
+# overflow = x, 0 expected
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   1   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   00    |  00   |    000     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00000000000000000000000000000000 | 00000000000000000000000000000000 | 00000000000000000000000000000000 |    x     | ERRO
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   1   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   00    |  00   |    000     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00000000000000000000000000000000 | 00000000000000000000000000000000 | 00000000000000000000000000000000 |    0     | OK
+#  
+# overflow = 1, 0 expected
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000000 | 00000000000000000000000000000000 |    1     | ERRO
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     1    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     1    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  1   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000000001 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  1   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000000001 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  1   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000000010 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  1   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000000010 | 00000000000000000000000000000000 |    0     | OK
+#  
+#  Adr = 00000000000000000000000000001000, 00000000000000000000000000001100 expected
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     1    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00000000000000000000000000000011 | 00000000000000000000000000001000 | 00000000000000000000000000000000 |    0     | ERRO
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     1    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00000000000000000000000000000011 | 00000000000000000000000000001100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00001000000000000000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00001000000000000000000000000010 | 00000000000000000000000000010000 | 00000000000000000000000000000010 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00001000000000000000000000000010 | 00000000000000000000000000010000 | 00000000000000000000000000000010 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00001000000000000000000000000010 | 00000000000000000000000000010000 | 00000000000000000000000000000000 |    0     | OK
+#  
+# Testes Efetuados  = 32
+# Erros Encontrados = 3
+# Break in Module Datapath_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv line 90
+# Simulation Breakpoint: Break in Module Datapath_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv line 90
+# MACRO ./Datapath_run_msim_gate_systemverilog.do PAUSED at line 17
+do Datapath_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {Datapath_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module Datapath
+# 
+# Top level modules:
+# 	Datapath
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Datapath/testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module Datapath_tb
+# ** Error: C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv(33): near "11": syntax error, unexpected INTEGER NUMBER
+# ** Error: C:/altera/12.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./Datapath_run_msim_gate_systemverilog.do line 10
+# C:/altera/12.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Datapath/testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbenc..."
+do Datapath_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {Datapath_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module Datapath
+# 
+# Top level modules:
+# 	Datapath
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Datapath/testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module Datapath_tb
+# 
+# Top level modules:
+# 	Datapath_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  Datapath_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps Datapath_tb 
+# Loading sv_std.std
+# Loading work.Datapath_tb
+# Loading work.Datapath
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading instances from Datapath_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: Design size of 2 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+# Loading timing data from Datapath_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /Datapath_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 33 of file "Datapath.tv". (Current address [32], address range [0:31])    : C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv(25)
+#    Time: 0 ps  Iteration: 0  Instance: /Datapath_tb
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   1   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   00    |  00   |    000     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00000000000000000000000000000000 | 00000000000000000000000000000000 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   1   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   00    |  00   |    000     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00000000000000000000000000000000 | 00000000000000000000000000000000 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000000 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     1    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     1    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00100000000000010000000000000101 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000000100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  1   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000000001 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  1   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10101100000000010000000000000001 | 00000000000000000000000000000001 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001000 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000101 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  1   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000000010 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  1   |    0    |    0     |    0    |     0    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 10001100000000100000000000000010 | 00000000000000000000000000000010 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     1    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00000000000000000000000000000011 | 00000000000000000000000000001100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     1    |    1    |   0    |   0     |   10    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00000000000000000000000000000011 | 00000000000000000000000000001100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00001000000000000000000000000010 | 00000000000000000000000000001100 | 00000000000000000000000000000000 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    1    |     0    |    0    |   0    |   1     |   01    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00001000000000000000000000000010 | 00000000000000000000000000010000 | 00000000000000000000000000000010 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 0  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00001000000000000000000000000010 | 00000000000000000000000000010000 | 00000000000000000000000000000010 |    0     | OK
+#  
+# | ck | reset | IorD | RegDest | MemtoReg | IRWrite | RegWrite | ALUSrcA | Branch | PCWrite | ALUSrcB | PCSrc | ALUControl |
+# | 1  |   0   |  0   |    0    |    0     |    0    |     0    |    0    |   0    |   0     |   11    |  00   |    010     |
+# |               RD                 |              Adr                 |               WD                 | Overflow |
+# | 00001000000000000000000000000010 | 00000000000000000000000000010000 | 00000000000000000000000000000000 |    0     | OK
+#  
+# Testes Efetuados  = 32
+# Erros Encontrados = 0
+# Break in Module Datapath_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv line 90
+# Simulation Breakpoint: Break in Module Datapath_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv line 90
+# MACRO ./Datapath_run_msim_gate_systemverilog.do PAUSED at line 17

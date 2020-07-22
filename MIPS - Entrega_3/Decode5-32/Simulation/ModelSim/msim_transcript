@@ -1,0 +1,114 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do decoder5_32_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {decoder5_32_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module decoder5_32
+# 
+# Top level modules:
+# 	decoder5_32
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/Decode5-32/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module decoder5_32_tb
+# 
+# Top level modules:
+# 	decoder5_32_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  decoder5_32_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps decoder5_32_tb 
+# Loading sv_std.std
+# Loading work.decoder5_32_tb
+# Loading work.decoder5_32
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# SDF 10.1b Compiler 2012.04 Apr 27 2012
+# 
+# Loading instances from decoder5_32_6_1200mv_85c_v_slow.sdo
+# ** Warning: (vsim-3017) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Too few port connections. Expected 33, found 2.
+# 
+#         Region: /decoder5_32_tb/dut
+# ** Error: (vsim-3063) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): Port 'y' not found in the connected module (2nd connection).
+# 
+#         Region: /decoder5_32_tb/dut
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_31_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_30_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_29_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_28_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_27_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_26_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_25_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_24_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_23_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_22_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_21_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_20_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_19_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_18_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_17_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_16_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_15_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_14_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_13_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_12_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_11_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_10_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_9_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_8_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_7_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_6_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_5_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_4_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_3_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_2_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_1_0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/thiag/OneDrive/햞ea de Trabalho/Decode5-32/Testbench/decoder5_32_tb.sv(11): [TFMPC] - Missing connection for port 'y_0_0'.
+# 
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./decoder5_32_run_msim_gate_verilog.do PAUSED at line 12

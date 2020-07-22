@@ -1,0 +1,170 @@
+module MIPS_FSM(input logic [5:0] funct, opcode,
+					 input logic clock, reset,
+					 output logic [2:0] ALUControl,
+					 output logic [1:0] ALUSrcB, PCSrc,
+					 output logic IorD, IRWrite, RegDst, MemtoReg,
+					 RegWrite, ALUSrcA, Branch, PCWrite, MemWrite);
+					 
+	typedef enum logic [3:0] {S0, S1, S2, S3, S4, S5, S6, S7, S8, 
+	S9, S10, S11} statetype;
+	statetype state, nextstate;
+	
+	logic [1:0] ALUOp;
+	
+	MIPS_ALUDECODER ALUDecoder(funct, ALUOp, ALUControl);
+	
+	
+	
+	always_ff @(posedge clock, posedge reset) begin
+		if (reset) state <= S0;
+		else state <= nextstate;
+		
+	end
+
+	
+	always_comb begin
+	
+		//$display("transition");
+		IRWrite = 1'b0;
+		MemWrite = 1'b0;
+		PCWrite = 1'b0;
+		Branch = 1'b0;
+		RegWrite = 1'b0;
+		ALUOp = 2'd0;
+		ALUSrcB = 2'd0;
+		PCSrc = 2'd0;
+		MemtoReg = 1'd0;
+		RegDst = 1'd0;
+		IorD = 1'd0;
+		ALUSrcA = 1'd0;
+		
+		case(state)	
+		
+			S0: begin
+					IorD = 1'b0;
+					ALUSrcA = 1'b0;
+					ALUSrcB = 2'b01;
+					PCSrc = 2'b00;
+					ALUOp = 2'b00;
+					IRWrite = 1'b1;
+					PCWrite = 1'b1;
+					nextstate <= S1;
+					$display("S0: Fetch");
+				end
+				
+			S1: begin
+					ALUSrcA = 1'b0;
+					ALUSrcB = 2'b11;
+					ALUOp = 2'b00;
+					case (opcode)
+						6'd0: nextstate <= S6;
+						6'd35, 6'd43: nextstate = S2;
+						6'd4: nextstate <= S8;
+						6'd8: nextstate <= S9;
+						6'd2: nextstate <= S11;
+						default: nextstate <= S0;
+					endcase
+					$display("S1: Decode");
+				end
+				
+			S2: begin
+					ALUSrcA = 1'b1;
+					ALUSrcB = 2'b10;
+					ALUOp = 2'b00;
+					case (opcode)
+						6'd35: nextstate <= S3;
+						6'd43: nextstate <= S5;
+						default: nextstate <= S0;
+					endcase
+					$display("S2: MemAdr");
+				end
+				
+			S3: begin
+					IorD = 1'b1;
+					nextstate <= S4;
+					$display("S3: MemRead");
+				end
+				
+			S4: begin
+					RegDst = 1'b0;
+					MemtoReg = 1'b1;
+					RegWrite = 1'b1;
+					nextstate <= S0;
+					$display("S4: MemWriteback");
+				end
+				
+			S5: begin
+					IorD = 1'b1;
+					MemWrite = 1'b1;
+					nextstate <= S0;
+					$display("S5: MemWrite");
+				end
+				
+			S6: begin
+					ALUSrcA = 1'b1;
+					ALUSrcB = 2'b00;
+					ALUOp = 2'b10;
+					nextstate <= S7;
+					$display("S6: Execute");
+				end
+				
+			S7: begin
+					RegDst = 1'b1;
+					MemtoReg = 1'b0;
+					RegWrite = 1'b1;
+					nextstate <= S0;
+					$display("S7: ALUWriteback");
+				 end
+				 
+			S8: begin
+					ALUSrcA = 1'b1;
+					ALUSrcB = 2'b00;
+					PCSrc = 2'b01;
+					ALUOp = 2'b01;
+					Branch = 1'b1;
+					nextstate <= S0;
+					$display("S8: Branch");
+				 end
+				 
+		   S9: begin
+					ALUSrcA = 1'b1;
+					ALUSrcB = 2'b10;
+					ALUOp = 2'b00;
+					nextstate <= S10;
+					$display("S9: ADDIExecute");
+			    end
+				 
+			S10: begin
+					RegDst = 1'b0;
+					MemtoReg = 1'b0;
+					RegWrite = 1'b1;
+					nextstate <= S0;
+					$display("S10: ADDIWriteback");
+				end
+				
+			S11: begin
+					PCSrc = 2'b10;
+					PCWrite = 1'b1;
+					nextstate <= S0;
+					$display("S11: Jump");
+				end
+				
+			default: begin
+					nextstate <= S0;
+					$display("No State");
+				end
+				
+		endcase
+	end
+	
+endmodule
+			
+					
+					
+					
+					
+					
+						
+					
+					
+				

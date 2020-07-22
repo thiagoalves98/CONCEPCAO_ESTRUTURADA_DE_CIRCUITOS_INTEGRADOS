@@ -1,0 +1,51 @@
+module register(input logic [0:4]RW, 
+			input logic en, clk, busW, 
+			input logic [0:4]RA,
+			input logic [0:4]RB,
+
+output logic busA, output logic busB);
+					
+	decoder5_32 d1(RW, ydec);
+
+	//ydec = y
+	
+	and2 a1 (en, ydec[0] );
+	and2 a2 (en, ydec[1] );
+	and2 a3 (en, ydec[2] );
+	and2 a4 (en, ydec[3] );
+	and2 a5 (en, ydec[4] );
+	and2 a6 (en, ydec[5] );
+	and2 a7 (en, ydec[6] );
+	and2 a8 (en, ydec[7] );
+	and2 a9 (en, ydec[8] );
+	and2 a10(en, ydec[9] );
+	and2 a11(en, ydec[11]);
+	and2 a12(en, ydec[12]);
+	and2 a13(en, ydec[13]);
+	and2 a14(en, ydec[14]);
+	and2 a15(en, ydec[15]);
+	and2 a16(en, ydec[16]);
+	and2 a17(en, ydec[17]);
+	and2 a18(en, ydec[18]);
+	and2 a19(en, ydec[19]);
+	and2 a20(en, ydec[20]);
+	and2 a21(en, ydec[21]);
+	and2 a22(en, ydec[22]);
+	and2 a23(en, ydec[23]);
+	and2 a24(en, ydec[24]);
+	and2 a25(en, ydec[25]);
+	and2 a26(en, ydec[26]);
+	and2 a27(en, ydec[27]);
+	and2 a28(en, ydec[28]);
+	and2 a29(en, ydec[29]);
+	and2 a30(en, ydec[30]);
+	and2 a31(en, ydec[31]);
+
+	bank b1(clk, 0, ydec, busW, qbank);
+	//qbank = ydec
+
+	mux32 m1(RA, qbank, busA);
+	mux32 m2(RB, qbank, busB);
+	
+				
+endmodule

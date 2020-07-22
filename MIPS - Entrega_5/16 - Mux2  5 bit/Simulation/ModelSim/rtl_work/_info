@@ -1,0 +1,97 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\16 - Mux2 5 bit\Simulation\ModelSim
+vinversor
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IMOclDS_9RGh6T2D11EKH;2
+VK9C;<dDEdeKN0OH61L[:Q1
+S1
+Z2 dC:\Users\thiag\OneDrive\햞ea de Trabalho\16 - Mux2 5 bit\Simulation\ModelSim
+w1553633326
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/inversor.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/inversor.sv
+L0 1
+Z3 OV;L;10.1b;51
+r1
+31
+Z4 o-sv -work work -O0
+Z5 !s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit} -O0
+!i10b 1
+!s100 eFNb17jbB7RkhU]jO8aPN3
+!s105 inversor_sv_unit
+!s85 0
+!s108 1555369865.982000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/inversor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit|C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/inversor.sv|
+!s101 -O0
+vmux2
+R1
+I@T;GfggUDiI13UXT^VInz1
+VefYEb<8V35LPTeUeNUD1;2
+S1
+R2
+w1555369427
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/mux2.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/mux2.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 >NS8mIWWSG=JfO7QX<_O63
+!s105 mux2_sv_unit
+!s85 0
+!s108 1555369868.038000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit|C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/mux2.sv|
+!s101 -O0
+vmux2_tb
+R1
+!i10b 1
+!s100 iHnG^P;fPo0iK[bd=VzjM0
+I68g9fcN;J=^7aV;[fSz@=3
+V_I?[5HnX@4AG3KQ4kg1TC1
+!s105 mux2_tb_sv_unit
+S1
+R2
+w1555369733
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/Testbench/mux2_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/Testbench/mux2_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1555369868.601000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/Testbench/mux2_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/Testbench|C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/Testbench/mux2_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/Testbench} -O0
+vtristate
+R1
+Ih2UXD[;?O^dUo4:?HS_692
+VXomj8bz[65N7@GVaeP8R^3
+S1
+R2
+w1555369444
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/tristate.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/tristate.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 6KO:^LkLA`3Y>coi@II6F2
+!s105 tristate_sv_unit
+!s85 0
+!s108 1555369866.929000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/tristate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit|C:/Users/thiag/OneDrive/햞ea de Trabalho/16 - Mux2 5 bit/tristate.sv|
+!s101 -O0

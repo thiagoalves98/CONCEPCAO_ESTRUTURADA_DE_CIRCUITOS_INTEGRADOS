@@ -1,0 +1,40 @@
+library verilog;
+use verilog.vl_types.all;
+entity mux32 is
+    port(
+        d0              : in     vl_logic_vector(31 downto 0);
+        d1              : in     vl_logic_vector(31 downto 0);
+        d2              : in     vl_logic_vector(31 downto 0);
+        d3              : in     vl_logic_vector(31 downto 0);
+        d4              : in     vl_logic_vector(31 downto 0);
+        d5              : in     vl_logic_vector(31 downto 0);
+        d6              : in     vl_logic_vector(31 downto 0);
+        d7              : in     vl_logic_vector(31 downto 0);
+        d8              : in     vl_logic_vector(31 downto 0);
+        d9              : in     vl_logic_vector(31 downto 0);
+        d10             : in     vl_logic_vector(31 downto 0);
+        d11             : in     vl_logic_vector(31 downto 0);
+        d12             : in     vl_logic_vector(31 downto 0);
+        d13             : in     vl_logic_vector(31 downto 0);
+        d14             : in     vl_logic_vector(31 downto 0);
+        d15             : in     vl_logic_vector(31 downto 0);
+        d16             : in     vl_logic_vector(31 downto 0);
+        d17             : in     vl_logic_vector(31 downto 0);
+        d18             : in     vl_logic_vector(31 downto 0);
+        d19             : in     vl_logic_vector(31 downto 0);
+        d20             : in     vl_logic_vector(31 downto 0);
+        d21             : in     vl_logic_vector(31 downto 0);
+        d22             : in     vl_logic_vector(31 downto 0);
+        d23             : in     vl_logic_vector(31 downto 0);
+        d24             : in     vl_logic_vector(31 downto 0);
+        d25             : in     vl_logic_vector(31 downto 0);
+        d26             : in     vl_logic_vector(31 downto 0);
+        d27             : in     vl_logic_vector(31 downto 0);
+        d28             : in     vl_logic_vector(31 downto 0);
+        d29             : in     vl_logic_vector(31 downto 0);
+        d30             : in     vl_logic_vector(31 downto 0);
+        d31             : in     vl_logic_vector(31 downto 0);
+        s               : in     vl_logic_vector(4 downto 0);
+        y               : out    vl_logic_vector(31 downto 0)
+    );
+end mux32;

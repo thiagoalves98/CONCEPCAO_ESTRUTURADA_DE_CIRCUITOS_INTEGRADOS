@@ -1,0 +1,885 @@
+|mux32
+s[4][0] => s[4][0].IN1
+s[3][0] => s[3][0].IN2
+s[2][0] => s[2][0].IN2
+s[1][0] => s[1][0].IN8
+s[0][0] => s[0][0].IN8
+d[31][0] => d[31][0].IN1
+d[30][0] => d[30][0].IN1
+d[29][0] => d[29][0].IN1
+d[28][0] => d[28][0].IN1
+d[27][0] => d[27][0].IN1
+d[26][0] => d[26][0].IN1
+d[25][0] => d[25][0].IN1
+d[24][0] => d[24][0].IN1
+d[23][0] => d[23][0].IN1
+d[22][0] => d[22][0].IN1
+d[21][0] => d[21][0].IN1
+d[20][0] => d[20][0].IN1
+d[19][0] => d[19][0].IN1
+d[18][0] => d[18][0].IN1
+d[17][0] => d[17][0].IN1
+d[16][0] => d[16][0].IN1
+d[15][0] => d[15][0].IN1
+d[14][0] => d[14][0].IN1
+d[13][0] => d[13][0].IN1
+d[12][0] => d[12][0].IN1
+d[11][0] => d[11][0].IN1
+d[10][0] => d[10][0].IN1
+d[9][0] => d[9][0].IN1
+d[8][0] => d[8][0].IN1
+d[7][0] => d[7][0].IN1
+d[6][0] => d[6][0].IN1
+d[5][0] => d[5][0].IN1
+d[4][0] => d[4][0].IN1
+d[3][0] => d[3][0].IN1
+d[2][0] => d[2][0].IN1
+d[1][0] => d[1][0].IN1
+d[0][0] => d[0][0].IN1
+y <= mux2:m11.port3
+
+
+|mux32|mux4:m1
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:m3.port3
+
+
+|mux32|mux4:m1|mux2:m1
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m1|mux2:m1|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m1|mux2:m1|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m1|mux2:m1|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m1|mux2:m2
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m1|mux2:m2|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m1|mux2:m2|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m1|mux2:m2|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m1|mux2:m3
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m1|mux2:m3|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m1|mux2:m3|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m1|mux2:m3|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m2
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:m3.port3
+
+
+|mux32|mux4:m2|mux2:m1
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m2|mux2:m1|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m2|mux2:m1|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m2|mux2:m1|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m2|mux2:m2
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m2|mux2:m2|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m2|mux2:m2|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m2|mux2:m2|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m2|mux2:m3
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m2|mux2:m3|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m2|mux2:m3|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m2|mux2:m3|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m3
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:m3.port3
+
+
+|mux32|mux4:m3|mux2:m1
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m3|mux2:m1|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m3|mux2:m1|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m3|mux2:m1|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m3|mux2:m2
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m3|mux2:m2|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m3|mux2:m2|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m3|mux2:m2|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m3|mux2:m3
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m3|mux2:m3|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m3|mux2:m3|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m3|mux2:m3|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m4
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:m3.port3
+
+
+|mux32|mux4:m4|mux2:m1
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m4|mux2:m1|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m4|mux2:m1|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m4|mux2:m1|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m4|mux2:m2
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m4|mux2:m2|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m4|mux2:m2|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m4|mux2:m2|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m4|mux2:m3
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m4|mux2:m3|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m4|mux2:m3|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m4|mux2:m3|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m5
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:m3.port3
+
+
+|mux32|mux4:m5|mux2:m1
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m5|mux2:m1|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m5|mux2:m1|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m5|mux2:m1|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m5|mux2:m2
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m5|mux2:m2|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m5|mux2:m2|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m5|mux2:m2|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m5|mux2:m3
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m5|mux2:m3|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m5|mux2:m3|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m5|mux2:m3|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m6
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:m3.port3
+
+
+|mux32|mux4:m6|mux2:m1
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m6|mux2:m1|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m6|mux2:m1|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m6|mux2:m1|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m6|mux2:m2
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m6|mux2:m2|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m6|mux2:m2|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m6|mux2:m2|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m6|mux2:m3
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m6|mux2:m3|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m6|mux2:m3|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m6|mux2:m3|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m7
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:m3.port3
+
+
+|mux32|mux4:m7|mux2:m1
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m7|mux2:m1|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m7|mux2:m1|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m7|mux2:m1|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m7|mux2:m2
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m7|mux2:m2|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m7|mux2:m2|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m7|mux2:m2|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m7|mux2:m3
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m7|mux2:m3|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m7|mux2:m3|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m7|mux2:m3|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m8
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:m3.port3
+
+
+|mux32|mux4:m8|mux2:m1
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m8|mux2:m1|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m8|mux2:m1|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m8|mux2:m1|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m8|mux2:m2
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m8|mux2:m2|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m8|mux2:m2|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m8|mux2:m2|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m8|mux2:m3
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m8|mux2:m3|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m8|mux2:m3|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m8|mux2:m3|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m9
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:m3.port3
+
+
+|mux32|mux4:m9|mux2:m1
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m9|mux2:m1|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m9|mux2:m1|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m9|mux2:m1|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m9|mux2:m2
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m9|mux2:m2|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m9|mux2:m2|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m9|mux2:m2|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m9|mux2:m3
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m9|mux2:m3|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m9|mux2:m3|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m9|mux2:m3|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m10
+d0 => d0.IN1
+d1 => d1.IN1
+d2 => d2.IN1
+d3 => d3.IN1
+s0 => s0.IN2
+s1 => s1.IN1
+y <= mux2:m3.port3
+
+
+|mux32|mux4:m10|mux2:m1
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m10|mux2:m1|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m10|mux2:m1|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m10|mux2:m1|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m10|mux2:m2
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m10|mux2:m2|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m10|mux2:m2|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m10|mux2:m2|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m10|mux2:m3
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m10|mux2:m3|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m10|mux2:m3|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux4:m10|mux2:m3|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux2:m11
+d0 => d0.IN1
+d1 => d1.IN1
+s => s.IN2
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux2:m11|tristate:t0
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux2:m11|tristate:t1
+a => y.DATAIN
+en => y.OE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux32|mux2:m11|inversor:inv
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+

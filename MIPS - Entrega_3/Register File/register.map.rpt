@@ -1,0 +1,559 @@
+Analysis & Synthesis report for register
+Tue Apr 09 02:08:11 2019
+Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Port Connectivity Checks: "bank:b"
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++------------------------------------+------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Apr 09 02:08:11 2019    ;
+; Quartus II 32-bit Version          ; 12.0 Build 178 05/31/2012 SJ Web Edition ;
+; Revision Name                      ; register                                 ;
+; Top-level Entity Name              ; register                                 ;
+; Family                             ; Cyclone IV GX                            ;
+; Total logic elements               ; 165                                      ;
+;     Total combinational functions  ; 165                                      ;
+;     Dedicated logic registers      ; 31                                       ;
+; Total registers                    ; 31                                       ;
+; Total pins                         ; 20                                       ;
+; Total virtual pins                 ; 0                                        ;
+; Total memory bits                  ; 0                                        ;
+; Embedded Multiplier 9-bit elements ; 0                                        ;
+; Total GXB Receiver Channel PCS     ; 0                                        ;
+; Total GXB Receiver Channel PMA     ; 0                                        ;
+; Total GXB Transmitter Channel PCS  ; 0                                        ;
+; Total GXB Transmitter Channel PMA  ; 0                                        ;
+; Total PLLs                         ; 0                                        ;
++------------------------------------+------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; register           ; register           ;
+; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
+; Type of Retiming Performed During Resynthesis                              ; Full               ;                    ;
+; Resynthesis Optimization Effort                                            ; Normal             ;                    ;
+; Physical Synthesis Level for Resynthesis                                   ; Normal             ;                    ;
+; Use Generated Physical Constraints File                                    ; On                 ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                          ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
+; decoder5_32.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/decoder5_32.sv ;         ;
+; tristate.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/tristate.sv    ;         ;
+; mux32.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux32.sv       ;         ;
+; mux4.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux4.sv        ;         ;
+; mux2.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux2.sv        ;         ;
+; inversor.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/inversor.sv    ;         ;
+; flopenr.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/flopenr.sv     ;         ;
+; bank.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/bank.sv        ;         ;
+; register.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/register.sv    ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++----------------------+----------------------+
+; Resource             ; Usage                ;
++----------------------+----------------------+
+; I/O pins             ; 20                   ;
+; Maximum fan-out node ; RW[0]~input          ;
+; Maximum fan-out      ; 32                   ;
+; Total fan-out        ; 631                  ;
+; Average fan-out      ; 2.67                 ;
++----------------------+----------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                 ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------+--------------+
+; |register                  ; 165 (0)           ; 31 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 20   ; 0            ; |register                                       ;              ;
+;    |bank:b|                ; 31 (0)            ; 31 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b                                ;              ;
+;       |flopenr:r0|         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r0                     ;              ;
+;       |flopenr:r10|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r10                    ;              ;
+;       |flopenr:r11|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r11                    ;              ;
+;       |flopenr:r12|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r12                    ;              ;
+;       |flopenr:r13|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r13                    ;              ;
+;       |flopenr:r14|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r14                    ;              ;
+;       |flopenr:r15|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r15                    ;              ;
+;       |flopenr:r16|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r16                    ;              ;
+;       |flopenr:r17|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r17                    ;              ;
+;       |flopenr:r18|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r18                    ;              ;
+;       |flopenr:r19|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r19                    ;              ;
+;       |flopenr:r1|         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r1                     ;              ;
+;       |flopenr:r20|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r20                    ;              ;
+;       |flopenr:r21|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r21                    ;              ;
+;       |flopenr:r22|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r22                    ;              ;
+;       |flopenr:r23|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r23                    ;              ;
+;       |flopenr:r24|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r24                    ;              ;
+;       |flopenr:r25|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r25                    ;              ;
+;       |flopenr:r26|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r26                    ;              ;
+;       |flopenr:r27|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r27                    ;              ;
+;       |flopenr:r28|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r28                    ;              ;
+;       |flopenr:r29|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r29                    ;              ;
+;       |flopenr:r2|         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r2                     ;              ;
+;       |flopenr:r30|        ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r30                    ;              ;
+;       |flopenr:r3|         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r3                     ;              ;
+;       |flopenr:r4|         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r4                     ;              ;
+;       |flopenr:r5|         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r5                     ;              ;
+;       |flopenr:r6|         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r6                     ;              ;
+;       |flopenr:r7|         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r7                     ;              ;
+;       |flopenr:r8|         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r8                     ;              ;
+;       |flopenr:r9|         ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|bank:b|flopenr:r9                     ;              ;
+;    |decoder5_32:d|         ; 79 (79)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|decoder5_32:d                         ;              ;
+;    |mux32:m1|              ; 28 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m1                              ;              ;
+;       |mux2:m11|           ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m1|mux2:m11                     ;              ;
+;          |tristate:t0|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m1|mux2:m11|tristate:t0         ;              ;
+;       |mux4:m10|           ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m1|mux4:m10                     ;              ;
+;          |mux2:m3|         ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m1|mux4:m10|mux2:m3             ;              ;
+;             |tristate:t0|  ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m1|mux4:m10|mux2:m3|tristate:t0 ;              ;
+;             |tristate:t1|  ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m1|mux4:m10|mux2:m3|tristate:t1 ;              ;
+;       |mux4:m9|            ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m1|mux4:m9                      ;              ;
+;          |mux2:m3|         ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m1|mux4:m9|mux2:m3              ;              ;
+;             |tristate:t0|  ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m1|mux4:m9|mux2:m3|tristate:t0  ;              ;
+;             |tristate:t1|  ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m1|mux4:m9|mux2:m3|tristate:t1  ;              ;
+;    |mux32:m2|              ; 27 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m2                              ;              ;
+;       |mux2:m11|           ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m2|mux2:m11                     ;              ;
+;          |tristate:t0|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m2|mux2:m11|tristate:t0         ;              ;
+;       |mux4:m10|           ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m2|mux4:m10                     ;              ;
+;          |mux2:m3|         ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m2|mux4:m10|mux2:m3             ;              ;
+;             |tristate:t0|  ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m2|mux4:m10|mux2:m3|tristate:t0 ;              ;
+;             |tristate:t1|  ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m2|mux4:m10|mux2:m3|tristate:t1 ;              ;
+;       |mux4:m9|            ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m2|mux4:m9                      ;              ;
+;          |mux2:m3|         ; 12 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m2|mux4:m9|mux2:m3              ;              ;
+;             |tristate:t0|  ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m2|mux4:m9|mux2:m3|tristate:t0  ;              ;
+;             |tristate:t1|  ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |register|mux32:m2|mux4:m9|mux2:m3|tristate:t1  ;              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                   ;
++-----------------------------------------------------+------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal    ; Free of Timing Hazards ;
++-----------------------------------------------------+------------------------+------------------------+
+; decoder5_32:d|y[0][0]                               ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[1][0]                               ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[2][0]                               ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[3][0]                               ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[4][0]                               ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[5][0]                               ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[6][0]                               ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[7][0]                               ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[8][0]                               ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[9][0]                               ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[10][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[11][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[12][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[13][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[14][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[15][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[16][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[17][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[18][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[19][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[20][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[21][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[22][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[23][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[24][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[25][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[26][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[27][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[28][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[29][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; decoder5_32:d|y[30][0]                              ; decoder5_32:d|Decoder0 ; yes                    ;
+; Number of user-specified and inferred latches = 31  ;                        ;                        ;
++-----------------------------------------------------+------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                  ;
++---------------------------------------+---------------------------------------------+
+; Register name                         ; Reason for Removal                          ;
++---------------------------------------+---------------------------------------------+
+; bank:b|flopenr:r31|q                  ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 1 ;                                             ;
++---------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 31    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------+
+; Port Connectivity Checks: "bank:b"      ;
++-------+-------+----------+--------------+
+; Port  ; Type  ; Severity ; Details      ;
++-------+-------+----------+--------------+
+; reset ; Input ; Info     ; Stuck at GND ;
++-------+-------+----------+--------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:08     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 12.0 Build 178 05/31/2012 SJ Web Edition
+    Info: Processing started: Tue Apr 09 02:07:52 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off register -c register
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file decoder5_32.sv
+    Info (12023): Found entity 1: decoder5_32
+Info (12021): Found 1 design units, including 1 entities, in source file testbench/register_tb.sv
+    Info (12023): Found entity 1: register_tb
+Info (12021): Found 1 design units, including 1 entities, in source file tristate.sv
+    Info (12023): Found entity 1: tristate
+Info (12021): Found 1 design units, including 1 entities, in source file mux32.sv
+    Info (12023): Found entity 1: mux32
+Info (12021): Found 1 design units, including 1 entities, in source file mux4.sv
+    Info (12023): Found entity 1: mux4
+Info (12021): Found 1 design units, including 1 entities, in source file mux2.sv
+    Info (12023): Found entity 1: mux2
+Info (12021): Found 1 design units, including 1 entities, in source file inversor.sv
+    Info (12023): Found entity 1: inversor
+Info (12021): Found 1 design units, including 1 entities, in source file flopenr.sv
+    Info (12023): Found entity 1: flopenr
+Info (12021): Found 1 design units, including 1 entities, in source file bank.sv
+    Info (12023): Found entity 1: bank
+Info (12021): Found 1 design units, including 1 entities, in source file register.sv
+    Info (12023): Found entity 1: register
+Warning (10236): Verilog HDL Implicit Net warning at mux4.sv(3): created implicit net for "y0"
+Warning (10236): Verilog HDL Implicit Net warning at mux4.sv(4): created implicit net for "y1"
+Warning (10236): Verilog HDL Implicit Net warning at mux2.sv(3): created implicit net for "ns"
+Info (12127): Elaborating entity "register" for the top level hierarchy
+Info (12128): Elaborating entity "decoder5_32" for hierarchy "decoder5_32:d"
+Warning (10270): Verilog HDL Case Statement warning at decoder5_32.sv(4): incomplete case statement has no default case item
+Info (10041): Inferred latch for "y[31][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[30][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[29][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[28][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[27][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[26][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[25][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[24][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[23][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[22][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[21][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[20][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[19][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[18][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[17][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[16][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[15][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[14][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[13][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[12][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[11][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[10][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[9][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[8][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[7][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[6][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[5][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[4][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[3][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[2][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[1][0]" at decoder5_32.sv(4)
+Info (10041): Inferred latch for "y[0][0]" at decoder5_32.sv(4)
+Info (12128): Elaborating entity "bank" for hierarchy "bank:b"
+Info (12128): Elaborating entity "flopenr" for hierarchy "bank:b|flopenr:r0"
+Info (12128): Elaborating entity "mux32" for hierarchy "mux32:m1"
+Info (12128): Elaborating entity "mux4" for hierarchy "mux32:m1|mux4:m1"
+Info (12128): Elaborating entity "mux2" for hierarchy "mux32:m1|mux4:m1|mux2:m1"
+Info (12128): Elaborating entity "tristate" for hierarchy "mux32:m1|mux4:m1|mux2:m1|tristate:t0"
+Info (12128): Elaborating entity "inversor" for hierarchy "mux32:m1|mux4:m1|mux2:m1|inversor:inv"
+Warning (13044): Always-enabled tri-state buffer(s) removed
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux2:m11|tristate:t0|y" to the node "busA" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux2:m11|tristate:t0|y" to the node "busB" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m9|mux2:m3|tristate:t0|y" to the node "mux32:m1|mux2:m11|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m10|mux2:m3|tristate:t0|y" to the node "mux32:m1|mux2:m11|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m9|mux2:m3|tristate:t0|y" to the node "mux32:m2|mux2:m11|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m10|mux2:m3|tristate:t0|y" to the node "mux32:m2|mux2:m11|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m9|mux2:m1|tristate:t0|y" to the node "mux32:m1|mux4:m9|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m9|mux2:m2|tristate:t0|y" to the node "mux32:m1|mux4:m9|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m10|mux2:m1|tristate:t0|y" to the node "mux32:m1|mux4:m10|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m10|mux2:m2|tristate:t0|y" to the node "mux32:m1|mux4:m10|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m9|mux2:m1|tristate:t0|y" to the node "mux32:m2|mux4:m9|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m9|mux2:m2|tristate:t0|y" to the node "mux32:m2|mux4:m9|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m10|mux2:m1|tristate:t0|y" to the node "mux32:m2|mux4:m10|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m10|mux2:m2|tristate:t0|y" to the node "mux32:m2|mux4:m10|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m1|mux2:m3|tristate:t0|y" to the node "mux32:m1|mux4:m9|mux2:m1|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m2|mux2:m3|tristate:t0|y" to the node "mux32:m1|mux4:m9|mux2:m1|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m3|mux2:m3|tristate:t0|y" to the node "mux32:m1|mux4:m9|mux2:m2|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m4|mux2:m3|tristate:t0|y" to the node "mux32:m1|mux4:m9|mux2:m2|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m5|mux2:m3|tristate:t0|y" to the node "mux32:m1|mux4:m10|mux2:m1|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m6|mux2:m3|tristate:t0|y" to the node "mux32:m1|mux4:m10|mux2:m1|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m7|mux2:m3|tristate:t0|y" to the node "mux32:m1|mux4:m10|mux2:m2|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m8|mux2:m3|tristate:t0|y" to the node "mux32:m1|mux4:m10|mux2:m2|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m1|mux2:m3|tristate:t0|y" to the node "mux32:m2|mux4:m9|mux2:m1|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m2|mux2:m3|tristate:t0|y" to the node "mux32:m2|mux4:m9|mux2:m1|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m3|mux2:m3|tristate:t0|y" to the node "mux32:m2|mux4:m9|mux2:m2|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m4|mux2:m3|tristate:t0|y" to the node "mux32:m2|mux4:m9|mux2:m2|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m5|mux2:m3|tristate:t0|y" to the node "mux32:m2|mux4:m10|mux2:m1|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m6|mux2:m3|tristate:t0|y" to the node "mux32:m2|mux4:m10|mux2:m1|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m7|mux2:m3|tristate:t0|y" to the node "mux32:m2|mux4:m10|mux2:m2|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m8|mux2:m3|tristate:t0|y" to the node "mux32:m2|mux4:m10|mux2:m2|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m1|mux2:m1|tristate:t0|y" to the node "mux32:m1|mux4:m1|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m1|mux2:m2|tristate:t0|y" to the node "mux32:m1|mux4:m1|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m2|mux2:m1|tristate:t0|y" to the node "mux32:m1|mux4:m2|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m2|mux2:m2|tristate:t0|y" to the node "mux32:m1|mux4:m2|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m3|mux2:m1|tristate:t0|y" to the node "mux32:m1|mux4:m3|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m3|mux2:m2|tristate:t0|y" to the node "mux32:m1|mux4:m3|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m4|mux2:m1|tristate:t0|y" to the node "mux32:m1|mux4:m4|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m4|mux2:m2|tristate:t0|y" to the node "mux32:m1|mux4:m4|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m5|mux2:m1|tristate:t0|y" to the node "mux32:m1|mux4:m5|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m5|mux2:m2|tristate:t0|y" to the node "mux32:m1|mux4:m5|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m6|mux2:m1|tristate:t0|y" to the node "mux32:m1|mux4:m6|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m6|mux2:m2|tristate:t0|y" to the node "mux32:m1|mux4:m6|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m7|mux2:m1|tristate:t0|y" to the node "mux32:m1|mux4:m7|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m7|mux2:m2|tristate:t0|y" to the node "mux32:m1|mux4:m7|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m8|mux2:m1|tristate:t0|y" to the node "mux32:m1|mux4:m8|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m1|mux4:m8|mux2:m2|tristate:t1|y" to the node "mux32:m1|mux4:m8|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m1|mux2:m1|tristate:t0|y" to the node "mux32:m2|mux4:m1|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m1|mux2:m2|tristate:t0|y" to the node "mux32:m2|mux4:m1|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m2|mux2:m1|tristate:t0|y" to the node "mux32:m2|mux4:m2|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m2|mux2:m2|tristate:t0|y" to the node "mux32:m2|mux4:m2|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m3|mux2:m1|tristate:t0|y" to the node "mux32:m2|mux4:m3|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m3|mux2:m2|tristate:t0|y" to the node "mux32:m2|mux4:m3|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m4|mux2:m1|tristate:t0|y" to the node "mux32:m2|mux4:m4|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m4|mux2:m2|tristate:t0|y" to the node "mux32:m2|mux4:m4|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m5|mux2:m1|tristate:t0|y" to the node "mux32:m2|mux4:m5|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m5|mux2:m2|tristate:t0|y" to the node "mux32:m2|mux4:m5|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m6|mux2:m1|tristate:t0|y" to the node "mux32:m2|mux4:m6|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m6|mux2:m2|tristate:t0|y" to the node "mux32:m2|mux4:m6|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m7|mux2:m1|tristate:t0|y" to the node "mux32:m2|mux4:m7|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m7|mux2:m2|tristate:t0|y" to the node "mux32:m2|mux4:m7|mux2:m3|tristate:t1|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m8|mux2:m1|tristate:t0|y" to the node "mux32:m2|mux4:m8|mux2:m3|tristate:t0|y" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "mux32:m2|mux4:m8|mux2:m2|tristate:t1|y" to the node "mux32:m2|mux4:m8|mux2:m3|tristate:t1|y" into a wire
+Warning (13012): Latch decoder5_32:d|y[0][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[1][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[2][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[3][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[4][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[5][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[6][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[7][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[8][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[9][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[10][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[11][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[12][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[13][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[14][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[15][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[16][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[17][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[18][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[19][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[20][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[21][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[22][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[23][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[24][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[25][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[26][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[27][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[28][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[29][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[0]
+Warning (13012): Latch decoder5_32:d|y[30][0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal RW[3]
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 185 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 18 input pins
+    Info (21059): Implemented 2 output pins
+    Info (21061): Implemented 165 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 130 warnings
+    Info: Peak virtual memory: 390 megabytes
+    Info: Processing ended: Tue Apr 09 02:08:12 2019
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:14
+
+

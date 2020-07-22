@@ -1,0 +1,627 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Mips_final\Simulation\ModelSim
+vmips
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Iocn0f0P`6L_:?C:1hgO9a3
+Vga=XP`Nk4celEh5iYC4b93
+S1
+Z2 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Mips_final\Simulation\ModelSim
+w1557366240
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS.sv
+L0 1
+Z3 OV;L;10.1b;51
+r1
+31
+Z4 o-sv -work work -O0
+Z5 !s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final} -O0
+!i10b 1
+!s100 ;dDCB1Qj173:==CnXB2Tj1
+!s105 MIPS_sv_unit
+!s85 0
+!s108 1557774567.187000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS.sv|
+!s101 -O0
+vMIPS_ALU_1
+R1
+I]HdbzJUCn3D7m2V7S[3Cc2
+VYkOdFiLZE??gdMkeeVWzm2
+S1
+R2
+w1527194030
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALU_1.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALU_1.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@a@l@u_1
+!i10b 1
+!s100 =mz0`]5d1nU5PkdkJ1Egl3
+!s105 MIPS_ALU_1_sv_unit
+!s85 0
+!s108 1557774566.687000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALU_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALU_1.sv|
+!s101 -O0
+vMIPS_ALU_1_LOGIC
+R1
+I7VRkXNVf9MDzn05c?f@bf1
+VBEJ9PCe@2K=Hk9@CJIKoW0
+S1
+R2
+w1527190204
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALU_1_LOGIC.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALU_1_LOGIC.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@a@l@u_1_@l@o@g@i@c
+!i10b 1
+!s100 B5cV8Bj@24>2nTI?H<lXk2
+!s105 MIPS_ALU_1_LOGIC_sv_unit
+!s85 0
+!s108 1557774565.811000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALU_1_LOGIC.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALU_1_LOGIC.sv|
+!s101 -O0
+vMIPS_ALU_1_SUM
+R1
+Io5RQ8jNZC]V6A:0YIBQZO2
+VUAg=TSUfP8ghzaP5nggMD0
+S1
+R2
+w1526374868
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALU_1_SUM.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALU_1_SUM.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@a@l@u_1_@s@u@m
+!i10b 1
+!s100 jQgY8K2UO6DHlfLAIKKeG3
+!s105 MIPS_ALU_1_SUM_sv_unit
+!s85 0
+!s108 1557774565.373000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALU_1_SUM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALU_1_SUM.sv|
+!s101 -O0
+vMIPS_ALU_32
+R1
+IdXIHk?PamcaABnkmb:UJ:2
+VI4>PJ?6@6J4Mi]D=DD?iT1
+S1
+R2
+w1557363428
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALU_32.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALU_32.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@a@l@u_32
+!i10b 1
+!s100 c]2VjdKiCMaBN7>Ed]<?Y1
+!s105 MIPS_ALU_32_sv_unit
+!s85 0
+!s108 1557774564.420000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALU_32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALU_32.sv|
+!s101 -O0
+vMIPS_ALUDECODER
+R1
+IkJD6;MibNol3H2WmRCc3N3
+V]H5LYfMEz4ZYMAQ0_gDMY2
+S1
+R2
+Z6 w1557366243
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALUDECODER.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALUDECODER.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@a@l@u@d@e@c@o@d@e@r
+!i10b 1
+!s100 <kQHE=Un2L30S^]1_YHOk0
+!s105 MIPS_ALUDECODER_sv_unit
+!s85 0
+!s108 1557774563.483000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALUDECODER.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_ALUDECODER.sv|
+!s101 -O0
+vMIPS_DATAPATH
+R1
+IYIifc<oCTO2UWCocb6VL60
+V[7D6fOR:77<[@AR?jZnP80
+S1
+R2
+w1557771550
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_DATAPATH.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_DATAPATH.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@d@a@t@a@p@a@t@h
+!i10b 1
+!s100 F2nRmf?bWXZXUDFP8TU640
+!s105 MIPS_DATAPATH_sv_unit
+!s85 0
+!s108 1557774562.952000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_DATAPATH.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_DATAPATH.sv|
+!s101 -O0
+vMIPS_FILEDECODER_32
+R1
+I7`44nSbza9JHzXR8WiO=G1
+Vd6FaRj8UGcS]@e6oOzE@J1
+S1
+R2
+w1527698524
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_FILEDECODER_32.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_FILEDECODER_32.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@f@i@l@e@d@e@c@o@d@e@r_32
+!i10b 1
+!s100 PcJQ2BYgZ99@U@le^Y_[f1
+!s105 MIPS_FILEDECODER_32_sv_unit
+!s85 0
+!s108 1557774562.514000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_FILEDECODER_32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_FILEDECODER_32.sv|
+!s101 -O0
+vMIPS_FSM
+R1
+IGkj=zlfkh0QV_>POg]5cB1
+V@758]^8j2mEOKzJ=FT0QW0
+S1
+R2
+w1557770939
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_FSM.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_FSM.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@f@s@m
+!i10b 1
+!s100 S:`N7G3Vz8D3Q:lFL]anV3
+!s105 MIPS_FSM_sv_unit
+!s85 0
+!s108 1557774562.123000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_FSM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_FSM.sv|
+!s101 -O0
+vMIPS_MUX2_1
+R1
+I^e0Tl:_O[[KbIN>iL4Al;0
+V76O5NN<4gaEf1N>Zi3;cl0
+S1
+R2
+w1557367958
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX2_1.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX2_1.sv
+L0 1
+R3
+r1
+31
+R4
+n@m@i@p@s_@m@u@x2_1
+R5
+!i10b 1
+!s100 4OVHP:hEdLD@=XTa6L:832
+!s105 MIPS_MUX2_1_sv_unit
+!s85 0
+!s108 1557774553.672000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX2_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX2_1.sv|
+!s101 -O0
+vMIPS_MUX2_32
+R1
+InLm_a0B3;9VLO9Kl2c[gl2
+V7501lK>XmieCV4C:mnQ8@2
+S1
+R2
+w1526759686
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX2_32.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX2_32.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@m@u@x2_32
+!i10b 1
+!s100 z8bcAZVZReo7NXhla^fAd3
+!s105 MIPS_MUX2_32_sv_unit
+!s85 0
+!s108 1557774560.996000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX2_32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX2_32.sv|
+!s101 -O0
+vMIPS_MUX2_5
+R1
+ISTTL5M<fOHXkGQM>JBfLN0
+Vi7l[ZD94BS9IVf990YC8n3
+S1
+R2
+w1528189736
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX2_5.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX2_5.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@m@u@x2_5
+!i10b 1
+!s100 ]cE9fk29fQQHzZYj_HNM:3
+!s105 MIPS_MUX2_5_sv_unit
+!s85 0
+!s108 1557774561.670000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX2_5.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX2_5.sv|
+!s101 -O0
+vMIPS_MUX32_1
+R1
+I>b`;U<<a?c@VV2^Xf@lDg2
+VA9C83n65U_?lUH>X>^0IM0
+S1
+R2
+w1527705136
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX32_1.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX32_1.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@m@u@x32_1
+!i10b 1
+!s100 [6<hOJXD4m`SZgeCoLL^k2
+!s105 MIPS_MUX32_1_sv_unit
+!s85 0
+!s108 1557774560.016000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX32_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX32_1.sv|
+!s101 -O0
+vMIPS_MUX4_32
+R1
+IA24m2S?0;bk>B2:V3A?aG2
+VYLm4eGCfE2[Vm=JKYCCf[3
+S1
+R2
+w1526761132
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX4_32.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX4_32.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@m@u@x4_32
+!i10b 1
+!s100 FKCicZZ@QEH]XlnI7TcnL2
+!s105 MIPS_MUX4_32_sv_unit
+!s85 0
+!s108 1557774560.376000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX4_32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_MUX4_32.sv|
+!s101 -O0
+vMIPS_REG_1
+R1
+Iz66afOcTl7oH31bV<M;Xk3
+VLGdO6:7BfScERNM37N6j`2
+S1
+R2
+w1557362036
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REG_1.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REG_1.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@r@e@g_1
+!i10b 1
+!s100 0d55_<mC1N@7FjX@hCM1;2
+!s105 MIPS_REG_1_sv_unit
+!s85 0
+!s108 1557774559.672000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REG_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REG_1.sv|
+!s101 -O0
+vMIPS_REG_32
+R1
+I6LJ5K7Y``bTRf5S4a]DJ81
+VYQVi4h5PJh5R5fX<;]D3_0
+S1
+R2
+w1527612562
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REG_32.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REG_32.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@r@e@g_32
+!i10b 1
+!s100 Cn8HPL1B;[1QSeF<Ohn>e1
+!s105 MIPS_REG_32_sv_unit
+!s85 0
+!s108 1557774559.204000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REG_32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REG_32.sv|
+!s101 -O0
+vMIPS_REGFILE_1
+R1
+IO`D@X^9nRfoBf>MheVFXW2
+V4K;^06MF0zJizVommdnn;1
+S1
+R2
+w1528969428
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REGFILE_1.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REGFILE_1.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@r@e@g@f@i@l@e_1
+!i10b 1
+!s100 iabJg>cO=K2f8lf@j2o:l2
+!s105 MIPS_REGFILE_1_sv_unit
+!s85 0
+!s108 1557774558.423000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REGFILE_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REGFILE_1.sv|
+!s101 -O0
+vMIPS_REGFILE_32
+R1
+IzX?IL`aWHbT>nGP^d]?4O0
+VT^?D67gUF5GmK:eh7L@YI3
+S1
+R2
+w1527956660
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REGFILE_32.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REGFILE_32.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@r@e@g@f@i@l@e_32
+!i10b 1
+!s100 FldJljhdUK5NR@QM0cCTA2
+!s105 MIPS_REGFILE_32_sv_unit
+!s85 0
+!s108 1557774557.423000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REGFILE_32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REGFILE_32.sv|
+!s101 -O0
+vMIPS_REGWE_1
+R1
+Ifglz@;BHm<jT4_H0V4VB:3
+VOBF<14W:l6b<ddWhOi>]:3
+S1
+R2
+w1528302762
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REGWE_1.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REGWE_1.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@r@e@g@w@e_1
+!i10b 1
+!s100 3j4nPIU=]Ff=ha2=8FRfl1
+!s105 MIPS_REGWE_1_sv_unit
+!s85 0
+!s108 1557774557.032000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REGWE_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REGWE_1.sv|
+!s101 -O0
+vMIPS_REGWE_32
+R1
+Ib^Y[`lb5ImQkJHdeZM32k2
+VKQ=@cSKWh^]jG1S_NzaN]3
+S1
+R2
+w1528303134
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REGWE_32.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REGWE_32.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@r@e@g@w@e_32
+!i10b 1
+!s100 l]Dz`3d]d[90h[[1D3DV<3
+!s105 MIPS_REGWE_32_sv_unit
+!s85 0
+!s108 1557774556.688000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REGWE_32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_REGWE_32.sv|
+!s101 -O0
+vMIPS_SHIFT2_32
+R1
+I9<Q=OJ<8AnN9^ADdMnzGB1
+ViNnB^fUgfjo68W3N`@EOe2
+S1
+R2
+w1526376484
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_SHIFT2_32.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_SHIFT2_32.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@s@h@i@f@t2_32
+!i10b 1
+!s100 S@3ATzJX3Fad@h?iz4ODm2
+!s105 MIPS_SHIFT2_32_sv_unit
+!s85 0
+!s108 1557774556.329000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_SHIFT2_32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_SHIFT2_32.sv|
+!s101 -O0
+vMIPS_SHIFT2_SIGEXT_32
+R1
+IOf`G;mTDE73eo^h6?1Oag2
+V0mKG9@NjhW7TL43kD4=g31
+S1
+R2
+w1526463524
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_SHIFT2_SIGEXT_32.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_SHIFT2_SIGEXT_32.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@s@h@i@f@t2_@s@i@g@e@x@t_32
+!i10b 1
+!s100 iRCSeoIa^id0SkQLB8=Ig1
+!s105 MIPS_SHIFT2_SIGEXT_32_sv_unit
+!s85 0
+!s108 1557774555.907000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_SHIFT2_SIGEXT_32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_SHIFT2_SIGEXT_32.sv|
+!s101 -O0
+vMIPS_SHIFT2PC_32
+R1
+I>IhO6JAm2OlcmmD4GQ:WC3
+Vff1RYIegm@D6O8?=V7?O72
+S1
+R2
+w1526985086
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_SHIFT2PC_32.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_SHIFT2PC_32.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@s@h@i@f@t2@p@c_32
+!i10b 1
+!s100 F13:oAW<Ji2Q;DHkMKa5@2
+!s105 MIPS_SHIFT2PC_32_sv_unit
+!s85 0
+!s108 1557774555.235000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_SHIFT2PC_32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_SHIFT2PC_32.sv|
+!s101 -O0
+vMIPS_SIGEXT_32
+R1
+IICmJ>HhfnbO[[5hAM3OP]2
+VnkNK7e4:9A4?_S36>bDhB0
+S1
+R2
+R6
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_SIGEXT_32.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_SIGEXT_32.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@s@i@g@e@x@t_32
+!i10b 1
+!s100 Fh;c7gfkWc:Y@8FWJg^dd1
+!s105 MIPS_SIGEXT_32_sv_unit
+!s85 0
+!s108 1557774554.532000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_SIGEXT_32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_SIGEXT_32.sv|
+!s101 -O0
+vmips_tb
+R1
+!i10b 1
+!s100 o@]nWWl6VC9nM?:48hRFn2
+IoFK:dS9H3Rk;@U6WT<mBR0
+VHfL@J;=TiSmbe>@j83EoJ0
+!s105 mips_tb_sv_unit
+S1
+R2
+w1557774550
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/Testbench/mips_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/Testbench/mips_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1557774567.625000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/Testbench/mips_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/Testbench|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/Testbench/mips_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/Testbench} -O0
+vMIPS_TWOREGWE_32
+R1
+IfjiR9L5^`UGb;z@^9aoIJ3
+VFE@H<1>RXML0>z0aIN]653
+S1
+R2
+w1528305928
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_TWOREGWE_32.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_TWOREGWE_32.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+n@m@i@p@s_@t@w@o@r@e@g@w@e_32
+!i10b 1
+!s100 z4c>MVVX6[l>_0W5jT9`V2
+!s105 MIPS_TWOREGWE_32_sv_unit
+!s85 0
+!s108 1557774554.047000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_TWOREGWE_32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/MIPS_TWOREGWE_32.sv|
+!s101 -O0

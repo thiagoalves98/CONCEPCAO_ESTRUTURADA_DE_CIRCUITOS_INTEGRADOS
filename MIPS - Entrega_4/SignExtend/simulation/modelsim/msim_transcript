@@ -1,0 +1,200 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do signextend_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {signextend_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module signextend
+# 
+# Top level modules:
+# 	signextend
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/signextend/testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench/signextend_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module signextend_tb
+# 
+# Top level modules:
+# 	signextend_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  signextend_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps signextend_tb 
+# Loading sv_std.std
+# Loading work.signextend_tb
+# Loading work.signextend
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# SDF 10.1b Compiler 2012.04 Apr 27 2012
+# 
+# Loading instances from signextend_6_1200mv_85c_v_slow.sdo
+# Loading timing data from signextend_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /signextend_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench/signextend_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |         A          |               Y                    |           Y_esperado               |
+# |--------------------|------------------------------------|------------------------------------|
+# |  0000000000000001  |  0000x000000000000x00000000000001  |  00000000000000000000000000000001  | ERROR
+# |  0000000000000010  |  00000000000000000000000000000010  |  00000000000000000000000000000010  | OK
+# |  0000000000000100  |  00000000000000000000000000000100  |  00000000000000000000000000000100  | OK
+# |  0000000000001000  |  00000000000000000000000000001000  |  00000000000000000000000000001000  | OK
+# |  0000000000010000  |  00000000000000000000000000010000  |  00000000000000000000000000010000  | OK
+# |  0000000000100000  |  00000000000000000000000000100000  |  00000000000000000000000000100000  | OK
+# |  0000000001000000  |  00000000000000000000000001000000  |  00000000000000000000000001000000  | OK
+# |  0000000010000000  |  00000000000000000000000010000000  |  00000000000000000000000010000000  | OK
+# |  0000000100000000  |  00000000000000000000000100000000  |  00000000000000000000000100000000  | OK
+# |  0000001000000000  |  00000000000000000000001000000000  |  00000000000000000000001000000000  | OK
+# |  0000010000000000  |  00000000000000000000010000000000  |  00000000000000000000010000000000  | OK
+# |  0000100000000000  |  00000000000000000000100000000000  |  00000000000000000000100000000000  | OK
+# |  0001000000000000  |  00000000000000000001000000000000  |  00000000000000000001000000000000  | OK
+# |  0010000000000000  |  00000000000000000010000000000000  |  00000000000000000010000000000000  | OK
+# |  0100000000000000  |  00000000000000000100000000000000  |  00000000000000000100000000000000  | OK
+# |  1000000000000000  |  11111111111111111100000000000000  |  11111111111111111000000000000000  | ERROR
+# Testes Efetuados  = 16
+# Erros Encontrados = 2
+# Break in Module signextend_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench/signextend_tb.sv line 58
+# Simulation Breakpoint: Break in Module signextend_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench/signextend_tb.sv line 58
+# MACRO ./signextend_run_msim_gate_verilog.do PAUSED at line 17
+do signextend_run_msim_gate_verilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {signextend_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module signextend
+# 
+# Top level modules:
+# 	signextend
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/signextend/testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench/signextend_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module signextend_tb
+# 
+# Top level modules:
+# 	signextend_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  signextend_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps signextend_tb 
+# Loading sv_std.std
+# Loading work.signextend_tb
+# Loading work.signextend
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading instances from signextend_6_1200mv_85c_v_slow.sdo
+# Loading timing data from signextend_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /signextend_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench/signextend_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |         A          |               Y                    |           Y_esperado               |
+# |--------------------|------------------------------------|------------------------------------|
+# |  0000000000000001  |  00000000000000000000000000000001  |  00000000000000000000000000000001  | OK
+# |  0000000000000010  |  00000000000000000000000000000010  |  00000000000000000000000000000010  | OK
+# |  0000000000000100  |  00000000000000000000000000000100  |  00000000000000000000000000000100  | OK
+# |  0000000000001000  |  00000000000000000000000000001000  |  00000000000000000000000000001000  | OK
+# |  0000000000010000  |  00000000000000000000000000010000  |  00000000000000000000000000010000  | OK
+# |  0000000000100000  |  00000000000000000000000000100000  |  00000000000000000000000000100000  | OK
+# |  0000000001000000  |  00000000000000000000000001000000  |  00000000000000000000000001000000  | OK
+# |  0000000010000000  |  00000000000000000000000010000000  |  00000000000000000000000010000000  | OK
+# |  0000000100000000  |  00000000000000000000000100000000  |  00000000000000000000000100000000  | OK
+# |  0000001000000000  |  00000000000000000000001000000000  |  00000000000000000000001000000000  | OK
+# |  0000010000000000  |  00000000000000000000010000000000  |  00000000000000000000010000000000  | OK
+# |  0000100000000000  |  00000000000000000000100000000000  |  00000000000000000000100000000000  | OK
+# |  0001000000000000  |  00000000000000000001000000000000  |  00000000000000000001000000000000  | OK
+# |  0010000000000000  |  00000000000000000010000000000000  |  00000000000000000010000000000000  | OK
+# |  0100000000000000  |  00000000000000000100000000000000  |  00000000000000000100000000000000  | OK
+# |  1000000000000000  |  11111111111111111000000000000000  |  11111111111111111000000000000000  | OK
+# Testes Efetuados  = 16
+# Erros Encontrados = 0
+# Break in Module signextend_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench/signextend_tb.sv line 58
+# Simulation Breakpoint: Break in Module signextend_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench/signextend_tb.sv line 58
+# MACRO ./signextend_run_msim_gate_verilog.do PAUSED at line 17
+do signextend_run_msim_gate_verilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {signextend_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module signextend
+# 
+# Top level modules:
+# 	signextend
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/signextend/testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench/signextend_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module signextend_tb
+# 
+# Top level modules:
+# 	signextend_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  signextend_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps signextend_tb 
+# Loading sv_std.std
+# Loading work.signextend_tb
+# Loading work.signextend
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading instances from signextend_6_1200mv_85c_v_slow.sdo
+# Loading timing data from signextend_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /signextend_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench/signextend_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |         A          |               Y                    |           Y_esperado               |
+# |--------------------|------------------------------------|------------------------------------|
+# |  0000000000000001  |  0xxxxx00xx00000xxx00000000000001  |  00000000000000000000000000000001  | ERROR
+# |  0000000000000010  |  00000000000000000000000000000010  |  00000000000000000000000000000010  | OK
+# |  0000000000000100  |  00000000000000000000000000000100  |  00000000000000000000000000000100  | OK
+# |  0000000000001000  |  00000000000000000000000000001000  |  00000000000000000000000000001000  | OK
+# |  0000000000010000  |  00000000000000000000000000010000  |  00000000000000000000000000010000  | OK
+# |  0000000000100000  |  00000000000000000000000000100000  |  00000000000000000000000000100000  | OK
+# |  0000000001000000  |  00000000000000000000000001000000  |  00000000000000000000000001000000  | OK
+# |  0000000010000000  |  00000000000000000000000010000000  |  00000000000000000000000010000000  | OK
+# |  0000000100000000  |  00000000000000000000000100000000  |  00000000000000000000000100000000  | OK
+# |  0000001000000000  |  00000000000000000000001000000000  |  00000000000000000000001000000000  | OK
+# |  0000010000000000  |  00000000000000000000010000000000  |  00000000000000000000010000000000  | OK
+# |  0000100000000000  |  00000000000000000000100000000000  |  00000000000000000000100000000000  | OK
+# |  0001000000000000  |  00000000000000000001000000000000  |  00000000000000000001000000000000  | OK
+# |  0010000000000000  |  00000000000000000010000000000000  |  00000000000000000010000000000000  | OK
+# |  0100000000000000  |  00000000000000000000000000000000  |  00000000000000000100000000000000  | ERROR
+# |  1000000000000000  |  11110111111111111100000000000000  |  11111111111111111000000000000000  | ERROR
+# Testes Efetuados  = 16
+# Erros Encontrados = 3
+# Break in Module signextend_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench/signextend_tb.sv line 58
+# Simulation Breakpoint: Break in Module signextend_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench/signextend_tb.sv line 58
+# MACRO ./signextend_run_msim_gate_verilog.do PAUSED at line 17

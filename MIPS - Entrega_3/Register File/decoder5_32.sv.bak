@@ -1,0 +1,238 @@
+module decoder5_32(input logic [0:4] a, output logic [0:31]y); 
+
+always_comb 
+	case(a) 
+
+	5'b00000: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+	  
+	5'b00001: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b00010: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b00011: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b00100: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b00101: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b00110: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b00111: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b01000: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b01001: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b01010: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b01011: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+	
+	5'b01100: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b01101: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b01110: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b01111: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b10000: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b10001: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b10010: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+	
+	5'b10011: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b10100: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b10101: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b10110: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b10111: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b11000: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b11001: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b11010: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b11011: begin
+		for (int i = 0; i < 32; i++) begin
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b11100: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b11101: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b11110: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+				  
+	5'b11111: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=0;
+		end
+			y[a] <=1;
+	end
+
+	default: begin
+		for (int i = 0; i < 32; i++) begin 
+			y[i] <=1'bx;
+		end
+	end
+	
+	endcase 
+
+endmodule

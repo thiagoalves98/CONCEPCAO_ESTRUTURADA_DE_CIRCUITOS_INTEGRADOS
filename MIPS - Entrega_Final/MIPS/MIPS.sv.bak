@@ -1,0 +1,26 @@
+module mips(input logic [31:0] MemoryRD,
+				input logic clock, reset,
+				output logic [31:0] MemoryAddress, MemoryWD,
+				output logic MemoryWE);
+				
+	
+	
+	logic [5:0] funct, opcode;
+	logic [2:0] ALUControl;
+	logic [1:0] ALUSrcB, PCSrc;
+	logic IorD, IRWrite, RegDst, MemtoReg;
+	logic RegWrite, ALUSrcA, Branch, PCWrite;
+	
+	MIPS_FSM CONTROL_UNIT(funct, opcode, clock, reset, ALUControl, ALUSrcB, PCSrc,
+								IorD, IRWrite, RegDst, MemtoReg, RegWrite, ALUSrcA, Branch,
+								PCWrite, MemoryWE);
+	
+
+							
+	MIPS_DATAPATH DATAPATH(MemoryRD, ALUControl, ALUSrcB, PCSrc, IorD, IRWrite, RegDst,
+								  MemtoReg, RegWrite, ALUSrcA, Branch, PCWrite, reset, clock,
+								 MemoryAddress, MemoryWD, opcode, funct);
+	
+endmodule
+	
+	

@@ -1,0 +1,77 @@
+# Reading C:/altera/91sp2/modelsim_ase/tcl/vsim/pref.tcl 
+# do mux_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\91sp2\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\91sp2\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/aluno/Downloads/Suanny\ (2)/Suanny/Alexandre\ e\ Lucas/Inv_Aula {C:/Users/aluno/Downloads/Suanny (2)/Suanny/Alexandre e Lucas/Inv_Aula/inv.sv}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module inv
+# 
+# Top level modules:
+# 	inv
+# vlog -sv -work work +incdir+C:/Users/aluno/Downloads/Suanny\ (2)/Suanny/mux {C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module mux
+# 
+# Top level modules:
+# 	mux
+# vlog -sv -work work +incdir+C:/Users/aluno/Downloads/Suanny\ (2)/Suanny/tristate {C:/Users/aluno/Downloads/Suanny (2)/Suanny/tristate/tristate.sv}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module tristate
+# 
+# Top level modules:
+# 	tristate
+# 
+# vlog -sv -work work +incdir+C:/Users/aluno/Downloads/Suanny\ (2)/Suanny/mux/testbench {C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/testbench/mux2_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.0c Compiler 2011.09 Sep 21 2011
+# -- Compiling module mux2_tb
+# 
+# Top level modules:
+# 	mux2_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc" mux2_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps mux2_tb 
+# Loading sv_std.std
+# Loading work.mux2_tb
+# Loading work.mux
+# Loading work.tristate
+# Loading work.inv
+# ** Warning: (vsim-3017) C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/testbench/mux2_tb.sv(12): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /mux2_tb/dut
+# ** Warning: (vsim-3015) C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/testbench/mux2_tb.sv(12): [PCDPC] - Port size (1 or 1) does not match connection size (4) for port 'ns'. The port definition is at: C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/mux.sv(3).
+#         Region: /mux2_tb/dut
+# ** Warning: (vsim-3722) C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/testbench/mux2_tb.sv(12): [TFMPC] - Missing connection for port 'y'.
+# ** Warning: (vsim-3015) C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/mux.sv(8): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/aluno/Downloads/Suanny (2)/Suanny/Alexandre e Lucas/Inv_Aula/inv.sv(1).
+#         Region: /mux2_tb/dut/inversor
+# ** Warning: (vsim-3015) C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/mux.sv(8): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'y'. The port definition is at: C:/Users/aluno/Downloads/Suanny (2)/Suanny/Alexandre e Lucas/Inv_Aula/inv.sv(1).
+#         Region: /mux2_tb/dut/inversor
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# | D0 | D1 | S | Y |
+# ---------------
+# Error: input in position           1 = 1
+# 0 OPÇÃO , output = 0, (1 expected)
+# Error: input in position           2 = 1
+# 0 OPÇÃO , output = 0, (1 expected)
+# Error: input in position           3 = 1
+# 0 OPÇÃO , output = 0, (1 expected)
+# | 1111 | 0000 | 0 | 0001 | ERROR
+# | 1111 | 0000 | 1 | 0000 | OK
+# Testes Efetuados  = 2
+# Erros Encontrados = 3
+# Break in Module mux2_tb at C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/testbench/mux2_tb.sv line 64
+# Simulation Breakpoint: Break in Module mux2_tb at C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/testbench/mux2_tb.sv line 64
+# MACRO ./mux_run_msim_rtl_verilog.do PAUSED at line 19

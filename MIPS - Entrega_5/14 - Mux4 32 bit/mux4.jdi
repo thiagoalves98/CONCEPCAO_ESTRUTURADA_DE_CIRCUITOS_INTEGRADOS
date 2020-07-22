@@ -1,0 +1,7 @@
+<sld_project_info>
+  <file_info>
+    <file checksum="0x000D821D" device="EP4CE15F23C6" path="mux4.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <hub_info ir_width="0" node_count="0"/>
+  <node_info/>
+</sld_project_info>

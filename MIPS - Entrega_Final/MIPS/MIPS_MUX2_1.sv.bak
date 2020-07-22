@@ -1,0 +1,5 @@
+module MIPS_MUX2_1(input logic zero, nzero, branchNE, output logic z);
+
+	assign z = branchNE ? nzero : zero;
+
+endmodule

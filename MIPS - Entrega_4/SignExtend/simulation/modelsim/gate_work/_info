@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\signextend\simulation\modelsim
+vsignextend
+I;81jYJR2h5fnYJ<_NA1U30
+VAd=Ga`Md[6L2MIcN_ONNE3
+Z1 dC:\Users\thiag\OneDrive\햞ea de Trabalho\signextend\simulation\modelsim
+w1554931937
+8signextend_6_1200mv_85c_slow.vo
+Fsignextend_6_1200mv_85c_slow.vo
+L0 31
+Z2 OV;L;10.1b;51
+r1
+31
+o-vlog01compat -work work -O0
+!i10b 1
+!s100 e:VeKe]CJG^]l0[NIhMU=0
+!s85 0
+!s108 1554932093.797000
+!s107 signextend_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|signextend_6_1200mv_85c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vsignextend_tb
+DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 <^g=B1Ja@M88@:1AU@Bn91
+InG5]RoaJTQTUfK8h[nEk;2
+ViYlJiLOA3G2MXea2>lI8h0
+!s105 signextend_tb_sv_unit
+S1
+R1
+w1554932090
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench/signextend_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench/signextend_tb.sv
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1554932094.341000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench/signextend_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench|C:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench/signextend_tb.sv|
+!s101 -O0
+o-sv -work work -O0
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/signextend/testbench} -O0

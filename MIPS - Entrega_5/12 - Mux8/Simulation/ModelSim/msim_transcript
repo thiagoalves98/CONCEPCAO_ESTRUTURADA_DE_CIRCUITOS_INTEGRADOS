@@ -1,0 +1,335 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do mux8_run_msim_gate_systemverilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+. {mux8_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux8
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/12\ -\ Mux8/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8_tb
+# 
+# Top level modules:
+# 	mux8_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  mux8_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux8_tb 
+# Loading sv_std.std
+# Loading work.mux8_tb
+# Loading work.mux8
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# SDF 10.1b Compiler 2012.04 Apr 27 2012
+# 
+# Loading instances from mux8_6_1200mv_85c_v_slow.sdo
+# Loading timing data from mux8_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux8_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |      D     |   S   |  Y  |  Y_esperado  |
+# |------------|-------|-----|--------------|
+# |  00000001  |  000  |  x  |      1       | ERROR
+# |  00000010  |  001  |  0  |      1       | ERROR
+# |  00000100  |  010  |  0  |      1       | ERROR
+# |  00001000  |  011  |  1  |      1       | OK
+# |  00010000  |  100  |  1  |      1       | OK
+# |  00100000  |  101  |  1  |      1       | OK
+# |  01000000  |  110  |  1  |      1       | OK
+# |  10000000  |  111  |  1  |      1       | OK
+# |  11111110  |  000  |  1  |      0       | ERROR
+# |  11111101  |  001  |  1  |      0       | ERROR
+# |  11111011  |  010  |  1  |      0       | ERROR
+# |  11110111  |  011  |  0  |      0       | OK
+# |  11101111  |  100  |  0  |      0       | OK
+# |  11011111  |  101  |  0  |      0       | OK
+# |  10111111  |  110  |  0  |      0       | OK
+# |  01111111  |  111  |  0  |      0       | OK
+# Testes Efetuados  = 16
+# Erros Encontrados = 6
+# Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv line 58
+# Simulation Breakpoint: Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv line 58
+# MACRO ./mux8_run_msim_gate_systemverilog.do PAUSED at line 17
+do mux8_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {mux8_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux8
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/12\ -\ Mux8/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8_tb
+# 
+# Top level modules:
+# 	mux8_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  mux8_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux8_tb 
+# Loading sv_std.std
+# Loading work.mux8_tb
+# Loading work.mux8
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading instances from mux8_6_1200mv_85c_v_slow.sdo
+# Loading timing data from mux8_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux8_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |      D     |   S   |  Y  |  Y_esperado  |
+# |------------|-------|-----|--------------|
+# |  00000001  |  000  |  x  |      1       | ERROR
+# |  00000010  |  001  |  0  |      1       | ERROR
+# |  00000100  |  010  |  0  |      1       | ERROR
+# |  00001000  |  011  |  1  |      1       | OK
+# |  00010000  |  100  |  1  |      1       | OK
+# |  00100000  |  101  |  1  |      1       | OK
+# |  01000000  |  110  |  1  |      1       | OK
+# |  10000000  |  111  |  1  |      1       | OK
+# |  11111110  |  000  |  1  |      0       | ERROR
+# |  11111101  |  001  |  1  |      0       | ERROR
+# |  11111011  |  010  |  1  |      0       | ERROR
+# |  11110111  |  011  |  0  |      0       | OK
+# |  11101111  |  100  |  0  |      0       | OK
+# |  11011111  |  101  |  0  |      0       | OK
+# |  10111111  |  110  |  0  |      0       | OK
+# |  01111111  |  111  |  0  |      0       | OK
+# Testes Efetuados  = 16
+# Erros Encontrados = 6
+# Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv line 58
+# Simulation Breakpoint: Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv line 58
+# MACRO ./mux8_run_msim_gate_systemverilog.do PAUSED at line 17
+do mux8_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {mux8_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux8
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/12\ -\ Mux8/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8_tb
+# 
+# Top level modules:
+# 	mux8_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  mux8_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux8_tb 
+# Loading sv_std.std
+# Loading work.mux8_tb
+# Loading work.mux8
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading instances from mux8_6_1200mv_85c_v_slow.sdo
+# Loading timing data from mux8_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux8_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |      D     |   S   |  Y  |  Y_esperado  |
+# |------------|-------|-----|--------------|
+# |  00000001  |  000  |  x  |      1       | ERROR
+# |  00000010  |  001  |  1  |      1       | OK
+# |  00000100  |  010  |  1  |      1       | OK
+# |  00001000  |  011  |  1  |      1       | OK
+# |  00010000  |  100  |  0  |      1       | ERROR
+# |  00100000  |  101  |  1  |      1       | OK
+# |  01000000  |  110  |  1  |      1       | OK
+# |  10000000  |  111  |  1  |      1       | OK
+# |  11111110  |  000  |  1  |      0       | ERROR
+# |  11111101  |  001  |  0  |      0       | OK
+# |  11111011  |  010  |  1  |      0       | ERROR
+# |  11110111  |  011  |  1  |      0       | ERROR
+# |  11101111  |  100  |  0  |      0       | OK
+# |  11011111  |  101  |  1  |      0       | ERROR
+# |  10111111  |  110  |  1  |      0       | ERROR
+# |  01111111  |  111  |  0  |      0       | OK
+# Testes Efetuados  = 16
+# Erros Encontrados = 7
+# Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv line 58
+# Simulation Breakpoint: Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv line 58
+# MACRO ./mux8_run_msim_gate_systemverilog.do PAUSED at line 17
+do mux8_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {mux8_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux8
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/12\ -\ Mux8/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8_tb
+# 
+# Top level modules:
+# 	mux8_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  mux8_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux8_tb 
+# Loading sv_std.std
+# Loading work.mux8_tb
+# Loading work.mux8
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading instances from mux8_6_1200mv_85c_v_slow.sdo
+# Loading timing data from mux8_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux8_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |      D     |   S   |  Y  |  Y_esperado  |
+# |------------|-------|-----|--------------|
+# |  00000001  |  000  |  1  |      1       | OK
+# |  00000010  |  001  |  1  |      1       | OK
+# |  00000100  |  010  |  1  |      1       | OK
+# |  00001000  |  011  |  1  |      1       | OK
+# |  00010000  |  100  |  1  |      1       | OK
+# |  00100000  |  101  |  1  |      1       | OK
+# |  01000000  |  110  |  1  |      1       | OK
+# |  10000000  |  111  |  1  |      1       | OK
+# |  11111110  |  000  |  0  |      0       | OK
+# |  11111101  |  001  |  0  |      0       | OK
+# |  11111011  |  010  |  0  |      0       | OK
+# |  11110111  |  011  |  0  |      0       | OK
+# |  11101111  |  100  |  0  |      0       | OK
+# |  11011111  |  101  |  0  |      0       | OK
+# |  10111111  |  110  |  1  |      0       | ERROR
+# |  01111111  |  111  |  0  |      0       | OK
+# Testes Efetuados  = 16
+# Erros Encontrados = 1
+# Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv line 58
+# Simulation Breakpoint: Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv line 58
+# MACRO ./mux8_run_msim_gate_systemverilog.do PAUSED at line 17
+do mux8_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {mux8_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux8
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/12\ -\ Mux8/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux8_tb
+# 
+# Top level modules:
+# 	mux8_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  mux8_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux8_tb 
+# Loading sv_std.std
+# Loading work.mux8_tb
+# Loading work.mux8
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading instances from mux8_6_1200mv_85c_v_slow.sdo
+# Loading timing data from mux8_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux8_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |      D     |   S   |  Y  |  Y_esperado  |
+# |------------|-------|-----|--------------|
+# |  00000001  |  000  |  1  |      1       | OK
+# |  00000010  |  001  |  1  |      1       | OK
+# |  00000100  |  010  |  1  |      1       | OK
+# |  00001000  |  011  |  1  |      1       | OK
+# |  00010000  |  100  |  1  |      1       | OK
+# |  00100000  |  101  |  1  |      1       | OK
+# |  01000000  |  110  |  1  |      1       | OK
+# |  10000000  |  111  |  1  |      1       | OK
+# |  11111110  |  000  |  0  |      0       | OK
+# |  11111101  |  001  |  0  |      0       | OK
+# |  11111011  |  010  |  0  |      0       | OK
+# |  11110111  |  011  |  0  |      0       | OK
+# |  11101111  |  100  |  0  |      0       | OK
+# |  11011111  |  101  |  0  |      0       | OK
+# |  10111111  |  110  |  0  |      0       | OK
+# |  01111111  |  111  |  0  |      0       | OK
+# Testes Efetuados  = 16
+# Erros Encontrados = 0
+# Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv line 58
+# Simulation Breakpoint: Break in Module mux8_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/12 - Mux8/Testbench/mux8_tb.sv line 58
+# MACRO ./mux8_run_msim_gate_systemverilog.do PAUSED at line 17

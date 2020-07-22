@@ -1,0 +1,143 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Mux32\Simulation\ModelSim
+vinversor
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I8gjZ?OODGKfcf2<Mo<`ES1
+VK9C;<dDEdeKN0OH61L[:Q1
+S1
+Z2 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Mux32\Simulation\ModelSim
+w1554515523
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/inversor.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/inversor.sv
+L0 1
+Z3 OV;L;10.1b;51
+r1
+31
+Z4 o-sv -work work -O0
+Z5 !s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32} -O0
+!i10b 1
+!s100 aShJWC<XnP3fPZ:H`VkZC3
+!s105 inversor_sv_unit
+!s85 0
+!s108 1554779019.087000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/inversor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/inversor.sv|
+!s101 -O0
+vmux2
+R1
+I:L4;Xz4@3JAFP[jF1I=jY2
+V4:42Wnh=OcQJ[:;]F`0F91
+S1
+R2
+Z6 w1554515524
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/mux2.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/mux2.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 ET>zbAYj6@m@9?4AE=o9J3
+!s105 mux2_sv_unit
+!s85 0
+!s108 1554779018.556000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/mux2.sv|
+!s101 -O0
+vmux32
+R1
+Ik]V22`PXHYTb3jWOmcBV32
+VV1VR7Iz`TVY76Y:ZF2@Rc1
+S1
+R2
+w1554778783
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/mux32.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/mux32.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 ODdZ8mVeHoB?BH:9JO5<n2
+!s105 mux32_sv_unit
+!s85 0
+!s108 1554779019.587000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/mux32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/mux32.sv|
+!s101 -O0
+vmux32_tb
+R1
+!i10b 1
+!s100 @]mb2`K`8a0U1bYzES0l40
+I;SBT:Ejhj?N=iDQD3A4k<0
+VDL=B7a9gY2dX8O6ld2bg^0
+!s105 mux32_tb_sv_unit
+S1
+R2
+w1554778784
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/Testbench/mux32_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/Testbench/mux32_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1554779020.009000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/Testbench/mux32_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/Testbench|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/Testbench/mux32_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/Testbench} -O0
+vmux4
+R1
+IO4db?`QT::jf;YRJfK6Hf0
+VD;U:>2Gg;99:CJY5m?OWI2
+S1
+R2
+R6
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/mux4.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/mux4.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 NE81C8_UL4@ZD6TCmY54A3
+!s105 mux4_sv_unit
+!s85 0
+!s108 1554779018.087000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/mux4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/mux4.sv|
+!s101 -O0
+vtristate
+R1
+IARiKYESA0nbD5a:_lEE[H0
+VRec>Y2aHg`5_EGQ7YU:J70
+S1
+R2
+R6
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/tristate.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/tristate.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 Mm;<1bNWLzcLeURZPQ1:53
+!s105 tristate_sv_unit
+!s85 0
+!s108 1554779017.634000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/tristate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mux32/tristate.sv|
+!s101 -O0

@@ -1,0 +1,74 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Banco de Registradores\Simulation\ModelSim
+vbank
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IF1I2lEM=jS?Rlm[_=jU_03
+V347G<QX5Dd6AecAzh?9^J0
+S1
+Z2 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Banco de Registradores\Simulation\ModelSim
+w1554780143
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/bank.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/bank.sv
+L0 1
+Z3 OV;L;10.1b;51
+r1
+31
+Z4 o-sv -work work -O0
+Z5 !s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores} -O0
+!i10b 1
+!s100 DfW3NR9_`@Z[<kSoCkU433
+!s105 bank_sv_unit
+!s85 0
+!s108 1554780427.291000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/bank.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores|C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/bank.sv|
+!s101 -O0
+vbank_tb
+R1
+!i10b 1
+!s100 T=;TM2l_Lz=HzbdVFK=An3
+IN[3;J7;:QllShM4O33T=<0
+Vg5Edg:]=KQgIkUDEa`Za93
+!s105 bank_tb_sv_unit
+S1
+R2
+w1554780121
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1554780427.916000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench|C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench/bank_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/Testbench} -O0
+vflopenr
+R1
+II^deNB_mJ8580GFoSZXjY0
+VmEVPe?[3Bd];NoWcd8TlK1
+S1
+R2
+w1554686808
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/flopenr.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/flopenr.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 8H42DL;HYD;>c4jP=m:6J0
+!s105 flopenr_sv_unit
+!s85 0
+!s108 1554780426.854000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/flopenr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores|C:/Users/thiag/OneDrive/햞ea de Trabalho/Banco de Registradores/flopenr.sv|
+!s101 -O0

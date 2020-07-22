@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\Documentos\Facudade\Faculdade - P6\CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS\MIPS\Entrega 2\Decode5-32\Simulation\ModelSim
+vdecoder5_32
+I5z2CBE<JQzz?g<59H=CoK2
+V`j4?Y7@3OSQGOY[J5<=m`3
+Z1 dC:\Users\thiag\OneDrive\Documentos\Facudade\Faculdade - P6\CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS\MIPS\Entrega 2\Decode5-32\Simulation\ModelSim
+w1554258553
+8decoder5_32_6_1200mv_85c_slow.vo
+Fdecoder5_32_6_1200mv_85c_slow.vo
+L0 31
+Z2 OV;L;10.1b;51
+r1
+31
+o-vlog01compat -work work -O0
+!i10b 1
+!s100 1l@HGNiGJW;Mb;NA1k=bV3
+!s85 0
+!s108 1554259154.053000
+!s107 decoder5_32_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|decoder5_32_6_1200mv_85c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vdecoder5_32_tb
+DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 dHI][S@W?CJ9T35e]?K5Q0
+IReR<jo5MWNQ8LT]6`be3Q1
+Vmb>WVmn>8k1cV8VM4?P1L1
+!s105 decoder5_32_tb_sv_unit
+S1
+R1
+w1554259149
+8C:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32/Testbench/decoder5_32_tb.sv
+FC:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32/Testbench/decoder5_32_tb.sv
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1554259154.633000
+!s107 C:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32/Testbench/decoder5_32_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32/Testbench|C:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32/Testbench/decoder5_32_tb.sv|
+!s101 -O0
+o-sv -work work -O0
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/Documentos/Facudade/Faculdade - P6/CONCEP플O ESTRUTURADA DE CIRCUITOS INTEGRADOS/MIPS/Entrega 2/Decode5-32/Testbench} -O0

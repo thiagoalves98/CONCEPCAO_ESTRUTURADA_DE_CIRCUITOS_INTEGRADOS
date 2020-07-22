@@ -1,0 +1,133 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do flopr32_run_msim_gate_systemverilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+. {flopr32_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module flopr32
+# 
+# Top level modules:
+# 	flopr32
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/18\ -\ Flopr\ 32\ bit/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/18 - Flopr 32 bit/Testbench/flopr32_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module flopr32_tb
+# 
+# Top level modules:
+# 	flopr32_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  flopr32_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps flopr32_tb 
+# Loading sv_std.std
+# Loading work.flopr32_tb
+# Loading work.flopr32
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_clkctrl
+# Loading cycloneiv_ver.cycloneiv_mux41
+# Loading cycloneiv_ver.cycloneiv_ena_reg
+# Loading altera_ver.dffeas
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# SDF 10.1b Compiler 2012.04 Apr 27 2012
+# 
+# Loading instances from flopr32_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from flopr32_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /flopr32_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/18 - Flopr 32 bit/Testbench/flopr32_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# | CLK | RST |               D                    |                  Q                 |             Q_esperado             |
+# |-----|-----|------------------------------------|------------------------------------|------------------------------------|
+# |  0    |  1    |  00000000000000000000000000000000  |  00000000000000000000000000000000  |  00000000000000000000000000000000  | OK
+# |  1    |  1    |  00000000000000000000000000000000  |  00000000000000000000000000000000  |  00000000000000000000000000000000  | OK
+# |  0    |  1    |  11111111111111111111111111111111  |  00000000000000000000000000000000  |  00000000000000000000000000000000  | OK
+# |  1    |  1    |  11111111111111111111111111111111  |  00000000000000000000000000000000  |  00000000000000000000000000000000  | OK
+# |  0    |  0    |  11111111111111111111111111111111  |  00000000000000000000000000000000  |  00000000000000000000000000000000  | OK
+# |  1    |  0    |  11111111111111111111111111111111  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# |  0    |  0    |  00000000000000000000000000000000  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# |  1    |  0    |  00000000000000000000000000000000  |  00000000000000000000000000000000  |  00000000000000000000000000000000  | OK
+# Testes Efetuados  = 8
+# Erros Encontrados = 0
+# Break in Module flopr32_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/18 - Flopr 32 bit/Testbench/flopr32_tb.sv line 58
+# Simulation Breakpoint: Break in Module flopr32_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/18 - Flopr 32 bit/Testbench/flopr32_tb.sv line 58
+# MACRO ./flopr32_run_msim_gate_systemverilog.do PAUSED at line 17
+do flopr32_run_msim_gate_systemverilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {flopr32_6_1200mv_85c_slow.svo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module flopr32
+# 
+# Top level modules:
+# 	flopr32
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/18\ -\ Flopr\ 32\ bit/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/18 - Flopr 32 bit/Testbench/flopr32_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module flopr32_tb
+# 
+# Top level modules:
+# 	flopr32_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  flopr32_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps flopr32_tb 
+# Loading sv_std.std
+# Loading work.flopr32_tb
+# Loading work.flopr32
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_clkctrl
+# Loading cycloneiv_ver.cycloneiv_mux41
+# Loading cycloneiv_ver.cycloneiv_ena_reg
+# Loading altera_ver.dffeas
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# SDF 10.1b Compiler 2012.04 Apr 27 2012
+# 
+# Loading instances from flopr32_6_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from flopr32_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /flopr32_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/18 - Flopr 32 bit/Testbench/flopr32_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# | CLK | RST |               D                    |                  Q                 |             Q_esperado             |
+# |-----|-----|------------------------------------|------------------------------------|------------------------------------|
+# |  0    |  1    |  00000000000000000000000000000000  |  00000000000000000000000000000000  |  00000000000000000000000000000000  | OK
+# |  1    |  1    |  00000000000000000000000000000000  |  00000000000000000000000000000000  |  00000000000000000000000000000000  | OK
+# |  0    |  1    |  11111111111111111111111111111111  |  00000000000000000000000000000000  |  00000000000000000000000000000000  | OK
+# |  1    |  1    |  11111111111111111111111111111111  |  00000000000000000000000000000000  |  00000000000000000000000000000000  | OK
+# |  0    |  0    |  11111111111111111111111111111111  |  00000000000000000000000000000000  |  00000000000000000000000000000000  | OK
+# |  1    |  0    |  11111111111111111111111111111111  |  11111111111111111111101111111111  |  11111111111111111111111111111111  | ERRO
+# |  0    |  0    |  00000000000000000000000000000000  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# |  1    |  0    |  00000000000000000000000000000000  |  00000000000000000000010000000000  |  00000000000000000000000000000000  | ERRO
+# Testes Efetuados  = 8
+# Erros Encontrados = 2
+# Break in Module flopr32_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/18 - Flopr 32 bit/Testbench/flopr32_tb.sv line 58
+# Simulation Breakpoint: Break in Module flopr32_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/18 - Flopr 32 bit/Testbench/flopr32_tb.sv line 58
+# MACRO ./flopr32_run_msim_gate_systemverilog.do PAUSED at line 17

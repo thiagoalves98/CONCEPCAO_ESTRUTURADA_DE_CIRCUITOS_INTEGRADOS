@@ -1,0 +1,83 @@
+module MIPS_DATAPATH(input logic [31:0] MemoryRD,
+							input logic [2:0] ALUControl,
+							input logic [1:0] ALUSrcB, PCSrc,
+							input logic IorD, IRWrite, RegDst, MemtoReg,
+							RegWrite, ALUSrcA, Branch, PCWrite, reset, clock,
+							output logic [31:0] MemoryAddress, MemoryWD,
+							output logic [5:0] Op, Funct);
+		
+	logic [31:0] PCl, PC, Instr, Data, ALUOut, WD3;
+	logic [31:0] A, B, RD1, RD2, SignImm, SignImm2, SrcA, SrcB;
+	logic [31:0] ALUResult, PCJump;
+	logic [4:0] A3;
+	logic PCEn, Zero, ZBranch;
+	
+	/*	PROTÓTIPOS
+	module MIPS_REG_32(input logic [31:0] d,
+						 input logic enable, reset, clk,
+						 output logic [31:0] q);
+						 
+	module MIPS_REGFILE_32(input logic [31:0] WD3,
+							  input logic [4:0] A1, A2, A3,
+							  input logic WE3, reset, clock,
+							  output logic [31:0] RD1, RD2);
+							  
+	module MIPS_SIGEXT_32(input logic [15:0] In, output logic [31:0] Out);
+	
+	module MIPS_SHIFT2_SIGEXT_32(input logic [15:0] In, output logic [31:0] Out);
+	
+	module MIPS_MUX2_32(input logic [31:0] a, b,
+						  input logic sel,
+						  output logic [31:0]s);
+						  
+	module MIPS_MUX4_32(input logic [31:0] a, b, c, d,
+						  input logic	sel0, sel1,
+						  output logic [31:0] s);
+						  
+	module MIPS_ALU_32(input logic [31:0] a, b,
+						 input logic [2:0] ctrl,
+						 output logic [31:0] result,
+						 output logic zero,
+						 output logic ovf);
+	module MIPS_SHIFT2PC_32(input logic [3:0]InPC,
+								input logic [25:0]In,  
+								output logic [31:0] Out);
+	*/
+	
+	MIPS_REG_32 PC_REG(PCl, PCEn, reset, clock, PC);
+	MIPS_MUX2_32 MUX_INSTR_OR_DATA(PC, ALUOut, IorD, MemoryAddress);
+	
+	
+	MIPS_REG_32 INSTR_REG(MemoryRD, IRWrite, reset, clock, Instr);
+	MIPS_REGWE_32 DATA_REG(MemoryRD, reset, clock, Data);
+	
+	assign Op = Instr[31:26];
+	assign Funct = Instr[5:0];
+	MIPS_MUX2_5 MUX_REGDST(Instr[20:16], Instr[15:11], RegDst, A3);
+	MIPS_MUX2_32 MUX_MEMTOREG(ALUOut, Data, MemtoReg, WD3);
+	
+	MIPS_REGFILE_32 REGISTER_FILE(WD3, Instr[25:21], Instr[20:16], A3,
+											RegWrite, reset, clock, RD1, RD2);
+	
+	MIPS_TWOREGWE_32 AB_REG(RD1, RD2, reset, clock, A, B);
+	
+	assign MemoryWD = B;
+	
+	MIPS_SIGEXT_32 SIGN_EXTEND(Instr[15:0], SignImm);
+	MIPS_SHIFT2_SIGEXT_32 SIGN_EXTEND_SFT2(Instr[15:0], SignImm2);
+	MIPS_MUX2_32 MUX_ALUSRCA(PC, A, ALUSrcA, SrcA);
+	MIPS_MUX4_32 MUX_ALUSRCB(B, 4, SignImm, SignImm2, ALUSrcB[0], ALUSrcB[1], SrcB);
+	
+	MIPS_ALU_32 ALU(SrcA, SrcB, ALUControl, ALUResult, Zero,  );
+	and(ZBranch, Zero, Branch);
+	or(PCEn, PCWrite, ZBranch);
+	
+	MIPS_REGWE_32 REG_ALUResult(ALUResult, reset, clock,  ALUOut);
+	MIPS_SHIFT2PC_32 SHIFT_PCJUMP(PC[31:28], Instr[25:0], PCJump);
+	MIPS_MUX4_32 MUX_PCL(ALUResult, ALUOut, PCJump, PCJump, PCSrc[0], PCSrc[1], PCl);
+
+endmodule
+
+	
+	
+	

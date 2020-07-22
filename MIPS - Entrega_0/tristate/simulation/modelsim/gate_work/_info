@@ -1,0 +1,46 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\aluno\Downloads\Suanny\tristate\simulation\modelsim
+vtristate
+IA9PojWm_]6KPbn:b4Rnz00
+VzB_4YGF1]61;m]9RLH0Bj1
+Z1 dC:\Users\aluno\Downloads\Suanny\tristate\simulation\modelsim
+w1551117669
+8tristate_6_1200mv_85c_slow.vo
+Ftristate_6_1200mv_85c_slow.vo
+L0 31
+Z2 OV;L;10.0c;49
+r1
+31
+o-vlog01compat -work work -O0
+!s100 0YW6@G:cRT`fhoQYF5NJF2
+!s85 0
+!s108 1551119327.990000
+!s107 tristate_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|tristate_6_1200mv_85c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vtristate_tb
+DXx6 sv_std 3 std 0 22 :CP]PHbGOHGT_H:3KF`8L2
+!s100 a4=7@7jd;65ehJHjINcR60
+Icf0<gCmWG]f@:9Q;7U2z63
+V2<d=caE^WD1g3A3jG7H:^1
+!s105 tristate_tb_sv_unit
+S1
+R1
+w1551119319
+8C:/Users/aluno/Downloads/Suanny/tristate/testbench/tristate_tb.sv
+FC:/Users/aluno/Downloads/Suanny/tristate/testbench/tristate_tb.sv
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1551119328.038000
+!s107 C:/Users/aluno/Downloads/Suanny/tristate/testbench/tristate_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aluno/Downloads/Suanny/tristate/testbench|C:/Users/aluno/Downloads/Suanny/tristate/testbench/tristate_tb.sv|
+!s101 -O0
+o-sv -work work -O0
+!s92 -sv -work work +incdir+C:/Users/aluno/Downloads/Suanny/tristate/testbench -O0

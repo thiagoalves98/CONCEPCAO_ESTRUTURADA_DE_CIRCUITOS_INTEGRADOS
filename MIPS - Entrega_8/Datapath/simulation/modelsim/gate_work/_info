@@ -1,0 +1,53 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Datapath\simulation\modelsim
+vDatapath
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IjGXj5o4VGeEfHdjNK=^AW0
+VF:T_GU6=iRR79FoiCC^U53
+S1
+Z2 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Datapath\simulation\modelsim
+w1556759906
+8Datapath_6_1200mv_85c_slow.svo
+FDatapath_6_1200mv_85c_slow.svo
+L0 31
+Z3 OV;L;10.1b;51
+r1
+31
+Z4 o-sv -work work -O0
+n@datapath
+!i10b 1
+!s100 iGa:0ceE<[Gh:m]hC>2lG1
+!s105 Datapath_6_1200mv_85c_slow_svo_unit
+!s85 0
+!s108 1556760330.471000
+!s107 Datapath_6_1200mv_85c_slow.svo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+.|Datapath_6_1200mv_85c_slow.svo|
+!s101 -O0
+!s92 -sv -work work +incdir+. -O0
+vDatapath_tb
+R1
+!i10b 1
+!s100 ]XjCz@4F1M99X::g<g3DK0
+IWTVBVN;V8GfNQLM^V5fRn3
+V7K75VAIZIQB5:Nl6mDQPS1
+!s105 Datapath_tb_sv_unit
+S1
+R2
+w1556760327
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1556760333.143000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench|C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench/Datapath_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Datapath/testbench} -O0
+n@datapath_tb

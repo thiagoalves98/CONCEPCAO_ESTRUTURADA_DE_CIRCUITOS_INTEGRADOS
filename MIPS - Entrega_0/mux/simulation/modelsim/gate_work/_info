@@ -1,0 +1,46 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\aluno\Downloads\Suanny\mux\simulation\modelsim
+vmux
+I_K_Y>SMHGec6[nJ7mTm[>3
+Vk36b4iaQMJzDF<n159k@Q0
+Z1 dC:\Users\aluno\Downloads\Suanny\mux\simulation\modelsim
+w1551125870
+8mux_6_1200mv_85c_slow.vo
+Fmux_6_1200mv_85c_slow.vo
+L0 31
+Z2 OV;L;10.0c;49
+r1
+31
+o-vlog01compat -work work -O0
+!s100 ZB8Jh[^;kmIi[cDbBVNBz1
+!s85 0
+!s108 1551126096.135000
+!s107 mux_6_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|mux_6_1200mv_85c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vmux2_tb
+DXx6 sv_std 3 std 0 22 :CP]PHbGOHGT_H:3KF`8L2
+!s100 IJE6>JUOk7ZJYcH@RhfTc3
+ISh3P4NA@k@CDXA[M`@aO<3
+V_I?[5HnX@4AG3KQ4kg1TC1
+!s105 mux2_tb_sv_unit
+S1
+R1
+w1551125971
+8C:/Users/aluno/Downloads/Suanny/mux/testbench/mux2_tb.sv
+FC:/Users/aluno/Downloads/Suanny/mux/testbench/mux2_tb.sv
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1551126096.198000
+!s107 C:/Users/aluno/Downloads/Suanny/mux/testbench/mux2_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aluno/Downloads/Suanny/mux/testbench|C:/Users/aluno/Downloads/Suanny/mux/testbench/mux2_tb.sv|
+!s101 -O0
+o-sv -work work -O0
+!s92 -sv -work work +incdir+C:/Users/aluno/Downloads/Suanny/mux/testbench -O0

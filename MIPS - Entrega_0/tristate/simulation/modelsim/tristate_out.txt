@@ -1,0 +1,70 @@
+Iniciando Testbench
+-------------
+|linha |   E   |   A    |    Y   |
+Erro na linha 16  a[0]=0 y[0]=x y_esperado[0]=0
+Erro na linha 16  a[1]=0 y[1]=x y_esperado[1]=0
+Erro na linha 16  a[2]=0 y[2]=x y_esperado[2]=0
+Erro na linha 16  a[3]=0 y[3]=x y_esperado[3]=0
+Erro na linha 17  a[0]=1 y[0]=x y_esperado[0]=1
+Erro na linha 17  a[1]=0 y[1]=x y_esperado[1]=0
+Erro na linha 17  a[2]=0 y[2]=x y_esperado[2]=0
+Erro na linha 17  a[3]=0 y[3]=x y_esperado[3]=0
+Erro na linha 18  a[0]=0 y[0]=x y_esperado[0]=0
+Erro na linha 18  a[1]=1 y[1]=x y_esperado[1]=1
+Erro na linha 18  a[2]=0 y[2]=x y_esperado[2]=0
+Erro na linha 18  a[3]=0 y[3]=x y_esperado[3]=0
+Erro na linha 19  a[0]=1 y[0]=x y_esperado[0]=1
+Erro na linha 19  a[1]=1 y[1]=x y_esperado[1]=1
+Erro na linha 19  a[2]=0 y[2]=x y_esperado[2]=0
+Erro na linha 19  a[3]=0 y[3]=x y_esperado[3]=0
+Erro na linha 20  a[0]=0 y[0]=x y_esperado[0]=0
+Erro na linha 20  a[1]=0 y[1]=x y_esperado[1]=0
+Erro na linha 20  a[2]=1 y[2]=x y_esperado[2]=1
+Erro na linha 20  a[3]=0 y[3]=x y_esperado[3]=0
+Erro na linha 21  a[0]=1 y[0]=x y_esperado[0]=1
+Erro na linha 21  a[1]=0 y[1]=x y_esperado[1]=0
+Erro na linha 21  a[2]=1 y[2]=x y_esperado[2]=1
+Erro na linha 21  a[3]=0 y[3]=x y_esperado[3]=0
+Erro na linha 22  a[0]=0 y[0]=x y_esperado[0]=0
+Erro na linha 22  a[1]=1 y[1]=x y_esperado[1]=1
+Erro na linha 22  a[2]=1 y[2]=x y_esperado[2]=1
+Erro na linha 22  a[3]=0 y[3]=x y_esperado[3]=0
+Erro na linha 23  a[0]=1 y[0]=x y_esperado[0]=1
+Erro na linha 23  a[1]=1 y[1]=x y_esperado[1]=1
+Erro na linha 23  a[2]=1 y[2]=x y_esperado[2]=1
+Erro na linha 23  a[3]=0 y[3]=x y_esperado[3]=0
+Erro na linha 24  a[0]=0 y[0]=x y_esperado[0]=0
+Erro na linha 24  a[1]=0 y[1]=x y_esperado[1]=0
+Erro na linha 24  a[2]=0 y[2]=x y_esperado[2]=0
+Erro na linha 24  a[3]=1 y[3]=x y_esperado[3]=1
+Erro na linha 25  a[0]=1 y[0]=x y_esperado[0]=1
+Erro na linha 25  a[1]=0 y[1]=x y_esperado[1]=0
+Erro na linha 25  a[2]=0 y[2]=x y_esperado[2]=0
+Erro na linha 25  a[3]=1 y[3]=x y_esperado[3]=1
+Erro na linha 26  a[0]=0 y[0]=x y_esperado[0]=0
+Erro na linha 26  a[1]=1 y[1]=x y_esperado[1]=1
+Erro na linha 26  a[2]=0 y[2]=x y_esperado[2]=0
+Erro na linha 26  a[3]=1 y[3]=x y_esperado[3]=1
+Erro na linha 27  a[0]=1 y[0]=x y_esperado[0]=1
+Erro na linha 27  a[1]=1 y[1]=x y_esperado[1]=1
+Erro na linha 27  a[2]=0 y[2]=x y_esperado[2]=0
+Erro na linha 27  a[3]=1 y[3]=x y_esperado[3]=1
+Erro na linha 28  a[0]=0 y[0]=x y_esperado[0]=0
+Erro na linha 28  a[1]=0 y[1]=x y_esperado[1]=0
+Erro na linha 28  a[2]=1 y[2]=x y_esperado[2]=1
+Erro na linha 28  a[3]=1 y[3]=x y_esperado[3]=1
+Erro na linha 29  a[0]=1 y[0]=x y_esperado[0]=1
+Erro na linha 29  a[1]=0 y[1]=x y_esperado[1]=0
+Erro na linha 29  a[2]=1 y[2]=x y_esperado[2]=1
+Erro na linha 29  a[3]=1 y[3]=x y_esperado[3]=1
+Erro na linha 30  a[0]=0 y[0]=x y_esperado[0]=0
+Erro na linha 30  a[1]=1 y[1]=x y_esperado[1]=1
+Erro na linha 30  a[2]=1 y[2]=x y_esperado[2]=1
+Erro na linha 30  a[3]=1 y[3]=x y_esperado[3]=1
+Erro na linha 31  a[0]=1 y[0]=x y_esperado[0]=1
+Erro na linha 31  a[1]=1 y[1]=x y_esperado[1]=1
+Erro na linha 31  a[2]=1 y[2]=x y_esperado[2]=1
+Erro na linha 31  a[3]=1 y[3]=x y_esperado[3]=1
+
+Testes Efetuados = 32 
+Erros Encontrados = 64 

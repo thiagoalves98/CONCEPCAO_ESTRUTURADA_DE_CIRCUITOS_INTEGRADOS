@@ -1,0 +1,328 @@
+// Copyright (C) 1991-2012 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 32-bit"
+// VERSION "Version 12.0 Build 178 05/31/2012 SJ Web Edition"
+
+// DATE "04/17/2019 15:30:21"
+
+// 
+// Device: Altera EP4CE6E22C6 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module alu (
+	ALUcontrol,
+	SrcA,
+	SrcB,
+	cin,
+	addSubSignal,
+	less,
+	set,
+	ALUresult,
+	cout);
+input 	[2:0] ALUcontrol;
+input 	SrcA;
+input 	SrcB;
+input 	cin;
+input 	addSubSignal;
+input 	less;
+output 	set;
+output 	ALUresult;
+output 	cout;
+
+// Design Ports Information
+// set	=>  Location: PIN_11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ALUresult	=>  Location: PIN_59,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// cout	=>  Location: PIN_10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SrcA	=>  Location: PIN_90,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SrcB	=>  Location: PIN_91,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// cin	=>  Location: PIN_87,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addSubSignal	=>  Location: PIN_100,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ALUcontrol[1]	=>  Location: PIN_83,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ALUcontrol[0]	=>  Location: PIN_72,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// less	=>  Location: PIN_104,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ALUcontrol[2]	=>  Location: PIN_86,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("alu_min_1200mv_0c_v_fast.sdo");
+// synopsys translate_on
+
+wire \set~output_o ;
+wire \ALUresult~output_o ;
+wire \cout~output_o ;
+wire \SrcB~input_o ;
+wire \SrcA~input_o ;
+wire \cin~input_o ;
+wire \addSubSignal~input_o ;
+wire \somadorULA|u2|output_s0~0_combout ;
+wire \ALUcontrol[2]~input_o ;
+wire \ALUcontrol[0]~input_o ;
+wire \muxULA|m2_0|t0|y~1_combout ;
+wire \less~input_o ;
+wire \muxULA|m2_0|t0|y~0_combout ;
+wire \ALUcontrol[1]~input_o ;
+wire \muxULA|m2_0|t0|y~2_combout ;
+wire \muxULA|m2_0|t0|y~3_combout ;
+wire \somadorULA|u3~0_combout ;
+
+
+// Location: IOOBUF_X0_Y18_N23
+cycloneive_io_obuf \set~output (
+	.i(\somadorULA|u2|output_s0~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\set~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \set~output .bus_hold = "false";
+defparam \set~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X23_Y0_N16
+cycloneive_io_obuf \ALUresult~output (
+	.i(\muxULA|m2_0|t0|y~3_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ALUresult~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ALUresult~output .bus_hold = "false";
+defparam \ALUresult~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y18_N16
+cycloneive_io_obuf \cout~output (
+	.i(\somadorULA|u3~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\cout~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \cout~output .bus_hold = "false";
+defparam \cout~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y12_N1
+cycloneive_io_ibuf \SrcB~input (
+	.i(SrcB),
+	.ibar(gnd),
+	.o(\SrcB~input_o ));
+// synopsys translate_off
+defparam \SrcB~input .bus_hold = "false";
+defparam \SrcB~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y12_N8
+cycloneive_io_ibuf \SrcA~input (
+	.i(SrcA),
+	.ibar(gnd),
+	.o(\SrcA~input_o ));
+// synopsys translate_off
+defparam \SrcA~input .bus_hold = "false";
+defparam \SrcA~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y10_N8
+cycloneive_io_ibuf \cin~input (
+	.i(cin),
+	.ibar(gnd),
+	.o(\cin~input_o ));
+// synopsys translate_off
+defparam \cin~input .bus_hold = "false";
+defparam \cin~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y17_N1
+cycloneive_io_ibuf \addSubSignal~input (
+	.i(addSubSignal),
+	.ibar(gnd),
+	.o(\addSubSignal~input_o ));
+// synopsys translate_off
+defparam \addSubSignal~input .bus_hold = "false";
+defparam \addSubSignal~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X33_Y13_N0
+cycloneive_lcell_comb \somadorULA|u2|output_s0~0 (
+// Equation(s):
+// \somadorULA|u2|output_s0~0_combout  = \SrcB~input_o  $ (\SrcA~input_o  $ (\cin~input_o  $ (\addSubSignal~input_o )))
+
+	.dataa(\SrcB~input_o ),
+	.datab(\SrcA~input_o ),
+	.datac(\cin~input_o ),
+	.datad(\addSubSignal~input_o ),
+	.cin(gnd),
+	.combout(\somadorULA|u2|output_s0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \somadorULA|u2|output_s0~0 .lut_mask = 16'h6996;
+defparam \somadorULA|u2|output_s0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y9_N1
+cycloneive_io_ibuf \ALUcontrol[2]~input (
+	.i(ALUcontrol[2]),
+	.ibar(gnd),
+	.o(\ALUcontrol[2]~input_o ));
+// synopsys translate_off
+defparam \ALUcontrol[2]~input .bus_hold = "false";
+defparam \ALUcontrol[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X32_Y0_N8
+cycloneive_io_ibuf \ALUcontrol[0]~input (
+	.i(ALUcontrol[0]),
+	.ibar(gnd),
+	.o(\ALUcontrol[0]~input_o ));
+// synopsys translate_off
+defparam \ALUcontrol[0]~input .bus_hold = "false";
+defparam \ALUcontrol[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X33_Y13_N12
+cycloneive_lcell_comb \muxULA|m2_0|t0|y~1 (
+// Equation(s):
+// \muxULA|m2_0|t0|y~1_combout  = (\SrcB~input_o  & ((\ALUcontrol[2]~input_o  & ((!\SrcA~input_o ))) # (!\ALUcontrol[2]~input_o  & ((\ALUcontrol[0]~input_o ) # (\SrcA~input_o ))))) # (!\SrcB~input_o  & ((\ALUcontrol[2]~input_o  & ((\ALUcontrol[0]~input_o ) # 
+// (\SrcA~input_o ))) # (!\ALUcontrol[2]~input_o  & (\ALUcontrol[0]~input_o  & \SrcA~input_o ))))
+
+	.dataa(\SrcB~input_o ),
+	.datab(\ALUcontrol[2]~input_o ),
+	.datac(\ALUcontrol[0]~input_o ),
+	.datad(\SrcA~input_o ),
+	.cin(gnd),
+	.combout(\muxULA|m2_0|t0|y~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \muxULA|m2_0|t0|y~1 .lut_mask = 16'h76E8;
+defparam \muxULA|m2_0|t0|y~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y18_N1
+cycloneive_io_ibuf \less~input (
+	.i(less),
+	.ibar(gnd),
+	.o(\less~input_o ));
+// synopsys translate_off
+defparam \less~input .bus_hold = "false";
+defparam \less~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X33_Y13_N2
+cycloneive_lcell_comb \muxULA|m2_0|t0|y~0 (
+// Equation(s):
+// \muxULA|m2_0|t0|y~0_combout  = (\ALUcontrol[0]~input_o  & ((\less~input_o ))) # (!\ALUcontrol[0]~input_o  & (\somadorULA|u2|output_s0~0_combout ))
+
+	.dataa(gnd),
+	.datab(\somadorULA|u2|output_s0~0_combout ),
+	.datac(\ALUcontrol[0]~input_o ),
+	.datad(\less~input_o ),
+	.cin(gnd),
+	.combout(\muxULA|m2_0|t0|y~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \muxULA|m2_0|t0|y~0 .lut_mask = 16'hFC0C;
+defparam \muxULA|m2_0|t0|y~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y9_N22
+cycloneive_io_ibuf \ALUcontrol[1]~input (
+	.i(ALUcontrol[1]),
+	.ibar(gnd),
+	.o(\ALUcontrol[1]~input_o ));
+// synopsys translate_off
+defparam \ALUcontrol[1]~input .bus_hold = "false";
+defparam \ALUcontrol[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X33_Y13_N6
+cycloneive_lcell_comb \muxULA|m2_0|t0|y~2 (
+// Equation(s):
+// \muxULA|m2_0|t0|y~2_combout  = (!\ALUcontrol[2]~input_o  & \ALUcontrol[0]~input_o )
+
+	.dataa(gnd),
+	.datab(\ALUcontrol[2]~input_o ),
+	.datac(\ALUcontrol[0]~input_o ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\muxULA|m2_0|t0|y~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \muxULA|m2_0|t0|y~2 .lut_mask = 16'h3030;
+defparam \muxULA|m2_0|t0|y~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X33_Y13_N16
+cycloneive_lcell_comb \muxULA|m2_0|t0|y~3 (
+// Equation(s):
+// \muxULA|m2_0|t0|y~3_combout  = (\ALUcontrol[1]~input_o  & ((\muxULA|m2_0|t0|y~2_combout  & (!\muxULA|m2_0|t0|y~1_combout )) # (!\muxULA|m2_0|t0|y~2_combout  & ((\muxULA|m2_0|t0|y~0_combout ))))) # (!\ALUcontrol[1]~input_o  & (\muxULA|m2_0|t0|y~1_combout 
+// ))
+
+	.dataa(\muxULA|m2_0|t0|y~1_combout ),
+	.datab(\muxULA|m2_0|t0|y~0_combout ),
+	.datac(\ALUcontrol[1]~input_o ),
+	.datad(\muxULA|m2_0|t0|y~2_combout ),
+	.cin(gnd),
+	.combout(\muxULA|m2_0|t0|y~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \muxULA|m2_0|t0|y~3 .lut_mask = 16'h5ACA;
+defparam \muxULA|m2_0|t0|y~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X33_Y13_N26
+cycloneive_lcell_comb \somadorULA|u3~0 (
+// Equation(s):
+// \somadorULA|u3~0_combout  = (\SrcA~input_o  & ((\cin~input_o ) # (\SrcB~input_o  $ (\addSubSignal~input_o )))) # (!\SrcA~input_o  & (\cin~input_o  & (\SrcB~input_o  $ (\addSubSignal~input_o ))))
+
+	.dataa(\SrcB~input_o ),
+	.datab(\SrcA~input_o ),
+	.datac(\cin~input_o ),
+	.datad(\addSubSignal~input_o ),
+	.cin(gnd),
+	.combout(\somadorULA|u3~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \somadorULA|u3~0 .lut_mask = 16'hD4E8;
+defparam \somadorULA|u3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign set = \set~output_o ;
+
+assign ALUresult = \ALUresult~output_o ;
+
+assign cout = \cout~output_o ;
+
+endmodule

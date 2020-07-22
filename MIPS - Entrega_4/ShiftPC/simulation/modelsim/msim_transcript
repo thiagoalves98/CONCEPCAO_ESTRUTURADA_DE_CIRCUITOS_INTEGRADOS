@@ -1,0 +1,164 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do shiftpc_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {shiftpc_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shiftpc
+# 
+# Top level modules:
+# 	shiftpc
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/shiftpc/testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench/shiftpc_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shiftpc_tb
+# 
+# Top level modules:
+# 	shiftpc_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  shiftpc_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps shiftpc_tb 
+# Loading sv_std.std
+# Loading work.shiftpc_tb
+# Loading work.shiftpc
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# SDF 10.1b Compiler 2012.04 Apr 27 2012
+# 
+# Loading instances from shiftpc_6_1200mv_85c_v_slow.sdo
+# Loading timing data from shiftpc_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /shiftpc_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench/shiftpc_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |              A               |   PC   |               Y                    |           Y_esperado               |
+# |------------------------------|--------|------------------------------------|------------------------------------|
+# |  11111111111111111111111111  |  0000  |  x0x011111x111111x111111111111100  |  00001111111111111111111111111100  | ERROR
+# |  11111111111111111111111111  |  1111  |  01011111111111111111111111111100  |  11111111111111111111111111111100  | ERROR
+# |  00000000000000000000000000  |  0000  |  10100000010000001000000000000000  |  00000000000000000000000000000000  | ERROR
+# |  00000000000000000000000000  |  1111  |  01010000000000000000000000000000  |  11110000000000000000000000000000  | ERROR
+# Testes Efetuados  = 4
+# Erros Encontrados = 4
+# Break in Module shiftpc_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench/shiftpc_tb.sv line 58
+# Simulation Breakpoint: Break in Module shiftpc_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench/shiftpc_tb.sv line 58
+# MACRO ./shiftpc_run_msim_gate_verilog.do PAUSED at line 17
+do shiftpc_run_msim_gate_verilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {shiftpc_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shiftpc
+# 
+# Top level modules:
+# 	shiftpc
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/shiftpc/testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench/shiftpc_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shiftpc_tb
+# 
+# Top level modules:
+# 	shiftpc_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  shiftpc_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps shiftpc_tb 
+# Loading sv_std.std
+# Loading work.shiftpc_tb
+# Loading work.shiftpc
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading instances from shiftpc_6_1200mv_85c_v_slow.sdo
+# Loading timing data from shiftpc_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /shiftpc_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench/shiftpc_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |              A               |   PC   |               Y                    |           Y_esperado               |
+# |------------------------------|--------|------------------------------------|------------------------------------|
+# |  11111111111111111111111111  |  0000  |  x0001111111111111111111111111100  |  00001111111111111111111111111100  | ERROR
+# |  11111111111111111111111111  |  1111  |  11111111111111111111111111111100  |  11111111111111111111111111111100  | OK
+# |  00000000000000000000000000  |  0000  |  10000000000000000000000000000000  |  00000000000000000000000000000000  | ERROR
+# |  00000000000000000000000000  |  1111  |  11110000000000000000000000000000  |  11110000000000000000000000000000  | OK
+# Testes Efetuados  = 4
+# Erros Encontrados = 2
+# Break in Module shiftpc_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench/shiftpc_tb.sv line 58
+# Simulation Breakpoint: Break in Module shiftpc_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench/shiftpc_tb.sv line 58
+# MACRO ./shiftpc_run_msim_gate_verilog.do PAUSED at line 17
+do shiftpc_run_msim_gate_verilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {shiftpc_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shiftpc
+# 
+# Top level modules:
+# 	shiftpc
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/shiftpc/testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench/shiftpc_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shiftpc_tb
+# 
+# Top level modules:
+# 	shiftpc_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  shiftpc_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps shiftpc_tb 
+# Loading sv_std.std
+# Loading work.shiftpc_tb
+# Loading work.shiftpc
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading instances from shiftpc_6_1200mv_85c_v_slow.sdo
+# Loading timing data from shiftpc_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /shiftpc_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench/shiftpc_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+# |              A               |   PC   |               Y                    |           Y_esperado               |
+# |------------------------------|--------|------------------------------------|------------------------------------|
+# |  11111111111111111111111111  |  0000  |  00001111111111111111111111111100  |  00001111111111111111111111111100  | OK
+# |  11111111111111111111111111  |  1111  |  11111111111111111111111111111100  |  11111111111111111111111111111100  | OK
+# |  00000000000000000000000000  |  0000  |  00000000000000000000000000000000  |  00000000000000000000000000000000  | OK
+# |  00000000000000000000000000  |  1111  |  11110000000000000000000000000000  |  11110000000000000000000000000000  | OK
+# Testes Efetuados  = 4
+# Erros Encontrados = 0
+# Break in Module shiftpc_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench/shiftpc_tb.sv line 58
+# Simulation Breakpoint: Break in Module shiftpc_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftpc/testbench/shiftpc_tb.sv line 58
+# MACRO ./shiftpc_run_msim_gate_verilog.do PAUSED at line 17

@@ -1,0 +1,36 @@
+module bank(input logic clk, input logic reset, input logic [0:31]en, input logic d, output logic [0:31]q);
+ 
+	flopenr r0 (clk, reset, en[0] , d, q[0] );
+	flopenr r1 (clk, reset, en[1] , d, q[1] );
+	flopenr r2 (clk, reset, en[2] , d, q[2] );
+	flopenr r3 (clk, reset, en[3] , d, q[3] );
+	flopenr r4 (clk, reset, en[4] , d, q[4] );
+	flopenr r5 (clk, reset, en[5] , d, q[5] );
+	flopenr r6 (clk, reset, en[6] , d, q[6] );
+	flopenr r7 (clk, reset, en[7] , d, q[7] );
+	flopenr r8 (clk, reset, en[8] , d, q[8] );
+	flopenr r9 (clk, reset, en[9] , d, q[9] );
+	flopenr r10(clk, reset, en[10], d, q[10]);
+	flopenr r11(clk, reset, en[11], d, q[11]);
+	flopenr r12(clk, reset, en[12], d, q[12]);
+	flopenr r13(clk, reset, en[13], d, q[13]);
+	flopenr r14(clk, reset, en[14], d, q[14]);
+	flopenr r15(clk, reset, en[15], d, q[15]);
+	flopenr r16(clk, reset, en[16], d, q[16]);
+	flopenr r17(clk, reset, en[17], d, q[17]);
+	flopenr r18(clk, reset, en[18], d, q[18]);
+	flopenr r19(clk, reset, en[19], d, q[19]);
+	flopenr r20(clk, reset, en[20], d, q[20]);
+	flopenr r21(clk, reset, en[21], d, q[21]);
+	flopenr r22(clk, reset, en[22], d, q[22]);
+	flopenr r23(clk, reset, en[23], d, q[23]);
+	flopenr r24(clk, reset, en[24], d, q[24]);
+	flopenr r25(clk, reset, en[25], d, q[25]);
+	flopenr r26(clk, reset, en[26], d, q[26]);
+	flopenr r27(clk, reset, en[27], d, q[27]);
+	flopenr r28(clk, reset, en[28], d, q[28]);
+	flopenr r29(clk, reset, en[29], d, q[29]);
+	flopenr r30(clk, reset, en[30], d, q[30]);
+	flopenr r31(clk, reset, en[31], d, q[31]);
+
+endmodule

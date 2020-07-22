@@ -1,0 +1,70 @@
+`timescale 1ns/100ps
+
+module mux32_tb;
+    
+int counter, errors, aux_error;
+logic clk,rst;
+logic d[31:0];
+logic s[4:0];
+logic y,y_esperado;
+logic [37:0]vectors[32]; 
+
+mux32 dut(s[5], d[32], y);
+
+initial begin
+	$display("Iniciando Testbench");
+	$display("| D0 | D1 | ... | D31 | S0 | S1 | S2 | S3 | S4 | Y |"); 
+	$display("----------------------------------------------------");
+	$readmemb("mux32_tv.tv",vectors);
+	counter=0; errors=0;
+	rst = 1; 
+	#15; 
+	rst = 0;		
+end
+		
+always begin
+    clk=1; #10; 
+	 clk=0; #5;
+end
+
+always @(posedge clk)	//Sempre (que o clock subir)
+	if(~rst)
+	begin
+		a = vectors[counter][4:0];
+		d = vectors[counter][36:5];
+		y_esperado = vectors[counter][37];
+		
+	end
+
+always @(negedge clk)	//Sempre (que o clock descer)
+		if(~rst)
+		begin
+			aux_error = errors;
+			
+		assert (y === y_esperado)
+		else	
+		begin
+			//Mostra mensagem de erro se a saida do DUT for diferente da saida esperada
+			$display("Error: input = %b", counter);
+			$display("Output = %b, (%b expected)", y, y_esperado);			
+			errors = errors + 1; //Incrementa contador de erros a cada bit errado encontrado
+		end
+		
+		if(aux_error === errors)
+			$display("| %b | %b | ... | %b | %b | %b | %b | %b | %b | OK", d[0], d[1], d[31], s[0], s[1], s[2], s[3], s[4], y);
+		else
+			$display("| %b | %b | ... | %b | %b | %b | %b | %b | %b | ERROR", d[0], d[1], d[31], s[0], s[1], s[2], s[3], s[4], y);
+
+			counter++;	//Incrementa contador dos vertores de teste
+			
+			if(counter == $size(vectors)) //Quando os vetores de teste acabarem
+			begin
+				$display("Testes Efetuados  = %0d", counter);
+				$display("Erros Encontrados = %0d", errors);
+				#10
+				$stop;
+			end
+			
+		end
+		
+ endmodule

@@ -1,0 +1,93 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\aluno\Downloads\Suanny (2)\Suanny\mux\simulation\modelsim
+vinv
+Z1 DXx6 sv_std 3 std 0 22 :CP]PHbGOHGT_H:3KF`8L2
+I]2>Padf_Ddz6f[ifIUX0l3
+VAa551c4U][gOM;MLgeOAP0
+S1
+Z2 dC:\Users\aluno\Downloads\Suanny (2)\Suanny\mux\simulation\modelsim
+w1537489524
+8C:/Users/aluno/Downloads/Suanny (2)/Suanny/Alexandre e Lucas/Inv_Aula/inv.sv
+FC:/Users/aluno/Downloads/Suanny (2)/Suanny/Alexandre e Lucas/Inv_Aula/inv.sv
+L0 1
+Z3 OV;L;10.0c;49
+r1
+31
+Z4 o-sv -work work -O0
+!s100 GH5DB7=<3>4VW:g>A;K<^2
+!s105 inv_sv_unit
+!s85 0
+!s108 1551203231.918000
+!s107 C:/Users/aluno/Downloads/Suanny (2)/Suanny/Alexandre e Lucas/Inv_Aula/inv.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aluno/Downloads/Suanny (2)/Suanny/Alexandre e Lucas/Inv_Aula|C:/Users/aluno/Downloads/Suanny (2)/Suanny/Alexandre e Lucas/Inv_Aula/inv.sv|
+!s101 -O0
+!s92 -sv -work work {+incdir+C:/Users/aluno/Downloads/Suanny (2)/Suanny/Alexandre e Lucas/Inv_Aula} -O0
+vmux
+R1
+I^DdhgYQ404=>ASQZD9Nb42
+V:3ih<8CHL5[G<APSBZ`2N0
+S1
+R2
+w1551126265
+8C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/mux.sv
+FC:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/mux.sv
+L0 1
+R3
+r1
+31
+R4
+!s100 ?oWk_G0<Ih<;;4OiKhPdi2
+!s105 mux_sv_unit
+!s85 0
+!s108 1551203231.963000
+!s107 C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux|C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/mux.sv|
+!s101 -O0
+!s92 -sv -work work {+incdir+C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux} -O0
+vmux2_tb
+R1
+!s100 IJE6>JUOk7ZJYcH@RhfTc3
+IN=nDWVV7IL43G0VDm5Y;52
+V_I?[5HnX@4AG3KQ4kg1TC1
+!s105 mux2_tb_sv_unit
+S1
+R2
+w1551125971
+8C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/testbench/mux2_tb.sv
+FC:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/testbench/mux2_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1551203232.045000
+!s107 C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/testbench/mux2_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/testbench|C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/testbench/mux2_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/aluno/Downloads/Suanny (2)/Suanny/mux/testbench} -O0
+vtristate
+R1
+IUZn3IG=WbMaZQblUliAnW1
+VzB_4YGF1]61;m]9RLH0Bj1
+S1
+R2
+w1550756550
+8C:/Users/aluno/Downloads/Suanny (2)/Suanny/tristate/tristate.sv
+FC:/Users/aluno/Downloads/Suanny (2)/Suanny/tristate/tristate.sv
+L0 1
+R3
+r1
+31
+R4
+!s100 V:Oc;F[@BDm[MKj307LoE2
+!s105 tristate_sv_unit
+!s85 0
+!s108 1551203232.008000
+!s107 C:/Users/aluno/Downloads/Suanny (2)/Suanny/tristate/tristate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/aluno/Downloads/Suanny (2)/Suanny/tristate|C:/Users/aluno/Downloads/Suanny (2)/Suanny/tristate/tristate.sv|
+!s101 -O0
+!s92 -sv -work work {+incdir+C:/Users/aluno/Downloads/Suanny (2)/Suanny/tristate} -O0

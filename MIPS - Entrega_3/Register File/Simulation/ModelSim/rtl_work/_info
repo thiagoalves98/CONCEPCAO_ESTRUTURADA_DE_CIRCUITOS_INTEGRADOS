@@ -1,0 +1,235 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Register File\Simulation\ModelSim
+vbank
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I[07jMk0`ee;2Cb^zgVeP;0
+V347G<QX5Dd6AecAzh?9^J0
+S1
+Z2 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Register File\Simulation\ModelSim
+w1554780143
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/bank.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/bank.sv
+L0 1
+Z3 OV;L;10.1b;51
+r1
+31
+Z4 o-sv -work work -O0
+Z5 !s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File} -O0
+!i10b 1
+!s100 Zf5VJz@2mJcX5;mASCZgI2
+!s105 bank_sv_unit
+!s85 0
+!s108 1554787157.978000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/bank.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File|C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/bank.sv|
+!s101 -O0
+vdecoder5_32
+R1
+I<DFGWZf:AL1=Tm11W3;Mz3
+V]j0V;LFNIT@lC:b5HMne`0
+S1
+R2
+w1554784325
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/decoder5_32.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/decoder5_32.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 Bo64G21K[;[^fTRCad^MZ0
+!s105 decoder5_32_sv_unit
+!s85 0
+!s108 1554787153.353000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/decoder5_32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File|C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/decoder5_32.sv|
+!s101 -O0
+vflopenr
+R1
+I1NG8>kF7D2<=aLTciz;7@1
+VmEVPe?[3Bd];NoWcd8TlK1
+S1
+R2
+w1554686808
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/flopenr.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/flopenr.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 j<NgJlNVY=fSCd?VgiW=O0
+!s105 flopenr_sv_unit
+!s85 0
+!s108 1554787157.556000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/flopenr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File|C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/flopenr.sv|
+!s101 -O0
+vinversor
+R1
+IUSh?VVgT^Og9f:fmD_L9;3
+VK9C;<dDEdeKN0OH61L[:Q1
+S1
+R2
+w1554515523
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/inversor.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/inversor.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 nbkeTczbFnh9VlXO:20Hl1
+!s105 inversor_sv_unit
+!s85 0
+!s108 1554787156.556000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/inversor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File|C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/inversor.sv|
+!s101 -O0
+vmux2
+R1
+I`?S2ldz60_26ka`IODAc30
+V4:42Wnh=OcQJ[:;]F`0F91
+S1
+R2
+Z6 w1554515524
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux2.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux2.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 f>]85WECTWRj^`mh7OWBD3
+!s105 mux2_sv_unit
+!s85 0
+!s108 1554787155.931000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File|C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux2.sv|
+!s101 -O0
+vmux32
+R1
+INKlc@LzX:QSmU0?iGI67_1
+VV1VR7Iz`TVY76Y:ZF2@Rc1
+S1
+R2
+w1554779505
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux32.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux32.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 V1>`fGlRY]]E?U6YbN?7X3
+!s105 mux32_sv_unit
+!s85 0
+!s108 1554787154.431000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux32.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File|C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux32.sv|
+!s101 -O0
+vmux4
+R1
+IC`aTYQ_8AoaA9>UblFTlZ0
+VD;U:>2Gg;99:CJY5m?OWI2
+S1
+R2
+R6
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux4.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux4.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 geZg<;m8o0@AiQnfEg>T82
+!s105 mux4_sv_unit
+!s85 0
+!s108 1554787155.463000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File|C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/mux4.sv|
+!s101 -O0
+vregister
+R1
+II=DSM88``S9dXoMlM9?YK0
+VmR;4[NNzjCB1VEizGX4BG1
+S1
+R2
+w1554777079
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/register.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/register.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 `TaAW^ZdS^5I;UfW>LXRG0
+!s105 register_sv_unit
+!s85 0
+!s108 1554787158.431000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/register.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File|C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/register.sv|
+!s101 -O0
+vregister_tb
+R1
+!i10b 1
+!s100 NC1TeTZ>jmaNWD4I<8;:J1
+I01X]kgb]UblK5c]6=GPRg2
+VPzo]z<>9V8[Ijo<]RZF=P0
+!s105 register_tb_sv_unit
+S1
+R2
+w1554787125
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/Testbench/register_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/Testbench/register_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1554787158.947000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/Testbench/register_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/Testbench|C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/Testbench/register_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/Testbench} -O0
+vtristate
+R1
+IiPYkch94zPZWMlaNagA`[0
+VRec>Y2aHg`5_EGQ7YU:J70
+S1
+R2
+R6
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/tristate.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/tristate.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 GHd12:AQSm_`J<H[5O0Zg1
+!s105 tristate_sv_unit
+!s85 0
+!s108 1554787153.806000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/tristate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File|C:/Users/thiag/OneDrive/햞ea de Trabalho/Register File/tristate.sv|
+!s101 -O0

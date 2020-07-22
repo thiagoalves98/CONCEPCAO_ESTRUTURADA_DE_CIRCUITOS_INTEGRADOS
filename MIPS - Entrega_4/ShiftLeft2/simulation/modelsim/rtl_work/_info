@@ -1,0 +1,51 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\shiftleft2\simulation\modelsim
+vshiftleft2
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+In_`ka7eT:5Dk8n[MTk2e@0
+VoB>MDTcgQ1zQ>JUSHX4RX0
+S1
+Z2 dC:\Users\thiag\OneDrive\햞ea de Trabalho\shiftleft2\simulation\modelsim
+w1554929825
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/shiftleft2.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/shiftleft2.sv
+L0 1
+Z3 OV;L;10.1b;51
+r1
+31
+Z4 o-sv -work work -O0
+!i10b 1
+!s100 RSl4igN]jXi5Omoj?EgoB0
+!s105 shiftleft2_sv_unit
+!s85 0
+!s108 1554930001.069000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/shiftleft2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2|C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/shiftleft2.sv|
+!s101 -O0
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2} -O0
+vshiftleft2_tb
+R1
+!i10b 1
+!s100 [P5_A;I<QBR8VDR9HFAni3
+IZBKWn;lkdz<4Q?nG=fYbZ1
+V6LF737Y2d@Cla>_HhXRTA3
+!s105 shiftleft2_tb_sv_unit
+S1
+R2
+w1554929998
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/testbench/shiftleft2_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/testbench/shiftleft2_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1554930001.429000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/testbench/shiftleft2_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/testbench|C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/testbench/shiftleft2_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/shiftleft2/testbench} -O0

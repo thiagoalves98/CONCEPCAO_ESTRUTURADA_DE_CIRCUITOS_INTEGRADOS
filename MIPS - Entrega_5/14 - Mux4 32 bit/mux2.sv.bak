@@ -1,0 +1,8 @@
+module mux2(input logic [1:0]d, input logic s, output tri y);
+ 
+ tristate t0(d[1], ns, y);
+ tristate t1(d[0], s, y);
+ inversor inv(s, ns);
+ 
+endmodule
+

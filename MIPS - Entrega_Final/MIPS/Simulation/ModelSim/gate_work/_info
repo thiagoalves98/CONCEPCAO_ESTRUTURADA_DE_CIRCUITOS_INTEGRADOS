@@ -1,0 +1,51 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Mips_final\Simulation\ModelSim
+vmips
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IO@ASez0CU79klWG6Pe7`R2
+Vga=XP`Nk4celEh5iYC4b93
+S1
+Z2 dC:\Users\thiag\OneDrive\햞ea de Trabalho\Mips_final\Simulation\ModelSim
+w1557367714
+8mips_6_1200mv_85c_slow.svo
+Fmips_6_1200mv_85c_slow.svo
+L0 31
+Z3 OV;L;10.1b;51
+r1
+31
+Z4 o-sv -work work -O0
+!i10b 1
+!s100 Z0W;V0b5gaJ1VkzbVWC[03
+!s105 mips_6_1200mv_85c_slow_svo_unit
+!s85 0
+!s108 1557781294.370000
+!s107 mips_6_1200mv_85c_slow.svo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+.|mips_6_1200mv_85c_slow.svo|
+!s101 -O0
+!s92 -sv -work work +incdir+. -O0
+vmips_tb
+R1
+!i10b 1
+!s100 ^07Y]:Re;XboU>51feBXZ2
+IC_XMg;26LE6:kG1nB3W1:2
+VHfL@J;=TiSmbe>@j83EoJ0
+!s105 mips_tb_sv_unit
+S1
+R2
+w1557781291
+8C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/Testbench/mips_tb.sv
+FC:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/Testbench/mips_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1557781297.783000
+!s107 C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/Testbench/mips_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/Testbench|C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/Testbench/mips_tb.sv|
+!s101 -O0
+R4
+!s92 -sv -work work {+incdir+C:/Users/thiag/OneDrive/햞ea de Trabalho/Mips_final/Testbench} -O0

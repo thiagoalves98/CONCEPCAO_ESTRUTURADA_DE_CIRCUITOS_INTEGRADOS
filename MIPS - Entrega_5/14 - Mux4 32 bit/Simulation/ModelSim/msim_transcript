@@ -1,0 +1,259 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do mux4_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {mux4_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/14\ -\ Mux4\ 32\ bit/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/14 - Mux4 32 bit/Testbench/mux4_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux4_tb
+# 
+# Top level modules:
+# 	mux4_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  mux4_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux4_tb 
+# Loading sv_std.std
+# Loading work.mux4_tb
+# Loading work.mux4
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# SDF 10.1b Compiler 2012.04 Apr 27 2012
+# 
+# Loading instances from mux4_6_1200mv_85c_v_slow.sdo
+# Loading timing data from mux4_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux4_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/14 - Mux4 32 bit/Testbench/mux4_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+#    |                D                   |  S   |                Y                   |             Y_esperado             |
+#    |------------------------------------|------|------------------------------------|------------------------------------|
+# D0 |  11111111111111111111111111111111  |  00  |  11x111111x11x111xx11111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  01  |  11011111111111111111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  11111111111111111111111111111111  |
+# D2 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  10  |  11011111101101110111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  11111111111111111111111111111111  |
+#  
+# D0 |  00000000000000000000000000000000  |  11  |  11011111111111111111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  00  |  00100000010010001100000000000000  |  00000000000000000000000000000000  | ERRO
+# D1 |  11111111111111111111111111111111  |
+# D2 |  11111111111111111111111111111111  |
+#  
+# D0 |  11111111111111111111111111111111  |  01  |  00100000000000000000000000000000  |  00000000000000000000000000000000  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  11111111111111111111111111111111  |
+#  
+# D0 |  11111111111111111111111111111111  |  10  |  00100000010010001100000000000000  |  00000000000000000000000000000000  | ERRO
+# D1 |  11111111111111111111111111111111  |
+# D2 |  00000000000000000000000000000000  |
+#  
+# D0 |  11111111111111111111111111111111  |  11  |  00100000000000000100000000000000  |  00000000000000000000000000000000  | ERRO
+# D1 |  11111111111111111111111111111111  |
+# D2 |  11111111111111111111111111111111  |
+#  
+# Testes Efetuados  = 8
+# Erros Encontrados = 8
+# Break in Module mux4_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/14 - Mux4 32 bit/Testbench/mux4_tb.sv line 69
+# Simulation Breakpoint: Break in Module mux4_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/14 - Mux4 32 bit/Testbench/mux4_tb.sv line 69
+# MACRO ./mux4_run_msim_gate_verilog.do PAUSED at line 17
+do mux4_run_msim_gate_verilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {mux4_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/14\ -\ Mux4\ 32\ bit/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/14 - Mux4 32 bit/Testbench/mux4_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux4_tb
+# 
+# Top level modules:
+# 	mux4_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  mux4_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux4_tb 
+# Loading sv_std.std
+# Loading work.mux4_tb
+# Loading work.mux4
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from mux4_6_1200mv_85c_v_slow.sdo
+# Loading timing data from mux4_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux4_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/14 - Mux4 32 bit/Testbench/mux4_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+#    |                D                   |  S   |                Y                   |             Y_esperado             |
+#    |------------------------------------|------|------------------------------------|------------------------------------|
+# D0 |  11111111111111111111111111111111  |  00  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  01  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  11111111111111111111111111111111  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  10  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  11111111111111111111111111111111  |
+# D3 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  11  |  11111111111111111111111111111111  |  11111111111111111111111111111111  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  11111111111111111111111111111111  |
+#  
+# D0 |  00000000000000000000000000000000  |  00  |  00000000000000000000000000000000  |  00000000000000000000000000000000  | OK
+# D1 |  11111111111111111111111111111111  |
+# D2 |  11111111111111111111111111111111  |
+# D3 |  11111111111111111111111111111111  |
+#  
+# D0 |  11111111111111111111111111111111  |  01  |  00000000000000000000000000000000  |  00000000000000000000000000000000  | OK
+# D1 |  00000000000000000000000000000000  |
+# D2 |  11111111111111111111111111111111  |
+# D3 |  11111111111111111111111111111111  |
+#  
+# D0 |  11111111111111111111111111111111  |  10  |  00000000000000000000000000000000  |  00000000000000000000000000000000  | OK
+# D1 |  11111111111111111111111111111111  |
+# D2 |  00000000000000000000000000000000  |
+# D3 |  11111111111111111111111111111111  |
+#  
+# D0 |  11111111111111111111111111111111  |  11  |  00000000000000000000000000000000  |  00000000000000000000000000000000  | OK
+# D1 |  11111111111111111111111111111111  |
+# D2 |  11111111111111111111111111111111  |
+# D3 |  00000000000000000000000000000000  |
+#  
+# Testes Efetuados  = 8
+# Erros Encontrados = 0
+# Break in Module mux4_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/14 - Mux4 32 bit/Testbench/mux4_tb.sv line 69
+# Simulation Breakpoint: Break in Module mux4_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/14 - Mux4 32 bit/Testbench/mux4_tb.sv line 69
+# MACRO ./mux4_run_msim_gate_verilog.do PAUSED at line 17
+do mux4_run_msim_gate_verilog.do
+# transcript on
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {mux4_6_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# 
+# vlog -sv -work work +incdir+C:/Users/thiag/OneDrive/햞ea\ de\ Trabalho/MIPS/14\ -\ Mux4\ 32\ bit/Testbench {C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/14 - Mux4 32 bit/Testbench/mux4_tb.sv}
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module mux4_tb
+# 
+# Top level modules:
+# 	mux4_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  mux4_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps mux4_tb 
+# Loading sv_std.std
+# Loading work.mux4_tb
+# Loading work.mux4
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from mux4_6_1200mv_85c_v_slow.sdo
+# Loading timing data from mux4_6_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mux4_tb File: C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/14 - Mux4 32 bit/Testbench/mux4_tb.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Iniciando Testbench
+#    |                D                   |  S   |                Y                   |             Y_esperado             |
+#    |------------------------------------|------|------------------------------------|------------------------------------|
+# D0 |  11111111111111111111111111111111  |  00  |  11x111111x11x111xx11111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  01  |  11011111111111111111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  11111111111111111111111111111111  |
+# D2 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  10  |  11011111101101110111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  11111111111111111111111111111111  |
+#  
+# D0 |  00000000000000000000000000000000  |  11  |  11011111111111111111111111111111  |  11111111111111111111111111111111  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  00000000000000000000000000000000  |
+#  
+# D0 |  00000000000000000000000000000000  |  00  |  00100000010010001100000000000000  |  00000000000000000000000000000000  | ERRO
+# D1 |  11111111111111111111111111111111  |
+# D2 |  11111111111111111111111111111111  |
+#  
+# D0 |  11111111111111111111111111111111  |  01  |  00100000000000000000000000000000  |  00000000000000000000000000000000  | ERRO
+# D1 |  00000000000000000000000000000000  |
+# D2 |  11111111111111111111111111111111  |
+#  
+# D0 |  11111111111111111111111111111111  |  10  |  00100000010010001100000000000000  |  00000000000000000000000000000000  | ERRO
+# D1 |  11111111111111111111111111111111  |
+# D2 |  00000000000000000000000000000000  |
+#  
+# D0 |  11111111111111111111111111111111  |  11  |  00100000000000000100000000000000  |  00000000000000000000000000000000  | ERRO
+# D1 |  11111111111111111111111111111111  |
+# D2 |  11111111111111111111111111111111  |
+#  
+# Testes Efetuados  = 8
+# Erros Encontrados = 8
+# Break in Module mux4_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/14 - Mux4 32 bit/Testbench/mux4_tb.sv line 69
+# Simulation Breakpoint: Break in Module mux4_tb at C:/Users/thiag/OneDrive/햞ea de Trabalho/MIPS/14 - Mux4 32 bit/Testbench/mux4_tb.sv line 69
+# MACRO ./mux4_run_msim_gate_verilog.do PAUSED at line 17

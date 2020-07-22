@@ -1,0 +1,40 @@
+|decoder5_32
+a[4] => Decoder0.IN4
+a[3] => Decoder0.IN3
+a[2] => Decoder0.IN2
+a[1] => Decoder0.IN1
+a[0] => Decoder0.IN0
+y[31][0] <= <GND>
+y[30][0] <= y[30][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[29][0] <= y[29][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[28][0] <= y[28][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[27][0] <= y[27][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[26][0] <= y[26][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[25][0] <= y[25][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[24][0] <= y[24][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[23][0] <= y[23][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[22][0] <= y[22][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[21][0] <= y[21][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[20][0] <= y[20][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[19][0] <= y[19][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[18][0] <= y[18][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[17][0] <= y[17][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[16][0] <= y[16][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[15][0] <= y[15][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[14][0] <= y[14][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[13][0] <= y[13][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[12][0] <= y[12][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[11][0] <= y[11][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[10][0] <= y[10][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[9][0] <= y[9][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[8][0] <= y[8][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[7][0] <= y[7][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[6][0] <= y[6][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[5][0] <= y[5][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[4][0] <= y[4][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[3][0] <= y[3][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[2][0] <= y[2][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[1][0] <= y[1][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[0][0] <= y[0][0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
